@@ -21,12 +21,7 @@ This is experimental software.
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-? ????? ??????.
-
-MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-license.php? ??????.
-
-? ?????? OpenSSL ??(http://www.openssl.org) ?? ???? ??? OpenSSL ????? ???? ???, ??? ????? Eric Young(eay@cryptsoft.com)?, UPnP ????? Thomas Bernard? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -37,34 +32,34 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Double-click to edit address or label</source>
-        <translation>?? ?? ?? ???? ?? ???? ???</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Create a new address</source>
-        <translation>? ?? ???</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>?? ??? ??? ??? ????? ????</translation>
-    </message>
-    <message>
-        <location line="-11"/>
-        <source>&amp;New Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-46"/>
+        <location line="+6"/>
         <source>These are your Gridcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+60"/>
-        <source>&amp;Copy Address</source>
-        <translation>?? ??(&amp;C)</translation>
+        <location line="+16"/>
+        <source>Double-click to edit address or label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Create a new address</source>
+        <translation>새 주소 만들기</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation>새 항목(&amp;N)</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Copy the currently selected address to the system clipboard</source>
+        <translation>현재 선택한 주소를 시스템 클립보드로 복사하기</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation>복사(&amp;C)</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -79,37 +74,37 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">메시지에 서명(&amp;M)</translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>Delete the currently selected address from the list</source>
-        <translation>?? ??? ??? ?? ??</translation>
-    </message>
-    <message>
-        <location line="-14"/>
+        <location line="+11"/>
         <source>Verify a message to ensure it was signed with a specified Gridcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished">??? ??(&amp;V)</translation>
+        <translation type="unfinished">메시지 검증(&amp;V)</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+11"/>
+        <source>Delete the currently selected address from the list</source>
+        <translation>현재 목록에 선택한 주소 삭제</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>&amp;Delete</source>
-        <translation>&amp;??</translation>
+        <translation>삭제(&amp;D)</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+65"/>
         <source>Copy &amp;Label</source>
-        <translation>? ??</translation>
+        <translation>라벨 복사(&amp;L)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Edit</source>
-        <translation>??&amp;</translation>
+        <translation>편집 (&amp;E)</translation>
     </message>
     <message>
         <location line="+250"/>
@@ -117,12 +112,7 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Comma separated file (*.csv)</source>
-        <translation>??? ??? ????(*.csv)</translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>Error exporting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -131,23 +121,28 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <source>Could not write to file %1.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location line="-13"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation>쉼표로 구분된 파일 (*.csv)</translation>
+    </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <location filename="../addresstablemodel.cpp" line="+144"/>
         <source>Label</source>
-        <translation>?</translation>
+        <translation>라벨</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>??</translation>
+        <translation>주소</translation>
     </message>
     <message>
         <location line="+36"/>
         <source>(no label)</source>
-        <translation>(? ??)</translation>
+        <translation>(라벨 없음)</translation>
     </message>
 </context>
 <context>
@@ -155,22 +150,22 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation>??? ????</translation>
+        <translation>암호문 대화상자</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>?? ????</translation>
+        <translation>암호 입력하기</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>??? ??</translation>
+        <translation>새로운 암호</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>? ?? ??</translation>
+        <translation>새로운 암호 재확인</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -183,155 +178,160 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+38"/>
+        <location filename="../askpassphrasedialog.cpp" line="+37"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>지갑에 새로운 비밀문구를 입력하세요.&lt;br/&gt;비밀문구를 &lt;b&gt;열 개 이상의 무작위 글자&lt;/b&gt; 혹은 &lt;b&gt;여덟개 이상의 단어로&lt;b&gt; 정하세요.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Encrypt wallet</source>
-        <translation>?? ???</translation>
+        <translation>지갑 암호화</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>? ??? ??? ???? ???? ???  ??? ?????.</translation>
+        <translation>이 작업을 실행하려면 사용자 지갑의 암호가 필요합니다.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Unlock wallet</source>
-        <translation>?? ??</translation>
+        <translation>지갑 잠금해제</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>? ??? ??? ???? ?? ???? ?? ??? ?????.</translation>
+        <translation>이 작업은 지갑을 해독하기 위해 사용자 지갑의 암호가 필요합니다.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Decrypt wallet</source>
-        <translation>?? ??</translation>
+        <translation>지갑 복호화</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>?? ??</translation>
+        <translation>암호 변경</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>??? ?? ??? ??? ??? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Confirm wallet encryption</source>
-        <translation>??? ???? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+46"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>?? ???? ?????????</translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+103"/>
-        <location line="+24"/>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>??: ??? ?? ??????!</translation>
-    </message>
-    <message>
-        <location line="-133"/>
-        <location line="+60"/>
-        <source>Wallet encrypted</source>
-        <translation>?? ??? ??</translation>
-    </message>
-    <message>
-        <location line="-140"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
+        <location line="+11"/>
         <source>Gridcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-12"/>
+        <source>Confirm wallet encryption</source>
+        <translation>지갑 암호화 승인</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>지갑 암호화를 허용하시겠습니까?</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+60"/>
+        <source>Wallet encrypted</source>
+        <translation>지갑 암호화 완료</translation>
+    </message>
+    <message>
+        <location line="-54"/>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>중요: 본인 지갑 파일에서 만든 예전 백업들은 새로 생성한 암호화된 지갑 파일로 교체됩니다. 보안상 이유로 이전에 암호화하지 않은 지갑 파일 백업은 사용할 수 없게 되니 이른 시일 내로 새로 암호화된 지갑을 사용하시기 바랍니다.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <location line="+7"/>
         <location line="+44"/>
         <location line="+6"/>
         <source>Wallet encryption failed</source>
-        <translation>?? ??? ??</translation>
+        <translation>지갑 암호화 실패</translation>
     </message>
     <message>
         <location line="-56"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>?? ???? ?? ??? ?? ??????.  ??? ??? ??? ?? ?????.</translation>
+        <translation>지갑 암호화는 내부 에러로 인해 실패했습니다.  당신의 지갑은 암호화 되지 않았습니다.</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+50"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>??? ??? ???? ????.</translation>
+        <translation>지정한 암호가 일치하지 않습니다.</translation>
     </message>
     <message>
         <location line="-38"/>
         <source>Wallet unlock failed</source>
-        <translation>?? ??? ???????.</translation>
+        <translation>지갑 잠금해제 실패</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+12"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>?? ??? ?? ??? ?????.</translation>
+        <translation>지갑 해독을 위한 암호가 틀렸습니다.</translation>
     </message>
     <message>
         <location line="-20"/>
         <source>Wallet decryption failed</source>
-        <translation>?? ??? ???????.</translation>
+        <translation>지갑 복호화 실패</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>?? ????? ????? ???????</translation>
+        <translation>지갑 비밀번호가 성공적으로 변경되었습니다.</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <location line="+24"/>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>경고: Caps Lock키가 켜져있습니다!</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+981"/>
+        <location filename="../bitcoingui.cpp" line="+798"/>
         <source>Sign &amp;message...</source>
-        <translation>??? ??&amp;...</translation>
+        <translation>메시지 서명(&amp;M)...</translation>
     </message>
     <message>
-        <location line="+346"/>
-        <source>Synchronizing with network...</source>
-        <translation>????? ????...</translation>
-    </message>
-    <message>
-        <location line="-500"/>
+        <location line="-131"/>
         <source>&amp;Overview</source>
-        <translation>&amp;??</translation>
+        <translation>개요(&amp;O)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show general overview of wallet</source>
-        <translation>??? ??? ??? ?? ???.</translation>
+        <translation>지갑의 일반적 개요를 보여줍니다.</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+5"/>
+        <source>Send coins to a Gridcoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;??</translation>
+        <translation>거래(&amp;T)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>????? ?????.</translation>
+        <translation>거래내역을 검색합니다.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -344,220 +344,7 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-11"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-6"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+57"/>
-        <source>E&amp;xit</source>
-        <translation>???(&amp;X)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Quit application</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Show information about Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>&amp;Options...</source>
-        <translation>&amp;??</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>?? ???&amp;...</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>?? ??&amp;...</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Change Passphrase...</source>
-        <translation>??? ??&amp;...</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+354"/>
-        <source>~%n block(s) remaining</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-351"/>
-        <source>&amp;Export...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-151"/>
-        <source>Send coins to a Gridcoin address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+134"/>
-        <source>Modify configuration options for Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-14"/>
-        <source>Encrypt or decrypt wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Backup wallet to another location</source>
-        <translation>??? ????? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>?? ???? ???? ??? ?????</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>&amp;Debug window</source>
-        <translation>??? ?&amp;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation>??? ? ?? ??? ???</translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>&amp;Verify message...</source>
-        <translation>??? ??&amp;...</translation>
-    </message>
-    <message>
-        <location line="-778"/>
-        <source>Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Wallet</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+711"/>
-        <source>&amp;About Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+54"/>
-        <source>&amp;Show / Hide</source>
-        <translation>???/???(&amp;S)</translation>
-    </message>
-    <message>
         <location line="+9"/>
-        <source>Unlock wallet</source>
-        <translation type="unfinished">?? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Lock Wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Lock wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+54"/>
-        <source>&amp;File</source>
-        <translation>&amp;??</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>&amp;Settings</source>
-        <translation>&amp;??</translation>
-    </message>
-    <message>
-        <location line="+59"/>
-        <source>&amp;Help</source>
-        <translation>&amp;???</translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <location line="+9"/>
-        <source>[testnet]</source>
-        <translation>[????]</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <location line="+64"/>
-        <source>Gridcoin client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+79"/>
-        <source>%n active connection(s) to Gridcoin network</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+40"/>
-        <source>Downloaded %1 blocks of transaction history.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1104"/>
-        <source>Not staking because wallet is locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Not staking because wallet is offline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Not staking because wallet is syncing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Not staking because you don&apos;t have mature coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <location line="-1101"/>
-        <source>%n second(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="-513"/>
         <source>&amp;Block Explorer</source>
         <translation type="unfinished"></translation>
     </message>
@@ -603,13 +390,122 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
-        <location line="+169"/>
+        <location line="+21"/>
+        <source>E&amp;xit</source>
+        <translation>나가기(&amp;X)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Quit application</source>
+        <translation>어플리케이션 종료</translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>&amp;Options...</source>
+        <translation>옵션(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>지갑 암호화(&amp;E)...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Encrypt or decrypt wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation>지갑 백업(&amp;B)...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation>암호문 변경(&amp;C)...</translation>
+    </message>
+    <message>
+        <location line="-1"/>
+        <source>Backup wallet to another location</source>
+        <translation>지갑을 다른장소에 백업</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>지갑 암호화에 사용되는 암호를 변경합니다</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Unlock Wallet...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock wallet</source>
+        <translation type="unfinished">지갑 잠금해제</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Lock Wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">현재 탭에 있는 데이터를 파일로 내보내기</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Debug window</source>
+        <translation>디버그 창(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation>디버깅 및 진단 콘솔을 엽니다</translation>
+    </message>
+    <message>
+        <location line="-5"/>
+        <source>&amp;Verify message...</source>
+        <translation>메시지 확인(&amp;V)...</translation>
+    </message>
+    <message>
+        <location line="-623"/>
+        <source>Wallet</source>
+        <translation>지갑</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Gridcoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+496"/>
+        <source>&amp;Send</source>
+        <translation>보내기(&amp;S)</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&amp;Receive</source>
+        <translation>받기(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="+65"/>
         <source>&amp;Rebuild Block Chain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-168"/>
+        <location line="+1"/>
         <source>Rebuild Block Chain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -624,17 +520,7 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>&amp;Reboot Client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Reboot Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>&amp;Upgrade Client</source>
         <translation type="unfinished"></translation>
     </message>
@@ -644,7 +530,17 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+3"/>
+        <source>&amp;About Gridcoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Gridcoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>&amp;Neural Network</source>
         <translation type="unfinished"></translation>
     </message>
@@ -654,7 +550,7 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>&amp;Advanced Configuration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -665,37 +561,17 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Live Ticker</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Live Ticker</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Tickets</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Tickets</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>&amp;New User Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+606"/>
+        <location line="+590"/>
         <source>New User Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-599"/>
+        <location line="-665"/>
         <source>&amp;Voting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -705,17 +581,7 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Galaza (Game)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Galaza</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+77"/>
         <source>&amp;Foundation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -745,63 +611,59 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>&amp;Unlock Wallet...</source>
+        <location line="+4"/>
+        <source>Modify configuration options for Gridcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
-        <source>&amp;Community</source>
-        <translation type="unfinished"></translation>
+        <location line="+2"/>
+        <source>&amp;Show / Hide</source>
+        <translation>보이기/숨기기(&amp;S)</translation>
     </message>
     <message>
+        <location line="+215"/>
         <location line="+9"/>
-        <source>&amp;Upgrade QT Client</source>
+        <source>[testnet]</source>
+        <translation type="unfinished">[테스트넷]</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+64"/>
+        <source>Gridcoin client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>&amp;Advanced</source>
+        <location line="+82"/>
+        <source>%1 active connection(s) to Gridcoin network</source>
         <translation type="unfinished"></translation>
     </message>
-    <message numerus="yes">
-        <location line="+295"/>
-        <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
+    <message>
+        <location line="+25"/>
+        <source>%1 second(s) ago</source>
+        <translation type="unfinished"></translation>
     </message>
-    <message numerus="yes">
+    <message>
         <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
+        <source>%1 minute(s) ago</source>
+        <translation type="unfinished"></translation>
     </message>
-    <message numerus="yes">
+    <message>
         <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
+        <source>%1 hour(s) ago</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Up to date</source>
-        <translation>????</translation>
+        <location line="+4"/>
+        <source>%1 day(s) ago</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Catching up...</source>
-        <translation>????...</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+23"/>
         <source>Last received block was generated %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+68"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -841,33 +703,19 @@ MIT/X11 ???? ????? ?? ?????. COPYING ?? http://www.opensource.org/licenses/mit-l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+30"/>
-        <source>Sent transaction</source>
-        <translation>?? ???</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Incoming transaction</source>
-        <translation>?? ???? ?</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+32"/>
         <source>Date: %1
 Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>??: %1
-???: %2
-??: %3
-??: %4
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+405"/>
+        <location line="+211"/>
         <location line="+15"/>
         <source>URI handling</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">URI 핸들링</translation>
     </message>
     <message>
         <location line="-15"/>
@@ -876,29 +724,19 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>??? ??? ??? ?? ???? ?????</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>??? ??? ??? ?? ??? ????</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="+57"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">지갑 백업</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">지갑 데이터 (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">백업 실패</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -906,31 +744,31 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+307"/>
+        <location line="+300"/>
         <source>%n second(s)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>%n 초</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>%n 분</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation>
-            <numerusform>??</numerusform>
+        <translation type="unfinished">
+            <numerusform>%n 시간</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
-            <numerusform>?</numerusform>
+        <translation type="unfinished">
+            <numerusform>&amp;n 일</numerusform>
         </translation>
     </message>
     <message>
@@ -939,12 +777,32 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+9"/>
+        <source>Not staking because wallet is locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Not staking because wallet is offline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Not staking because wallet is syncing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Not staking because you don&apos;t have mature coins and stake weight is too low.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
+        <source>Not staking because you don&apos;t have mature coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Searching for mature coins... Please wait</source>
         <translation type="unfinished"></translation>
     </message>
@@ -952,6 +810,68 @@ Address: %4
         <location line="+5"/>
         <source>Not staking</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-1246"/>
+        <source>&amp;File</source>
+        <translation>파일(&amp;F)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>&amp;Settings</source>
+        <translation>설정(&amp;S)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Community</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>&amp;Advanced</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>&amp;Help</source>
+        <translation>도움말(&amp;H)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+285"/>
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation>
+            <numerusform>%n 블럭 만큼의 거래 기록이 처리됨.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Up to date</source>
+        <translation>현재까지</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Catching up...</source>
+        <translation>블록 따라잡기...</translation>
+    </message>
+    <message>
+        <location line="+218"/>
+        <source>Sent transaction</source>
+        <translation>거래 보내기</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Incoming transaction</source>
+        <translation>들어오고 있는 거래</translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>지갑이 암호화 되었고 현재 차단해제 되었습니다</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>지갑이 암호화 되었고 현재 잠겨져 있습니다</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+145"/>
@@ -964,7 +884,7 @@ Address: %4
     <message>
         <location filename="../clientmodel.cpp" line="+116"/>
         <source>Network Alert</source>
-        <translation>???? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -977,27 +897,27 @@ Address: %4
     <message>
         <location line="+28"/>
         <source>Quantity:</source>
-        <translation>??:</translation>
+        <translation>수량:</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <location line="+45"/>
         <source>Amount:</source>
-        <translation>???</translation>
+        <translation>금액:</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Priority:</source>
-        <translation>???:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+45"/>
         <source>Fee:</source>
-        <translation>???:</translation>
+        <translation>수수료:</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -1005,115 +925,90 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+551"/>
-        <source>no</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="+48"/>
-        <source>After Fee:</source>
-        <translation>??? ??:</translation>
-    </message>
-    <message>
-        <location line="+32"/>
-        <source>Change:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+69"/>
-        <source>(un)select all</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+162"/>
         <source>Tree &amp;mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>List mode</source>
-        <translation>??? ??</translation>
-    </message>
-    <message>
-        <location line="+45"/>
-        <source>Amount</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+66"/>
         <source>Label</source>
-        <translation type="unfinished">?</translation>
+        <translation type="unfinished">라벨</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Address</source>
-        <translation>??</translation>
+        <translation type="unfinished">주소</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+18"/>
+        <source>Priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-203"/>
+        <source>After Fee:</source>
+        <translation>수수료 이후:</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation>체인지:</translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>(un)select all</source>
+        <translation>모두 선택(하지 않음)</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>List mode</source>
+        <translation>리스트 모드</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount</source>
+        <translation>거래액</translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Date</source>
-        <translation>??</translation>
+        <translation>날짜</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Confirmations</source>
-        <translation>??</translation>
+        <translation>확인</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Confirmed</source>
-        <translation>???</translation>
+        <translation>확인됨</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Priority</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="-515"/>
+        <location filename="../coincontroldialog.cpp" line="+36"/>
         <source>Copy address</source>
-        <translation>?? ????</translation>
+        <translation>주소 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation>?? ????</translation>
+        <translation>라벨 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+26"/>
         <source>Copy amount</source>
-        <translation>??? ??</translation>
+        <translation>거래액 복사</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Copy transaction ID</source>
-        <translation>?? ID ??</translation>
+        <translation>거래 아이디 복사</translation>
     </message>
     <message>
-        <location line="+24"/>
-        <source>Copy quantity</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Copy fee</source>
-        <translation>??? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy after fee</source>
-        <translation>??? ?? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy bytes</source>
-        <translation>bytes? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+29"/>
         <source>Copy priority</source>
-        <translation>??? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1121,39 +1016,34 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Copy change</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+317"/>
+        <location line="+318"/>
         <source>highest</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>high</source>
-        <translation>?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>medium-high</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>medium</source>
-        <translation>?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
         <source>low-medium</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>low</source>
-        <translation>?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1164,11 +1054,6 @@ Address: %4
         <location line="+155"/>
         <source>DUST</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>yes</source>
-        <translation>?</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1205,20 +1090,55 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="-501"/>
+        <source>Copy quantity</source>
+        <translation>수량 복사</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation>수수료 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation>수수료 이후 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>bytes 복사</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Copy change</source>
+        <translation>잔돈 복사</translation>
+    </message>
+    <message>
+        <location line="+481"/>
+        <source>yes</source>
+        <translation>예</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>no</source>
+        <translation>아니요</translation>
+    </message>
+    <message>
+        <location line="+50"/>
         <location line="+63"/>
         <source>(no label)</source>
-        <translation>(? ??)</translation>
+        <translation>(라벨 없음)</translation>
     </message>
     <message>
         <location line="-9"/>
         <source>change from %1 (%2)</source>
-        <translation>~??? ?? %1 (%2)</translation>
+        <translation>%1로부터 변경 (%2)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>(change)</source>
-        <translation type="unfinished"></translation>
+        <translation>(잔돈)</translation>
     </message>
 </context>
 <context>
@@ -1226,12 +1146,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
-        <translation>?? ??</translation>
+        <translation>주소 편집</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Label</source>
-        <translation>&amp;?</translation>
+        <translation>라벨(&amp;L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1239,82 +1159,72 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>&amp;Address</source>
-        <translation>&amp;??</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+17"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="-10"/>
+        <source>&amp;Address</source>
+        <translation>주소(&amp;A)</translation>
+    </message>
+    <message>
         <location filename="../editaddressdialog.cpp" line="+20"/>
         <source>New receiving address</source>
-        <translation>?? ?? ??</translation>
+        <translation>새 받는 주소</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>New sending address</source>
-        <translation>?? ??? ??</translation>
+        <translation>새 보내는 주소</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Edit receiving address</source>
-        <translation>?? ?? ??</translation>
+        <translation>받는 주소 편집</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Edit sending address</source>
-        <translation>??? ?? ??</translation>
+        <translation>보내는 주소 편집</translation>
     </message>
     <message>
-        <location line="+76"/>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>??? ???&quot;%1&quot; ?? ???? ????.</translation>
-    </message>
-    <message>
-        <location line="-5"/>
+        <location line="+71"/>
         <source>The entered address &quot;%1&quot; is not a valid Gridcoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>입력된 주소는&quot;%1&quot; 이미 주소록에 있습니다.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Could not unlock wallet.</source>
-        <translation>??? ? ? ????.</translation>
+        <translation>지갑을 잠금해제 할 수 없습니다.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>New key generation failed.</source>
-        <translation>??? ? ??? ???????</translation>
+        <translation>새로운 키 생성이 실패하였습니다.</translation>
     </message>
 </context>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+436"/>
-        <source>Gridcoin-Qt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-12"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <source>version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>gridcoinresearch</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">버전</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Usage:</source>
-        <translation type="unfinished">???:</translation>
+        <translation type="unfinished">사용법:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>command-line options</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">명령줄 옵션</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1324,23 +1234,28 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&quot;ko_KR&quot;와 같이 언어를 설정하십시오 (기본값: 시스템 로캘)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Start minimized</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">최소화된 상태에서 시작</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location line="+2"/>
+        <source>Gridcoin-Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NewPollDialog</name>
     <message>
-        <location filename="../votingdialog.cpp" line="+900"/>
+        <location filename="../votingdialog.cpp" line="+896"/>
         <location line="+96"/>
         <source>Create Poll</source>
         <translation type="unfinished"></translation>
@@ -1416,12 +1331,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
         <source>Options</source>
-        <translation>???</translation>
+        <translation>환경설정</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>&amp;Main</source>
-        <translation>??(&amp;M)</translation>
+        <translation>메인(&amp;M)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1429,12 +1344,22 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+15"/>
+        <source>Pa&amp;y transaction fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Reserved amount does not participate in staking and is therefore spendable at any time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+15"/>
+        <source>Reser&amp;ve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Automatically start Gridcoin after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1454,22 +1379,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>&amp;Network</source>
-        <translation>????(&amp;N)</translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+27"/>
         <source>Automatically open the Gridcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Map port using &amp;UPnP</source>
-        <translation>???? UPnP ?? ??(&amp;U)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>Connect to the Gridcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1479,97 +1394,32 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-130"/>
-        <source>Pa&amp;y transaction fee</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>Reser&amp;ve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+93"/>
-        <source>Prox&amp;y IP:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+19"/>
+        <location line="+28"/>
         <source>IP address of the proxy (e.g. 127.0.0.1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>&amp;Port:</source>
-        <translation>??(&amp;P):</translation>
-    </message>
-    <message>
-        <location line="+19"/>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>???? ???????(?: 9050)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+33"/>
         <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS ??(&amp;V):</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
         <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>???? SOCKS ?????(?: 5)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>&amp;Window</source>
-        <translation>?(&amp;W)</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Show only a tray icon after minimizing the window.</source>
-        <translation>?? ??? ?? ???? ???? ?????.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>?? ??? ?? ???? ???(&amp;M)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+52"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>?? ??? ?????? ??? ?? ??????. ? ??? ?????, ????? ???? ???? ??? ??? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>M&amp;inimize on close</source>
-        <translation>??? ???(&amp;I)</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>&amp;Display</source>
-        <translation>??(&amp;D)</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>User Interface &amp;language:</source>
-        <translation>??? ????? ??(&amp;L):</translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+45"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Gridcoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>???? ??? ??(&amp;U):</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>?????? ???? ??? ??? ??? ?? ??? ??? ??????.</translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location line="+35"/>
         <source>Style:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1586,37 +1436,102 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>?? ??? ?? ??(&amp;D)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Whether to show coin control features or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Display coin &amp;control features (experts only!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
-        <source>&amp;OK</source>
-        <translation>??(&amp;O)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>&amp;Cancel</source>
-        <translation>??(&amp;C)</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+91"/>
         <source>&amp;Apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="-345"/>
+        <source>&amp;Network</source>
+        <translation>네트워크(&amp;N)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>사용중인 &amp;UPnP 포트 매핑</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>프록시 &amp;IP:</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>&amp;Port:</source>
+        <translation>포트(&amp;P):</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>프록시의 포트번호입니다 (예: 9050)</translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>&amp;Window</source>
+        <translation>창(&amp;W)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>창을 최소화 하면 트레이에 아이콘만 표시합니다.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>작업 표시줄 대신 트레이로 최소화(&amp;M)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>M&amp;inimize on close</source>
+        <translation>닫을때 최소화(&amp;I)</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>표시(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>사용자 인터페이스 언어(&amp;L):</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>거래액을 표시할 단위(&amp;U):</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>인터페이스에 표시하고 코인을 보낼때 사용할 기본 최소화 단위를 선택하십시오.</translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation>코인 상세 제어기능에 대한 표시 여부를 선택할 수 있습니다.</translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>&amp;OK</source>
+        <translation>확인(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation>취소(&amp;C)</translation>
+    </message>
+    <message>
         <location filename="../optionsdialog.cpp" line="+55"/>
         <source>default</source>
-        <translation>???</translation>
+        <translation>기본값</translation>
     </message>
     <message>
         <location line="+30"/>
@@ -1632,7 +1547,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+123"/>
         <location line="+9"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">경고</translation>
     </message>
     <message>
         <location line="-9"/>
@@ -1643,7 +1558,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+42"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>??? ??? ??? ???????.</translation>
+        <translation>지정한 프록시 주소가 잘못되었습니다.</translation>
     </message>
 </context>
 <context>
@@ -1651,21 +1566,21 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../forms/overviewpage.ui" line="+32"/>
         <source>Form</source>
-        <translation>??</translation>
+        <translation>유형</translation>
     </message>
     <message>
-        <location line="+57"/>
-        <location line="+439"/>
+        <location line="+47"/>
+        <source>Wallet</source>
+        <translation type="unfinished">지갑</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+466"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gridcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-376"/>
-        <source>Your current balance.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="-390"/>
         <source>Stake</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1677,55 +1592,35 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+13"/>
         <source>Unconfirmed</source>
-        <translation type="unfinished">???</translation>
-    </message>
-    <message>
-        <location line="-114"/>
-        <source>Wallet</source>
-        <translation type="unfinished">??</translation>
-    </message>
-    <message>
-        <location line="+58"/>
-        <source>Balance:</source>
-        <translation type="unfinished">??:</translation>
-    </message>
-    <message>
-        <location line="+90"/>
-        <source>Immature:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+15"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Total mined coins that have not yet matured.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+38"/>
-        <source>Total:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Total Balance     </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+46"/>
+        <location line="+94"/>
         <source>Blocks:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Difficulty:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Net Weight:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>DPOR Weight:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1750,30 +1645,50 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+109"/>
-        <source>Recent transactions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+99"/>
+        <location line="+223"/>
         <source>Current Poll:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Client Messages:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-414"/>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation type="unfinished"></translation>
+        <location line="-515"/>
+        <source>Available:</source>
+        <translation>사용 가능</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+134"/>
+        <location line="+15"/>
+        <source>Your current spendable balance</source>
+        <translation>당신의 현재 사용 가능한 잔액</translation>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Immature:</source>
+        <translation>아직 사용 불가능:</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Total:</source>
+        <translation>총액:</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Your current total balance</source>
+        <translation>당신의 현재 총액</translation>
+    </message>
+    <message>
+        <location line="+252"/>
+        <source>Recent transactions</source>
+        <translation>최근 거래</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+132"/>
         <location line="+1"/>
         <source>out of sync</source>
-        <translation>???</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1789,29 +1704,29 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+56"/>
-        <source>Amount:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-44"/>
+        <location line="+12"/>
         <source>Label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Message:</source>
+        <translation type="unfinished">메시지:</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Amount:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+46"/>
         <source>&amp;Save As...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qrcodedialog.cpp" line="+62"/>
         <source>Error encoding URI into QR Code.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">URI를 QR 코드로 인코딩하는 중 오류가 발생했습니다.</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1821,12 +1736,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+23"/>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">URI 결과가 너무 길음, 라벨/메세지의 글을 줄이도록 하세요.</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Save QR Code</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">QR코드 저장</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1837,12 +1752,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>RPCConsole</name>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="+491"/>
-        <source>Client name</source>
-        <translation>????? ??</translation>
-    </message>
-    <message>
-        <location line="-445"/>
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
         <location line="+27"/>
         <location line="+42"/>
         <location line="+42"/>
@@ -1854,40 +1764,25 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+107"/>
         <location filename="../rpcconsole.cpp" line="+386"/>
         <source>N/A</source>
-        <translation>??</translation>
+        <translation>없음</translation>
     </message>
     <message>
         <location line="-241"/>
         <source>Client version</source>
-        <translation>????? ??</translation>
+        <translation>클라이언트 버전</translation>
     </message>
     <message>
         <location line="-168"/>
         <source>&amp;Information</source>
-        <translation>??&amp;</translation>
+        <translation>정보(&amp;I)</translation>
     </message>
     <message>
         <location line="+425"/>
         <source>Startup time</source>
-        <translation>?? ??</translation>
+        <translation>시작 시간</translation>
     </message>
     <message>
-        <location line="-366"/>
-        <source>Number of connections</source>
-        <translation>?? ?</translation>
-    </message>
-    <message>
-        <location line="+220"/>
-        <source>On testnet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-136"/>
-        <source>Block chain</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="-159"/>
+        <location line="-441"/>
         <source>Gridcoin - Debug Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1907,153 +1802,173 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+128"/>
+        <location line="+29"/>
+        <source>Number of connections</source>
+        <translation>연결 수</translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Block chain</source>
+        <translation>블럭 체인</translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Gridcoin Core:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+58"/>
+        <source>Build date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
         <source>Network:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+39"/>
-        <source>Current number of blocks</source>
-        <translation>?? ?? ?</translation>
-    </message>
-    <message>
         <location line="+29"/>
-        <source>Estimated total blocks</source>
-        <translation>?? ?? ??</translation>
-    </message>
-    <message>
-        <location line="-217"/>
-        <source>Last block time</source>
-        <translation>?? ?? ??</translation>
-    </message>
-    <message>
-        <location line="+248"/>
-        <source>&amp;Open</source>
-        <translation>??(&amp;O)</translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>Command-line options</source>
+        <source>On testnet</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>&amp;Show</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+265"/>
-        <source>&amp;Console</source>
-        <translation>??(&amp;C)</translation>
-    </message>
-    <message>
-        <location line="-429"/>
-        <source>Build date</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="+117"/>
-        <source>Debug log file</source>
-        <translation>?? ?? ???</translation>
     </message>
     <message>
         <location line="+10"/>
+        <source>Current number of blocks</source>
+        <translation>현재 블럭 수</translation>
+    </message>
+    <message>
+        <location line="-188"/>
+        <source>Last block time</source>
+        <translation>최종 블럭 시각</translation>
+    </message>
+    <message>
+        <location line="+217"/>
+        <source>Estimated total blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
         <source>Open the Gridcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+6"/>
+        <source>&amp;Open</source>
+        <translation>열기(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Command-line options</source>
+        <translation type="unfinished">명령줄 옵션</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Show the Gridcoin help message to get a list with possible Gridcoin command-line options.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+6"/>
+        <source>&amp;Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
         <source>OpenSSL version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>&amp;Network Traffic</source>
+        <location line="+13"/>
+        <source>Client name</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+184"/>
+        <source>&amp;Console</source>
+        <translation>콘솔(&amp;C)</translation>
+    </message>
+    <message>
+        <location line="-176"/>
+        <source>&amp;Network Traffic</source>
+        <translation>네트워크 트래픽(&amp;N)</translation>
     </message>
     <message>
         <location line="+52"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>지우기(&amp;C)</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Totals</source>
-        <translation type="unfinished"></translation>
+        <translation>총액</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>In:</source>
-        <translation type="unfinished"></translation>
+        <translation>In:</translation>
     </message>
     <message>
         <location line="+43"/>
         <source>Out:</source>
-        <translation type="unfinished"></translation>
+        <translation>Out:</translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="-271"/>
+        <source>Debug log file</source>
+        <translation>로그 파일 디버그</translation>
+    </message>
+    <message>
+        <location line="+368"/>
         <source>Clear console</source>
-        <translation>?? ???</translation>
+        <translation>콘솔 초기화</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="-35"/>
-        <source>Welcome to the Gridcoin RPC console! </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location filename="../rpcconsole.cpp" line="-34"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>??? ????? ? ?? ??? ??, ??? ???? &lt;b&gt;Ctrl-L&lt;/b&gt;?? ??????.</translation>
+        <translation>기록을 찾아보려면 위 아래 화살표 키를, 화면을 지우려면 &lt;b&gt;Ctrl-L&lt;/b&gt;키를 사용하십시오.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>??? ? ?? ??? ????? &lt;b&gt;help&lt;/b&gt;? ??????.</translation>
+        <translation>사용할 수 있는 명령을 둘러보려면 &lt;b&gt;help&lt;/b&gt;를 입력하십시오.</translation>
     </message>
     <message>
         <location line="+111"/>
         <source>%1 B</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 바이트</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 KB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 킬로바이트</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 MB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 메가바이트</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 GB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 기가바이트</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>%1 m</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 분</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>%1 h</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 시간</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 h %2 m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-133"/>
+        <source>Welcome to the Gridcoin RPC console! </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2069,32 +1984,32 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>??? ???</translation>
+        <translation>코인들 보내기</translation>
     </message>
     <message>
         <location line="+73"/>
         <source>Coin Control Features</source>
-        <translation>?? ??? ???</translation>
+        <translation>코인 컨트롤 기능들</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Inputs...</source>
-        <translation type="unfinished"></translation>
+        <translation>입력...</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>automatically selected</source>
-        <translation>?? ??</translation>
+        <translation>자동 선택</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Insufficient funds!</source>
-        <translation>??? ?????!</translation>
+        <translation>자금이 부족합니다!</translation>
     </message>
     <message>
         <location line="+83"/>
         <source>Quantity:</source>
-        <translation>??:</translation>
+        <translation>수량:</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -2105,12 +2020,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-19"/>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <location line="+48"/>
         <source>Amount:</source>
-        <translation>???:</translation>
+        <translation>거래액:</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -2123,17 +2038,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-179"/>
         <source>Priority:</source>
-        <translation>???:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
         <source>medium</source>
-        <translation type="unfinished">?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Fee:</source>
-        <translation>???:</translation>
+        <translation>수수료:</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -2143,12 +2058,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+19"/>
         <source>no</source>
-        <translation type="unfinished">???</translation>
+        <translation type="unfinished">아니요</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>After Fee:</source>
-        <translation>??? ??:</translation>
+        <translation>수수료 이후:</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -2161,79 +2076,74 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+115"/>
-        <source>Send to multiple recipients at once</source>
-        <translation>??? ?????? ??? ???</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Add &amp;Recipient</source>
-        <translation>??? ????</translation>
-    </message>
-    <message>
-        <location line="+20"/>
+        <location line="+138"/>
         <source>Remove all transaction fields</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>?? ???(&amp;A)</translation>
-    </message>
-    <message>
-        <location line="+28"/>
-        <source>Balance:</source>
-        <translation>??:</translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+47"/>
         <source>123.456 GRC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="-70"/>
+        <source>Send to multiple recipients at once</source>
+        <translation>다수의 수령인들에게 한번에 보내기</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add &amp;Recipient</source>
+        <translation>수령인 추가하기(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Clear &amp;All</source>
+        <translation>모두 지우기(&amp;A)</translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Balance:</source>
+        <translation>잔액:</translation>
+    </message>
+    <message>
+        <location line="+47"/>
         <source>Confirm the send action</source>
-        <translation>?? ?? ??</translation>
+        <translation>전송 기능 확인</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
-        <translation>???(&amp;E)</translation>
+        <translation>보내기(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location filename="../sendcoinsdialog.cpp" line="-158"/>
         <source>Copy quantity</source>
-        <translation>?? ??</translation>
+        <translation>수량 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>??? ??</translation>
+        <translation>거래액 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy fee</source>
-        <translation>??? ??</translation>
+        <translation>수수료 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy after fee</source>
-        <translation>??? ?? ??</translation>
+        <translation>수수료 이후 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy bytes</source>
-        <translation>bytes ??</translation>
+        <translation>bytes 복사</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy priority</source>
-        <translation>??? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2241,22 +2151,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Copy change</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+86"/>
+        <location line="+87"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Confirm send coins</source>
-        <translation>?? ??? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Are you sure you want to send %1?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2268,27 +2168,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+29"/>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>??? ??? ???? ????. ??? ????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>???? ??? 0 ?? ?? ???.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>The amount exceeds your balance.</source>
-        <translation>??? ???????.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>%1 ? ?????? ???? ??? ?????.</translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+21"/>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>?? ??? ?????. ??? ??? ???? ??? ? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2306,50 +2191,111 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>(no label)</source>
-        <translation>(? ??)</translation>
+        <location line="+17"/>
+        <source>WARNING: unknown change address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>WARNING: unknown change address</source>
+        <location line="-420"/>
+        <source>Copy change</source>
+        <translation>잔돈 복사</translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <source>Confirm send coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The amount exceeds your balance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+280"/>
+        <source>(no label)</source>
+        <translation>(라벨 없음)</translation>
+    </message>
+    <message>
+        <location line="-438"/>
+        <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+14"/>
-        <source>Form</source>
-        <translation type="unfinished">??</translation>
+        <location filename="../forms/sendcoinsentry.ui" line="+170"/>
+        <source>A&amp;mount:</source>
+        <translation>금액(&amp;M):</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Pa&amp;y To:</source>
+        <location line="-108"/>
+        <source>Pay &amp;To:</source>
+        <translation>송금할 대상(&amp;T):</translation>
+    </message>
+    <message>
+        <location line="-30"/>
+        <source>&amp;Label:</source>
+        <translation>라벨(&amp;L):</translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation>클립보드로 부터 주소 붙여넣기</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Message:</source>
+        <translation>메시지:</translation>
+    </message>
+    <message>
+        <location line="-87"/>
+        <location filename="../sendcoinsentry.cpp" line="+29"/>
+        <source>Enter a label for this address to add it to your address book</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+27"/>
         <source>The address to send the payment to  (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+60"/>
-        <source>Message:</source>
+        <location line="+10"/>
+        <source>Choose address from address book</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+34"/>
+        <source>Remove this recipient</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
         <source>Send Custom Message to a Gridcoin Recipient</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>A&amp;mount:</source>
-        <translation>??:</translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+22"/>
         <source>Track Coins</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2359,40 +2305,9 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-137"/>
-        <location filename="../sendcoinsentry.cpp" line="+29"/>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>??? ???? ? ??? ???? ??? ?? ????? </translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>&amp;Label:</source>
-        <translation>?:</translation>
-    </message>
-    <message>
-        <location line="+58"/>
-        <source>Choose address from address book</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Paste address from clipboard</source>
-        <translation>????? ?? ??? ????</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Remove this recipient</source>
-        <translation type="unfinished"></translation>
+        <location line="-176"/>
+        <source>Form</source>
+        <translation type="unfinished">유형</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
@@ -2405,18 +2320,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>?? - ?? / ??? ??</translation>
+        <translation>서명 - 싸인 / 메시지 확인</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
         <source>&amp;Sign Message</source>
-        <translation>??? ??(&amp;S)</translation>
+        <translation>메시지 서명(&amp;S)</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>??? ??? ???? ?? ??? ???? ??? ? ????. ?? ???? ???? ???? ??? ?? ?? ???? ? ? ????, ???? ?? ?? ??? ??? ??????. ???? ?? ??? ???? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
@@ -2430,55 +2344,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <location line="-193"/>
-        <source>Paste address from clipboard</source>
-        <translation>????? ?? ??? ????</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Enter the message you want to sign here</source>
-        <translation>??? ????? ???? ??????</translation>
-    </message>
-    <message>
-        <location line="+24"/>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>?? ??? ??? ????? ??</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="-116"/>
         <source>Sign the message to prove you own this Gridcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
-        <source>Reset all sign message fields</source>
-        <translation>??? ??? ?? ?? ???</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>?? ???(&amp;A)</translation>
-    </message>
-    <message>
-        <location line="-87"/>
-        <location line="+70"/>
-        <source>&amp;Verify Message</source>
-        <translation>??? ??(&amp;V)</translation>
-    </message>
-    <message>
-        <location line="-64"/>
+        <location line="+85"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2493,20 +2364,62 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
-        <source>Reset all verify message fields</source>
-        <translation>?? ?? ??? ?? ???</translation>
+        <location line="-223"/>
+        <location line="+203"/>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+27"/>
+        <location line="-193"/>
+        <source>Paste address from clipboard</source>
+        <translation>클립보드로 부터 주소를 복사하기</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Enter the message you want to sign here</source>
+        <translation>여기에 서명하려는 메시지를 입력하십시오</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation>현재 서명을 시스템 클립보드에 복사</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Sign &amp;Message</source>
+        <translation>메시지에 서명(&amp;M)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reset all sign message fields</source>
+        <translation>메시지 필드의 모든 서명 재설정</translation>
+    </message>
+    <message>
         <location line="+3"/>
-        <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="unfinished"></translation>
+        <location line="+146"/>
+        <source>Clear &amp;All</source>
+        <translation>모두 지우기(&amp;A)</translation>
     </message>
     <message>
-        <location line="-2"/>
+        <location line="-87"/>
+        <location line="+70"/>
+        <source>&amp;Verify Message</source>
+        <translation>메시지 검증(&amp;V)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reset all verify message fields</source>
+        <translation>모든 검증 메시지 필드 재설정</translation>
+    </message>
+    <message>
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>??? ???? &quot;??? ??&quot;? ?????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2517,7 +2430,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+82"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
-        <translation>??? ??? ???????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-81"/>
@@ -2525,95 +2438,113 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+73"/>
         <location line="+8"/>
         <source>Please check the address and try again.</source>
-        <translation>??? ???? ?? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>??? ??? ??? ???? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-73"/>
         <source>Wallet unlock was cancelled.</source>
-        <translation>?? ?? ??? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Private key for the entered address is not available.</source>
-        <translation>??? ??? ?? ???? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Message signing failed.</source>
-        <translation>??? ??? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message signed.</source>
-        <translation>???? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+59"/>
         <source>The signature could not be decoded.</source>
-        <translation>??? ??? ? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+13"/>
         <source>Please check the signature and try again.</source>
-        <translation>??? ???? ?? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The signature did not match the message digest.</source>
-        <translation>??? ?????? ??? ???? ????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Message verification failed.</source>
-        <translation>??? ??? ??????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message verified.</source>
-        <translation>???? ??????.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-211"/>
+        <location line="+3"/>
+        <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <location filename="../transactiondesc.cpp" line="+36"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="+38"/>
+        <location line="+2"/>
         <source>Open until %1</source>
-        <translation>%1 ?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
         <source>conflicted</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/offline</source>
-        <translation>%1/????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/unconfirmed</source>
-        <translation>%1/???</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 confirmations</source>
-        <translation>%1 ???</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+45"/>
         <source>Status</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+7"/>
+        <location line="+2"/>
         <source>, broadcast through %n node(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -2622,103 +2553,44 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+4"/>
         <source>Date</source>
-        <translation>??</translation>
+        <translation>날짜</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Source</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Generated</source>
-        <translation>????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+17"/>
         <source>From</source>
-        <translation>????</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>unknown</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+22"/>
         <location line="+58"/>
         <source>To</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
-        <translation>??? ??</translation>
-    </message>
-    <message>
-        <location line="-2"/>
-        <source>label</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+37"/>
-        <location line="+12"/>
-        <location line="+45"/>
-        <location line="+17"/>
-        <location line="+51"/>
-        <source>Credit</source>
-        <translation>??</translation>
-    </message>
-    <message numerus="yes">
-        <location line="-123"/>
-        <source>matures in %n more block(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>not accepted</source>
-        <translation>???? ???</translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <location line="+8"/>
-        <location line="+15"/>
-        <location line="+51"/>
-        <source>Debit</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="-60"/>
-        <source>Transaction fee</source>
-        <translation>?? ???</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Net amount</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Message</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Comment</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Transaction ID</source>
-        <translation>?? ID</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+130"/>
         <source>Block Type</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2729,60 +2601,97 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>RAC</source>
+        <source>Gridcoin generated coins must mature 110 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Gridcoin generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+14"/>
         <source>Information</source>
+        <translation type="unfinished">정보</translation>
+    </message>
+    <message>
+        <location line="-148"/>
+        <source>label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Transaction</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Inputs</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Amount</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>true</source>
-        <translation>?</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>false</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="-255"/>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>. ?? ????? ???? ??</translation>
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+45"/>
+        <location line="+17"/>
+        <location line="+43"/>
+        <source>Credit</source>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="-64"/>
-        <source>Open for %n more block(s)</source>
+        <location line="-115"/>
+        <source>matures in %n more block(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <location line="+99"/>
-        <source>unknown</source>
-        <translation>????</translation>
+        <location line="+2"/>
+        <source>not accepted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <location line="+8"/>
+        <location line="+15"/>
+        <location line="+43"/>
+        <source>Debit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-52"/>
+        <source>Transaction fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Net amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Message</source>
+        <translation type="unfinished">메시지</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Comment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transaction ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Transaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Amount</source>
+        <translation type="unfinished">거래액</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>true</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>false</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2790,40 +2699,30 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+20"/>
         <source>Transaction details</source>
-        <translation>?? ?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>? ?? ??? ????? ?????</translation>
+        <translation>이 창은 거래의 세부내역을 보여줍니다</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+25"/>
+        <source>View Attachment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Execute Contract</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
+        <source>C&amp;lose</source>
+        <translation type="unfinished">닫기(&amp;L)</translation>
     </message>
     <message>
-        <location line="-17"/>
-        <source>Track Coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-7"/>
-        <source>View Attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../transactiondescdialog.cpp" line="+90"/>
-        <source>Gridcoin Coin Tracking System</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location filename="../transactiondescdialog.cpp" line="+40"/>
         <source>Gridcoin Documents</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2838,40 +2737,30 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../transactiontablemodel.cpp" line="+239"/>
         <source>Date</source>
-        <translation>??</translation>
+        <translation>날짜</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Type</source>
-        <translation>??</translation>
+        <translation>형식</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>??</translation>
+        <translation type="unfinished">주소</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Amount</source>
-        <translation>??</translation>
+        <translation type="unfinished">거래액</translation>
     </message>
     <message>
-        <location line="+55"/>
-        <source>Open until %1</source>
-        <translation>%1 ?? ??</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+64"/>
         <source>Confirming (%1 of %2 recommended confirmations)&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>???(%1 ???)</translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>Immature (%1 confirmations, will be available after %2)&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2900,82 +2789,92 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>Mined - Interest</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location line="+257"/>
+        <source>Destination address of transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message numerus="yes">
-        <location line="-117"/>
+        <location line="-374"/>
         <source>Open for %n more block(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
+        <source>Open until %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Offline</source>
-        <translation>????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Unconfirmed</source>
-        <translation>???</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+6"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Conflicted</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Generated but not accepted</source>
-        <translation>?????? ???</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+61"/>
         <source>Received with</source>
-        <translation>??? ?? ?? : </translation>
+        <translation>받은 주소</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Received from</source>
-        <translation>?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sent to</source>
-        <translation>???? ?? :</translation>
+        <translation>보낸 주소</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Payment to yourself</source>
-        <translation>???? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+80"/>
         <source>(n/a)</source>
-        <translation>(??)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>????. ???? ??? ????? ?????.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>??? ???? ??? ??.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>??? ??.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Destination address of transaction.</source>
-        <translation>??? ??? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+4"/>
         <source>Amount removed from or added to balance.</source>
-        <translation>??? ??.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2984,150 +2883,80 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location filename="../transactionview.cpp" line="+55"/>
         <location line="+16"/>
         <source>All</source>
-        <translation>??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-15"/>
         <source>Today</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This week</source>
-        <translation>???</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This month</source>
-        <translation>?? ?</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Last month</source>
-        <translation>?? ?</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This year</source>
-        <translation>? ?</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Range...</source>
-        <translation>??...</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Received with</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Sent to</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>To yourself</source>
-        <translation>????</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Mined</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Other</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Enter address or label to search</source>
-        <translation>???? ?? ?? ?? ? ??</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Min amount</source>
-        <translation>?? ???</translation>
-    </message>
-    <message>
-        <location line="+34"/>
-        <source>Copy address</source>
-        <translation>?? ????</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy label</source>
-        <translation>? ????</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>??? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation>?? ID ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Edit label</source>
-        <translation>? ????</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show transaction details</source>
-        <translation>?? ?? ??</translation>
-    </message>
-    <message>
-        <location line="+146"/>
-        <source>Export Transaction Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Comma separated file (*.csv)</source>
-        <translation>??? ??? ????(*.csv)</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Confirmed</source>
-        <translation>???</translation>
+        <source>This week</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Date</source>
-        <translation>??</translation>
+        <source>This month</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Type</source>
-        <translation>??</translation>
+        <source>Last month</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Label</source>
-        <translation>?</translation>
+        <source>This year</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Address</source>
-        <translation>??</translation>
+        <source>Range...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Received with</source>
+        <translation>받은 주소</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Sent to</source>
+        <translation>보낸 주소</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>To yourself</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Amount</source>
-        <translation>???</translation>
+        <source>Mined</source>
+        <translation type="unfinished">채굴됨</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>ID</source>
-        <translation>???</translation>
+        <source>Other</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+7"/>
+        <source>Enter address or label to search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Min amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+185"/>
+        <source>Export Transaction Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>Error exporting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3137,14 +2966,84 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="-170"/>
+        <source>Copy address</source>
+        <translation>주소 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation>라벨 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>거래액 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy transaction ID</source>
+        <translation>트랜잭션 아이디 복사</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit label</source>
+        <translation>라벨 수정</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation>거래 세부 내역 보기</translation>
+    </message>
+    <message>
+        <location line="+147"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation>쉼표로 구분된 파일 (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Confirmed</source>
+        <translation>확인됨</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Date</source>
+        <translation>날짜</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type</source>
+        <translation>형식</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Label</source>
+        <translation>라벨</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Amount</source>
+        <translation type="unfinished">거래액</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ID</source>
+        <translation>아이디</translation>
+    </message>
+    <message>
+        <location line="+104"/>
         <source>Range:</source>
-        <translation>??:</translation>
+        <translation>범위:</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>to</source>
-        <translation>???</translation>
+        <translation>상대방</translation>
     </message>
 </context>
 <context>
@@ -3167,7 +3066,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+7"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">숨기기</translation>
     </message>
 </context>
 <context>
@@ -3209,12 +3108,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>VotingDialog</name>
     <message>
-        <location line="-349"/>
-        <source>Gridcoin Voting System 1.1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="-343"/>
         <source>Active Polls (Right Click to Vote)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3247,7 +3141,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>VotingTableModel</name>
     <message>
-        <location line="-391"/>
+        <location line="-387"/>
         <source>#</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3273,12 +3167,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <location line="+157"/>
+        <location line="+158"/>
         <source>Answers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-156"/>
+        <location line="-157"/>
         <source># Voters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3298,7 +3192,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Row Number.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3346,7 +3240,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>VotingVoteDialog</name>
     <message>
-        <location line="+533"/>
+        <location line="+528"/>
         <source>PlaceVote</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3379,7 +3273,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+278"/>
+        <location filename="../walletmodel.cpp" line="+249"/>
         <source>Sending...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3387,257 +3281,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>Gridcoin version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Usage:</source>
-        <translation>???:</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>List commands</source>
-        <translation>??? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Get help for a command</source>
-        <translation>??? ???</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location filename="../bitcoinstrings.cpp" line="+39"/>
         <source>Options:</source>
-        <translation>??:</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>??? ?? ?? ?? ??? ?????.</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Specify data directory</source>
-        <translation>??? ?? ??</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>?????? ?? ??? ?????? ??(???:25)</translation>
+        <translation>옵션:</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Set database disk log size in megabytes (default: 100)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>?? ? ???? ???? ?????(???: 125)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>?? ??? ?? ?? ??? ????, ?? ?? ??? ????</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Specify your own public address</source>
-        <translation>?? ??? ??????</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Bind to given address. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>???? ???? ???? ??? ????? ?? ??? (???: 100)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>????? ?? ???? ????? ?? ?????? ??? ?? (???: 86400?)</translation>
-    </message>
-    <message>
-        <location line="-43"/>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>IPv4 ??? ?? RPC ?? %u?? ??? ??? ??????: %s</translation>
-    </message>
-    <message>
-        <location line="+157"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 15715 or testnet: 25715)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-11"/>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>???? JSON-RPC ?? ??</translation>
-    </message>
-    <message>
-        <location line="+101"/>
-        <source>Error: Transaction creation failed  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-8"/>
-        <source>Importing blockchain data file.</source>
+        <source>This help message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Importing bootstrap blockchain data file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-88"/>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>???? ??????? ???? ??? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Use the test network</source>
-        <translation>??? ???? ??</translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>?? ??? ?????</translation>
-    </message>
-    <message>
-        <location line="-38"/>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+115"/>
-        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>??: -paytxfee?? ?? ???! ? ?? ???? ??? ?? ??????.</translation>
-    </message>
-    <message>
-        <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gridcoin will not work properly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-30"/>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-18"/>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-31"/>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>??? wallet.dat?? ??? ??? ?????</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Block creation options:</source>
-        <translation>?? ?? ??:</translation>
-    </message>
-    <message>
-        <location line="-59"/>
-        <source>Connect only to the specified node(s)</source>
-        <translation>??? ???? ????</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+92"/>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-88"/>
-        <source>Find peers using DNS lookup (default: 1)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Sync checkpoints policy (default: strict)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-81"/>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-15"/>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-49"/>
-        <source>%s, you must set a rpcpassword in the configuration file:
- %s
-It is recommended you use the following random password:
-rpcuser=gridcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo.com
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Send command to -server or gridcoind</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
         <source>Specify configuration file (default: gridcoin.conf)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3647,12 +3301,157 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+1"/>
+        <source>Specify data directory</source>
+        <translation>데이터 폴더 지정</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database disk log size in megabytes (default: 100)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Listen for connections on &lt;port&gt; (default: 32749 or testnet: 32748)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>피어 주소를 받기 위해 노드에 연결하고, 받은 후에 연결을 끊습니다</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation>공인 주소를 지정하십시오</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Bind to given address. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sync checkpoints policy (default: strict)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>명령줄과 JSON-RPC 명령 수락</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use the test network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3667,138 +3466,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL ??: (SSL ?? ??? ??? ???? ??? ??????)</translation>
-    </message>
-    <message>
-        <location line="-71"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+38"/>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>???? ??? degug.log ??? ??? ?? ??? ???</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Send trace/debug info to debugger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+28"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 15715 or testnet: 25715)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1"/>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>??? ??? ?? ?? ?? ??(???: 0)</translation>
-    </message>
-    <message>
-        <location line="-29"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>????? ??? debug.log ?? ???(???: ??? ??? 1)</translation>
-    </message>
-    <message>
-        <location line="-39"/>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>??? ??? ?? ????? ??????(???: 5000)</translation>
-    </message>
-    <message>
-        <location line="+107"/>
-        <source>Unable to sign checkpoint, wrong checkpointkey?
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-79"/>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-24"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+39"/>
-        <source>Username for JSON-RPC connections</source>
-        <translation>JSON-RPC ??? ??? ??? ??</translation>
-    </message>
-    <message>
-        <location line="+48"/>
-        <source>Verifying database integrity...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Warning: Disk space is low!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-2"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>??: ? ??? ???? ?????? ?????!</translation>
-    </message>
-    <message>
-        <location line="-47"/>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat ??? ????? ??? ???????.</translation>
-    </message>
-    <message>
-        <location line="-55"/>
-        <source>Password for JSON-RPC connections</source>
-        <translation>JSON-RPC ??? ??? ??</translation>
-    </message>
-    <message>
-        <location line="-30"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+2"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>??? IP ??? JSON-RPC ?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>?? ?? ??? ?? ?? &lt;ip&gt; (???: 127.0.0.1)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>??? ??? ??? ??? ??(cmd ? ?? %s ? ?? ??? ?? ???? ?)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+7"/>
         <source>Require a confirmations for change (default: 0)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3815,20 +3503,25 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
     <message>
         <location line="+3"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>??? ?? ???? ?????</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>? ? ?? ?? &lt;n&gt;(???: 100)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>??? ?? ??? ?? ?? ?? ?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3843,19 +3536,39 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+2"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>JSON-RPC ??? OpenSSL(https) ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>?? ?? ?? (???: server.cert)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>?? ?? ?(???: server.pem)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3863,27 +3576,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+3"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Initialization sanity check failed. Gridcoin is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-155"/>
-        <source>This help message</source>
-        <translation>??? ??????</translation>
-    </message>
-    <message>
-        <location line="+93"/>
+        <location line="+1"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3893,42 +3606,73 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-96"/>
-        <source>Gridcoin</source>
+        <location line="+3"/>
+        <source>Verifying database integrity...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+137"/>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>? ???? %s? ???? ? ???? (??? ??? %d ?? ??, %s)</translation>
-    </message>
-    <message>
-        <location line="-127"/>
-        <source>Connect through socks proxy</source>
+        <location line="+1"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>-addnode, -seednode, -connect ??? ?? DNS ?? ??</translation>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+119"/>
-        <source>Loading addresses...</source>
-        <translation>??? ???? ?...</translation>
+        <location line="+4"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unable to sign checkpoint, wrong checkpointkey?
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Error loading blkindex.dat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat ???? ??: ?? ??</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Gridcoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3940,126 +3684,274 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat</source>
-        <translation>wallet.dat ???? ??</translation>
-    </message>
-    <message>
-        <location line="-16"/>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>??? -proxy ?????: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>-onlynet? ??? ????? ? ? ????: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>??? -socks ??? ??? ? ? ????: %i</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>-bind ??? ??? ? ????: &apos;%s&apos;</translation>
+        <source>Importing blockchain data file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Importing bootstrap blockchain data file.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>-externalip ??? ??? ? ????: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-25"/>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>-paytxfee=&lt;amount&gt;? ?? ?? ???????: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+44"/>
         <source>Error: could not start node</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>Sending...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Invalid amount</source>
-        <translation>???? ??</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Insufficient funds</source>
-        <translation>?? ??</translation>
-    </message>
-    <message>
-        <location line="-33"/>
-        <source>Loading block index...</source>
-        <translation>?? ???? ???? ?...</translation>
-    </message>
-    <message>
-        <location line="-101"/>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+119"/>
+        <location line="+2"/>
         <source>Unable to bind to %s on this computer. Gridcoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-97"/>
-        <source>Fee per KB to add to transactions you send</source>
+        <location line="+2"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
-        <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+1"/>
+        <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: Transaction creation failed  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sending...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gridcoin will not work properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: Disk space is low!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-114"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>데몬으로 백그라운드에서 실행하고 명령을 허용</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>지갑 거래가 바뀌면 명령을 실행합니다.(%s 안의 명령어가 TxID로 바뀝니다)</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Block creation options:</source>
+        <translation>블록 생성 옵션:</translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>어떤 포트도 반응하지 않습니다. 사용자 반응=0 만약 원한다면</translation>
+    </message>
+    <message>
+        <location line="-107"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>데이터 폴더 안에 지갑 파일을 선택하세요.</translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation>추적오류 정보를 degug.log 자료로 보내는 대신 콘솔로 보내기</translation>
+    </message>
+    <message>
+        <location line="-1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>클라이언트 시작시 debug.log 파일 비우기(기본값: 디버그 안할때 1)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation>JSON-RPC 연결에 사용할 사용자 이름</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation>JSON-RPC 연결에 사용할 암호</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>최고의 블럭이 변하면 명령을 실행(cmd 에 있는 %s 는 블럭 해시에 의해 대체되어 짐)</translation>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>-addnode, -seednode, -connect 옵션에 대해 DNS 탐색 허용</translation>
+    </message>
+    <message>
+        <location line="-43"/>
+        <source>To use the %s option</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=gridcoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo.com
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Gridcoin version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">사용법:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or gridcoind</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Gridcoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+132"/>
+        <source>Loading addresses...</source>
+        <translation>주소를 불러오는 중...</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation>잘못된 -proxy 주소입니다: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="-1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation>-onlynet에 지정한 네트워크를 알 수 없습니다: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Insufficient funds</source>
+        <translation>자금 부족</translation>
+    </message>
+    <message>
+        <location line="-33"/>
+        <source>Loading block index...</source>
+        <translation>블럭 인덱스를 불러오는 중...</translation>
+    </message>
+    <message>
+        <location line="-101"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>노드를 추가하여 연결하고 연결상태를 계속 유지하려고 시도합니다.</translation>
+    </message>
+    <message>
+        <location line="+103"/>
         <source>Loading wallet...</source>
-        <translation>??? ???? ?...</translation>
+        <translation>지갑을 불러오는 중...</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Cannot downgrade wallet</source>
-        <translation>??? ?????? ? ? ????</translation>
+        <translation>지갑을 다운그레이드 할 수 없습니다</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot write default address</source>
-        <translation>?? ??? ??? ? ????</translation>
+        <translation>기본 계좌에 기록할 수 없습니다</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Rescanning...</source>
-        <translation>??? ?...</translation>
+        <translation>재검색 중...</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Done loading</source>
-        <translation>?? ??</translation>
+        <translation>로딩 완료</translation>
     </message>
     <message>
-        <location line="-164"/>
-        <source>To use the %s option</source>
-        <translation>%s ??? ?????</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="-150"/>
         <source>Error</source>
-        <translation>??</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>?? ??? rpcpassword=&lt;??&gt;? ???? ???:
-%s
-??? ??? ??? ?? ?? ?? ???? ???? ???.</translation>
+        <translation>오류</translation>
     </message>
 </context>
 </TS>

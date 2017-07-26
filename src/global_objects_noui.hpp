@@ -9,8 +9,6 @@ extern std::string sRegVer;
 extern int nRegVersion;
 extern bool bDebugMode;
 extern bool bBoincSubsidyEligible;
-extern bool bPoolMiningMode;
-extern bool bCPUMiningMode;
 extern volatile bool bCPIDsLoaded;
 extern volatile bool bProjectsInitialized;
 extern volatile int  iCriticalThreadDelay;
@@ -18,7 +16,6 @@ extern volatile bool CreatingNewBlock;
 extern volatile bool bNetAveragesLoaded;
 extern volatile bool bForceUpdate;
 extern volatile bool bExecuteCode;
-extern volatile bool bAddressUser;
 extern volatile bool bCheckedForUpgrade;
 extern volatile bool bCheckedForUpgradeLive;
 extern volatile bool bGlobalcomInitialized;
@@ -70,9 +67,6 @@ struct StructCPID
     int32_t LastBlock;
     double NetworkMagnitude;
     double NetworkAvgMagnitude;
-    double NetsoftRAC;
-    double GRCQuote;
-    double BTCQuote;
     std::string cpid;
     std::string emailhash;
     std::string cpidhash;
@@ -168,10 +162,5 @@ extern MiningCPID GlobalCPUMiningCPID;
 extern std::map<std::string, StructCPID> mvBoincProjects; // Contains all of the allowed boinc projects;
 // Timers
 extern std::map<std::string, int> mvTimers; // Contains event timers that reset after max ms duration iterator is exceeded
-extern double nMinerPaymentCount;
-
 
 #endif /* GLOBAL_OBJECTS_NOUI_HPP */
-
-
-

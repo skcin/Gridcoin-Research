@@ -24,12 +24,9 @@
 
 std::vector<std::string> split(std::string s, std::string delim);
 bool LoadAdminMessages(bool bFullTableScan,std::string& out_errors);
-extern void InitializeBoincProjects();
 extern boost::thread_group threadGroup;
 
 StructCPID GetStructCPID();
-std::string GetArgument(std::string arg, std::string defaultvalue);
-void ThreadCPIDs();
 bool ComputeNeuralNetworkSupermajorityHashes();
 void BusyWaitForTally();
 extern void ThreadAppInit2(void* parg);
@@ -37,7 +34,6 @@ extern void ThreadAppInit2(void* parg);
 void LoadCPIDsInBackground();
 bool IsConfigFileEmpty();
 
-void HarvestCPIDs(bool cleardata);
 std::string ToOfficialName(std::string proj);
 
 #ifndef WIN32
@@ -49,7 +45,6 @@ using namespace boost;
 CWallet* pwalletMain;
 CClientUIInterface uiInterface;
 std::vector<std::string> split(std::string s, std::string delim);
-void ThreadCPIDs();
 extern bool fConfChange;
 extern bool fEnforceCanonical;
 extern unsigned int nNodeLifespan;
@@ -57,8 +52,7 @@ extern unsigned int nDerivationMethodIndex;
 extern unsigned int nMinerSleep;
 extern bool fUseFastIndex;
 extern enum Checkpoints::CPMode CheckpointsMode;
-extern void InitializeBoincProjects();
-void LoadCPIDsInBackground();
+void InitializeBoincProjects();
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -116,7 +110,7 @@ void DetectShutdownThread(boost::thread_group* threadGroup)
 }
 
 
-void InitializeBoincProjectsNew()
+void InitializeBoincProjects()
 {
        //Initialize GlobalCPUMiningCPID
         GlobalCPUMiningCPID.initialized = true;
@@ -165,13 +159,6 @@ void InitializeBoincProjectsNew()
                 }
        }
 
-}
-
-
-void InitializeBoincProjects()
-{
-    InitializeBoincProjectsNew();
-    return;
 }
 
 
@@ -289,7 +276,7 @@ bool AppInit(int argc, char* argv[])
             int ret = CommandLineRPC(argc, argv);
             exit(ret);
         }
-        boost::thread* detectShutdownThread = new boost::thread(boost::bind(&DetectShutdownThread, &threadGroup));
+        new boost::thread(boost::bind(&DetectShutdownThread, &threadGroup));
 
         fRet = AppInit2();
     }
@@ -545,19 +532,12 @@ bool AppInit2()
 
     printf("\r\nBoost Version: %s",s.str().c_str());
 
-    #if defined(WIN32) && defined(QT_GUI)
-            //startWireFrameRenderer();
-    #endif
-
-
     //Placeholder: Load Remote CPIDs Here
 
-    nNodeLifespan = GetArg("-addrlifespan", 7);
-
-    
+    nNodeLifespan = GetArg("-addrlifespan", 7);    
     fUseFastIndex = GetBoolArg("-fastindex", false);
 
-    nMinerSleep = GetArg("-minersleep", 500);
+    nMinerSleep = GetArg("-minersleep", 8000);
 
     CheckpointsMode = Checkpoints::STRICT;
     //CheckpointsMode = Checkpoints::ADVISORY;
@@ -579,10 +559,6 @@ bool AppInit2()
     if (fTestNet) {
         SoftSetBoolArg("-irc", true);
     }
-
-
-    bPoolMiningMode = GetBoolArg("-poolmining");
-
 
     if (mapArgs.count("-bind")) {
         // when specifying an explicit binding address, you want to listen on it
@@ -1102,27 +1078,23 @@ bool AppInit2()
     uiInterface.InitMessage(_("Loading Persisted Data Cache..."));
     //
     std::string sOut = "";
-    if (fDebug3) printf("Loading admin Messages %f",(double)0);
+    if (fDebug3) printf("Loading admin Messages");
     LoadAdminMessages(true,sOut);
-    printf("Done loading Admin messages%f",(double)0);
+    printf("Done loading Admin messages");
 
     InitializeBoincProjects();
-    printf("Done loading boinc projects %f",(double)0);
+    printf("Done loading boinc projects");
     uiInterface.InitMessage(_("Loading Network Averages..."));
-    if (fDebug3) printf("Loading network averages %f",(double)0);
+    if (fDebug3) printf("Loading network averages");
     BusyWaitForTally();
     uiInterface.InitMessage(_("Compute Neural Network Hashes..."));
 
     ComputeNeuralNetworkSupermajorityHashes();
 
-    printf("Starting CPID thread...%f",(double)0);
+    printf("Starting CPID thread...");
     LoadCPIDsInBackground();  //This calls HarvesCPIDs(true)
 
     uiInterface.InitMessage(_("Finding first applicable Research Project..."));
-
-    #if defined(WIN32) && defined(QT_GUI)
-        //stopWireFrameRenderer();
-    #endif
 
     if (!CheckDiskSpace())
         return false;

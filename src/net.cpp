@@ -12,8 +12,11 @@
 #include "util.h"
 
 #include <boost/algorithm/string/case_conv.hpp> // for to_lower()
-#include <boost/array.hpp>
 #include <boost/thread.hpp>
+
+#if !defined(HAVE_MSG_NOSIGNAL)
+#define MSG_NOSIGNAL 0
+#endif
 
 #ifdef WIN32
   #include <string.h>
@@ -32,7 +35,6 @@ bool TallyNetworkAverages(bool ColdBoot);
 extern void BusyWaitForTally();
 extern void DoTallyResearchAverages(void* parg);
 extern void ExecGridcoinServices(void* parg);
-double cdbl(std::string s, int place);
 std::string DefaultWalletAddress();
 std::string NodeAddress(CNode* pfrom);
 std::string GetNeuralVersion();
@@ -52,8 +54,6 @@ std::string DefaultBoincHashArgs();
 extern std::string LegacyDefaultBoincHashArgs();
 bool IsCPIDValidv3(std::string cpidv2, bool allow_investor);
 extern int nMaxConnections;
-void HarvestCPIDs(bool cleardata);
-extern std::string GetHttpPageFromCreditServerRetired(std::string cpid, bool UseDNS, bool ClearCache);
 std::string ExtractXML(std::string XMLdata, std::string key, std::string key_end);
 std::string cached_boinchash_args = "";
 std::string RetrieveMd5(std::string s1);
@@ -90,7 +90,7 @@ static bool vfLimited[NET_MAX] = {};
 static CNode* pnodeLocalHost = NULL;
 CAddress addrSeenByPeer(CService("0.0.0.0", 0), nLocalServices);
 uint64_t nLocalHostNonce = 0;
-boost::array<int, THREAD_MAX> vnThreadsRunning;
+std::array<int, THREAD_MAX> vnThreadsRunning;
 static std::vector<SOCKET> vhListenSocket;
 CAddrMan addrman;
 
@@ -639,86 +639,6 @@ std::string GetHttpPage(std::string url)
 }
 
 
-
-
-std::string GetHttpPageFromCreditServerRetired(std::string cpid, bool UseDNS, bool ClearCache)
-{
-    
-    try
-    {
-       if (cpid=="" || cpid.length() < 5)
-       {
-                if (fDebug10) printf("Blank cpid supplied");
-                return "";
-       }
-
-       if (ClearCache)
-       {
-            mvCPIDCache["cache"+cpid].initialized=false;
-       }
-       StructCPIDCache c = mvCPIDCache["cache"+cpid];
-       if (c.initialized)
-       {
-           if (c.xml.length() > 100)
-           {
-               return c.xml;
-           }
-
-       }
-
-
-        CService addrConnect;
-
-        std::string url  = "http://cpid.gridcoin.us/get_user.php?cpid=";
-        std::string url3 = "cpid.gridcoin.us";
-        std::string url4 = "get_user.php?cpid=" + cpid;
-        int iCPIDPort = 5000;
-        if (fDebug10) printf("HTTP Request\r\n %s \r\n",url4.c_str());
-
-        CService addrIP(url3, iCPIDPort, true);
-        if (UseDNS)
-        {
-            if (addrIP.IsValid())
-            {
-                addrConnect = addrIP;
-                printf("QA:%s",url4.c_str());
-            }
-        }
-        else
-        {
-            addrConnect = CService("216.165.179.26", 80);
-            printf("Invalid address...");
-        }
-
-        std::string getdata = "GET /" + url4 + " HTTP/1.1\r\n"
-                     "Host: " + url3 + "\r\n"
-                     "User-Agent: Mozilla/4.0\r\n"
-                     "\r\n";
-
-        std::string http = GetHttpContent(addrConnect,getdata);
-        std::string resultset = "" + http;
-        c.initialized=true;
-        c.xml = resultset;
-        mvCPIDCache.insert(map<string,StructCPIDCache>::value_type("cache"+cpid,c));
-        mvCPIDCache["cache"+cpid]=c;
-        return resultset;
-    }
-    catch (std::exception &e)
-    {
-        printf("Error while querying address for cpid %s",cpid.c_str());
-        return "";
-    }
-    catch (...)
-    {
-
-        return "";
-    }
-
-}
-
-
-
-
 bool GetMyExternalIP2(const CService& addrConnect, const char* pszGet, const char* pszKeyword, CNetAddr& ipRet)
 {
     SOCKET hSocket;
@@ -954,11 +874,6 @@ void CNode::CloseSocketDisconnect()
         if (lockRecv)
             vRecvMsg.clear();
     }
-}
-
-bool IsWindows()
-{
-    return BoincHashMerkleRootNew.substr(0,4) == "Elim" ?  true : false;
 }
 
 

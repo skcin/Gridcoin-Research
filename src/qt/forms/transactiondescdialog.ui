@@ -56,13 +56,6 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnTrack">
-       <property name="text">
-        <string>Track Coins</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="btnExecute">
        <property name="enabled">
         <bool>true</bool>
@@ -75,7 +68,7 @@
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>Close</string>
+        <string>C&amp;lose</string>
        </property>
       </widget>
      </item>

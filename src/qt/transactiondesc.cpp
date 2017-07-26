@@ -262,24 +262,16 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
         strHTML += "<br><b>" + tr("Comment") + ":</b><br>" + GUIUtil::HtmlEscape(wtx.mapValue["comment"], true) + "<br>";
 
     strHTML += "<b>" + tr("Transaction ID") + ":</b> " + wtx.GetHash().ToString().c_str() + "<br>";
-	msHashBoincTxId = wtx.GetHash().ToString();
-
     if (wtx.IsCoinBase() || wtx.IsCoinStake())
-	{
-		    //   strHTML += "<br>" + tr("Generated coins must mature 510 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to \"not accepted\" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.") + "<br>";
-	
-			int out_blocknumber=0;
-			int out_blocktype = 0;
-			double out_rac = 0;
-			std::string project = GetTxProject(wtx.GetHash(),out_blocknumber, out_blocktype, out_rac);
-            strHTML += "<br>" + tr("Project") + ":</b> " + project.c_str() + 
-				       "<br>" + tr("Block Type") + ":</b> " + RoundToString(out_blocktype,0).c_str() + 
-					   "<br>" + tr("Block Number") + ":</b> " + RoundToString(out_blocknumber,0).c_str() +
-					   "<br>" + tr("RAC")           + ":</b> " + RoundToString(out_rac,0).c_str() +
-					   	"<br><br>" + tr("Gridcoin generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to \"not accepted\" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.") + "<br>";
-
-
-	}
+    {
+        int out_blocknumber=0;
+        int out_blocktype = 0;
+        double out_rac = 0;
+        GetTxProject(wtx.GetHash(),out_blocknumber, out_blocktype, out_rac);
+        strHTML += "<br>" + tr("Block Type") + ":</b> " + RoundToString(out_blocktype,0).c_str() +
+                "<br>" + tr("Block Number") + ":</b> " + RoundToString(out_blocknumber,0).c_str() +
+                "<br><br>" + tr("Gridcoin generated coins must mature 110 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to \"not accepted\" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.") + "<br>";
+    }
 
     //
     // Debug view 12-7-2014 - Halford
@@ -287,7 +279,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
 
 	// Smart Contracts
 
-	msHashBoinc = "";
+    msHashBoinc = "";
 
 
     if (fDebug || true)
@@ -306,17 +298,18 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
         CTxDB txdb("r"); // To fetch source txouts
 		//Decrypt any embedded messages
 		std::string eGRCMessage = ExtractXML(wtx.hashBoinc,"<MESSAGE>","</MESSAGE>");
-		std::string sOptionsNarr = ExtractXML(wtx.hashBoinc,"<NARR>","</NARR>");
-		//std::string sGRCMessage = AdvancedDecrypt(eGRCMessage);
-		// Contracts
+        std::string sGRCMessage = MakeSafeMessage(eGRCMessage);
+        std::string sOptionsNarr = ExtractXML(wtx.hashBoinc,"<NARR>","</NARR>");
+        // Contracts
 		//std::string sContractLength = RoundToString((double)wtx.hashBoinc.length(),0);
 		//std::string sContractInfo = "";
 		//if (wtx.hashBoinc.length() > 255) sContractInfo = ": " + wtx.hashBoinc.substr(0,255);
 		strHTML += "<br><b>Notes:</b><pre><font color=blue> " 
-			+ QString::fromStdString(eGRCMessage) + "</font></pre><p><br>";
-		if (sOptionsNarr.length() > 1)
+            + QString::fromStdString(sGRCMessage) + "</font></pre><p><br>";
+        if (sOptionsNarr.length() > 1)
 		{
-			strHTML += "<br><b>Options:</b><pre><font color=blue> " + QString::fromStdString(sOptionsNarr) + "</font></pre><p><br>";
+            std::string oOptionsNarr = MakeSafeMessage(sOptionsNarr);
+            strHTML += "<br><b>Options:</b><pre><font color=blue> " + QString::fromStdString(oOptionsNarr) + "</font></pre><p><br>";
 		
 		}
 		if (fDebug3)

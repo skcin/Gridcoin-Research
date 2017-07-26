@@ -72,7 +72,6 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 static const unsigned int MINIMUM_CHECKPOINT_TRANSMISSION_BALANCE = 4000000;
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Genesis - MainNet - Production Genesis: as of 10-20-2014:
@@ -105,6 +104,8 @@ inline bool AreBinarySuperblocksEnabled(int nHeight)
 inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime - 20 * 60  : nTime - 20 * 60; }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? nTime + 20 * 60  : nTime + 20 * 60; }
 inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 90 : 60; }
+
+extern bool IsNeuralNodeParticipant(const std::string& addr, int64_t locktime);
 
 extern std::map<std::string, std::string> mvApplicationCache;
 extern std::map<std::string, int64_t> mvApplicationCacheTimestamp;
@@ -181,17 +182,11 @@ extern std::string 	msMiningProject;
 extern std::string 	msMiningCPID;
 extern std::string  msPrimaryCPID;
 
-extern double    	mdMiningRAC;
-extern double       mdMiningNetworkRAC;
 extern double       mdPORNonce;
-extern double       mdPORNonceSolved;
 extern double       mdLastPorNonce;
-extern double       mdMachineTimer;
 extern double       mdMachineTimerLast;
 
-extern std::string  msENCboincpublickey;
 extern std::string  msHashBoinc;
-extern std::string  msHashBoincTxId;
 extern std::string  msMiningErrors;
 extern std::string  msPoll;
 extern std::string  msMiningErrors5;
@@ -204,26 +199,18 @@ extern std::string  msAttachmentGuid;
 
 extern std::string  msMiningErrorsIncluded;
 extern std::string  msMiningErrorsExcluded;
-extern std::string  msContracts;
 
 extern std::string  msRSAOverview;
 extern std::string  msNeuralResponse;
 extern std::string  msHDDSerial;
 extern bool         mbBlocksDownloaded;
-
-
-extern std::string  Organization;
-extern std::string  OrganizationKey;
-
 extern int nGrandfather;
 extern int nNewIndex;
 extern int nNewIndex2;
 
-// Stats for Main Screen:
-extern std::string    msLastPaymentTime;
-
 struct globalStatusType
 {
+    CCriticalSection lock;
     std::string blocks;
     std::string difficulty;
     std::string netWeight;
@@ -258,7 +245,6 @@ bool ProcessMessages(CNode* pfrom);
 bool SendMessages(CNode* pto, bool fSendTrickle);
 bool LoadExternalBlockFile(FILE* fileIn);
 bool WriteKey(std::string sKey, std::string sValue);
-std::string GetArgument(std::string arg, std::string defaultvalue);
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
@@ -268,6 +254,8 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, std::string cpid,
 	bool VerifyingBlock, int VerificationPhase, int64_t nTime, CBlockIndex* pindexLast, std::string operation,
 	double& OUT_POR, double& OUT_INTEREST, double& dAccrualAge, double& dMagnitudeUnit, double& AvgMagnitude);
 
+MiningCPID DeserializeBoincBlock(std::string block, int BlockVersion);
+std::string SerializeBoincBlock(MiningCPID mcpid, int BlockVersion);
 
 
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
@@ -289,9 +277,10 @@ std::string DefaultWalletAddress();
 bool AcceptToMemoryPool(CTxMemPool& pool, CTransaction &tx,
                         bool* pfMissingInputs);
 
-
+std::string GetBackupFilename(const std::string& basename, const std::string& suffix = "");
 
 bool GetWalletFile(CWallet* pwallet, std::string &strWalletFileOut);
+StructCPID GetInitializedStructCPID2(const std::string& name, std::map<std::string, StructCPID>& vRef);
 
 /** Position on disk for a particular transaction. */
 class CDiskTxPos
@@ -977,7 +966,7 @@ class CBlock
 {
 public:
     // header
-    static const int CURRENT_VERSION = 7;
+    static const int CURRENT_VERSION = 8;
     int nVersion;
     uint256 hashPrevBlock;
     uint256 hashMerkleRoot;
@@ -1262,7 +1251,6 @@ public:
     bool CheckBlock(std::string sCaller, int height1, int64_t mint, bool fCheckPOW=true, bool fCheckMerkleRoot=true, bool fCheckSig=true, bool fLoadingIndex=false) const;
     bool AcceptBlock(bool generated_by_me);
     bool GetCoinAge(uint64_t& nCoinAge) const; // ppcoin: calculate total coin age spent in block
-    bool SignBlock(CWallet& keystore, int64_t nFees);
     bool CheckBlockSignature() const;
 
 private:

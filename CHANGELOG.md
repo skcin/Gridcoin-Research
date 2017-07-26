@@ -4,6 +4,89 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Changed
+ - Staking cleanup, #301 (@tomasbrod). This also solves several other issues:
+ - UI:
+    - Wallet window can now be made smaller, #384 (@skcin). 
+    - Interest and Research subsidy visible in getmininginfo (@tomasbrod).
+    - External links now use HTTPS where possible, and the code has been cleaned
+      up, #339 (@skcin).
+    - Rearrange menu items to reduce the number of entries. Remove references
+      to broken function, #362 (@skcin).
+ - Replace translations which were just question marks with new files from
+   the Bitcoin source tree: Arabic, Belarusian, Bulgarian, Greek, Persian,
+   Hebrew, Hindi, Japanese, Georgian, Kirghiz, Serbian, Thai, Ukranian,
+   Urdu and Chinese.
+ - Don't print the "Bootup" and "Signing block" messages unless fDebug (@tomasbrod). 
+ - Print beacons as they are loaded and debug3=true (@tomasbrod).
+ - Show superblock information in getblock (@tomasbrod).
+ - Code cleanup (@skcin).
+ - Update Lithuanian translations, #469 (@Rytiss).
+ - Add block size min, max, avg to block stats RPC (@tomasbrod).
+ - Fields on overview page are now selectable.
+
+### Fixed
+ - High CPU usage, #349 (@tomasbrod)
+ - Repetetive block signing, #295 (@tomasbrod)
+ - Staking creates 1 cent output, #311 (@tomasbrod)
+ - Client no longer has to be restarted for a beacon to activate, #253
+   (@Foggyx420).
+ - Fixed a coin age bug which made it hard to stake on testnet (@denravonska)
+ - Fixed reloading of polls in the voting GUI, #431 (@skcin) 
+ - Fix crash when listing receivedby on addresses with no transactions,
+   #456 (@denravonska).
+ - Fix buffer overflow in TX message unscambling, #468 (@tomasbrod).
+ - Splash screen can no longer be dismissed and the UI can no longer be shown
+   until the wallet has fully loaded, #353 (@denravonska).
+
+### Removed
+ - Removed newbie boost, #332
+ - Removed obsolete functionality.
+
+## [3.5.9.8] - 2017-07-29
+### Changed
+ - Revised Neural Network magnitude calculation to prevent diluted magnitudes.
+ - Cap magnitude to 32766 in NeuralNet to avoid future hash inconsistencies when packing binary superblocks.
+
+### Fixed
+ - Fix binary pack/unpack bug which could cause the contract to get a different hash when unpacked.
+ - Revised Neural Network business logic rule fix inability to stake current superblock.
+
+## [3.5.9.7] - 2017-07-25
+### Fixed
+ - Add artificial researcher to contract to push the average magnitude above 70. Without this the superblock is rejected by the wallet.
+
+## [3.5.9.6] - 2017-07-24
+### Fixed
+ - Use UTC time instead of local time when determining file mirror filename suffix.
+
+## [3.5.9.5] - 2017-07-22
+### Fixed
+ - Fix incorrect handling of 404 errors in NeuralNet.
+ - Fix a bug causing the NeuralNet to skip Rosetta.
+
+## [3.5.9.4] - 2017-07-16
+### Changed
+ - Added checkpoint (block 950000).
+
+### Fixed
+ - Fix neural network missing folder error.
+ - Fix speech bug.
+
+## [3.5.9.3] - 2017-07-15
+### Changed
+ - Require superblocks to be populated with more than half of the
+   whitelisted projects.
+ - Add subfolders to Neural Network
+
+### Fixed
+ - Fix neural network inability to stake superblocks.
+
+## [3.5.9.2] - 2017-07-04
+### Fixed
+ - Fix neural network project gather bug related to timezones.
+
 ## [3.5.9.1] - 2017-07-03
 ### Changed
  - Neural Network improvements:

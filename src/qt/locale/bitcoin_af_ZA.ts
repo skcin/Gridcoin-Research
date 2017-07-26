@@ -27,72 +27,32 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>AddressBookPage</name>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="+14"/>
-        <source>Address Book</source>
-        <translation>adres boek</translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Double-click to edit address or label</source>
-        <translation>Dubbel-klik om die adres of etiket te wysig</translation>
-    </message>
-    <message>
-        <location line="+27"/>
+        <location filename="../forms/addressbookpage.ui" line="+63"/>
         <source>Create a new address</source>
         <translation>Skep &apos;n nuwe adres</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Maak &apos;n kopie van die huidige adres na die stelsel klipbord</translation>
     </message>
     <message>
-        <location line="-11"/>
-        <source>&amp;New Address</source>
-        <translation>&amp;Nuwe Adres</translation>
-    </message>
-    <message>
-        <location line="-46"/>
-        <source>These are your Gridcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit is jou Gridcoin-adresse om betalings te ontvang. U kan &apos;n ander een aan elke sender gee, sodat u kan monitor wie u betaal.</translation>
-    </message>
-    <message>
-        <location line="+60"/>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Kopieer Adres</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Show &amp;QR Code</source>
-        <translation>Wys &amp;QR-kode</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Sign a message to prove you own a Gridcoin address</source>
-        <translation>Teken &apos;n boodskap om te bewys dat jy &apos;n Gridcoin-adres besit</translation>
-    </message>
-    <message>
         <location line="+3"/>
-        <source>Sign &amp;Message</source>
-        <translation>Teken &amp;Boodskap</translation>
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopie</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+50"/>
         <source>Delete the currently selected address from the list</source>
-        <translation>Verwyder die huidige gekose adres uit die lys</translation>
-    </message>
-    <message>
-        <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified Gridcoin address</source>
-        <translation>Verwyder die huidige gekose adres uit die lys</translation>
+        <translation>Verwyder die huidiglik gekieste address van die lys</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Bevestig Boodskap</translation>
-    </message>
-    <message>
-        <location line="+14"/>
         <source>&amp;Delete</source>
         <translation>&amp;Verwyder</translation>
     </message>
@@ -107,17 +67,57 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Redigeer</translation>
     </message>
     <message>
-        <location line="+250"/>
-        <source>Export Address Book Data</source>
-        <translation>Voer adresboekdata uit</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+251"/>
         <source>Comma separated file (*.csv)</source>
         <translation>Komma geskei lêer (*.csv)</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location filename="../forms/addressbookpage.ui" line="-119"/>
+        <source>Address Book</source>
+        <translation>adres boek</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>These are your Gridcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit is jou Gridcoin-adresse om betalings te ontvang. U kan &apos;n ander een aan elke sender gee, sodat u kan monitor wie u betaal.</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Double-click to edit address or label</source>
+        <translation>Dubbel-klik om die adres of etiket te wysig</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Show &amp;QR Code</source>
+        <translation>Wys &amp;QR-kode</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Sign a message to prove you own a Gridcoin address</source>
+        <translation>Teken &apos;n boodskap om te bewys dat jy &apos;n Gridcoin-adres besit</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation>Teken &amp;Boodskap</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Verify a message to ensure it was signed with a specified Gridcoin address</source>
+        <translation>Verwyder die huidige gekose adres uit die lys</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Bevestig Boodskap</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-1"/>
+        <source>Export Address Book Data</source>
+        <translation>Voer adresboekdata uit</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Error exporting</source>
         <translation>Fout met uitvoer</translation>
     </message>
@@ -150,33 +150,22 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation>Wagwoord Dialoog</translation>
+        <translation>Wagfrase Dialoog</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>
-Voer wagwoordfrase in</translation>
+        <translation>Tik wagfrase in</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>Nuwe wagwoord</translation>
+        <translation>Nuwe wagfrase</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>Herhaal nuwe wagwoordfrase</translation>
-    </message>
-    <message>
-        <location line="+33"/>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Dien om die triviale sendmoney uit te skakel wanneer OS-rekening gekompromitteer word. Verskaf geen werklike sekuriteit nie.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>For staking only</source>
-        <translation>Slegs vir staking</translation>
+        <translation>Herhaal nuwe wagfrase</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+38"/>
@@ -206,57 +195,21 @@ Voer wagwoordfrase in</translation>
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>Verander wagwoord</translation>
+        <translation>Verander wagfrase</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Tik asseblief die ou en nuwe wagwoord vir die beursie in.</translation>
-    </message>
-    <message>
-        <location line="+45"/>
+        <location line="+46"/>
         <source>Confirm wallet encryption</source>
-        <translation>Bevestig portefeulje enkripsie</translation>
+        <translation>Bevestig beursie enkripsie.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: As jy jou beursie enkripteer en jou wagwoordfrase verloor, sal jy &lt;b&gt; ALMAL VAN JOU MUNTSTUKKE VERLOOR &lt;/b&gt;!</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Is jy seker jy wil jou beursie enkripteer?</translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>BELANGRIK: Enige vorige rugsteun wat u van u beursie-lêer gemaak het, moet vervang word met die nuut gegenereerde, versleutelde beursie-lêer. Om sekuriteitsredes sal vorige back-ups van die ongecodeerde beursie-lêer nutteloos word sodra u die nuwe versleutelde beursie begin gebruik.</translation>
-    </message>
-    <message>
-        <location line="+103"/>
-        <location line="+24"/>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Waarskuwing: Die Caps Lock-sleutel is aan!</translation>
-    </message>
-    <message>
-        <location line="-133"/>
+        <location line="+10"/>
         <location line="+60"/>
         <source>Wallet encrypted</source>
         <translation>Die beursie is nou bewaak</translation>
     </message>
     <message>
-        <location line="-140"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
-        <source>Gridcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Gridcoin sal nou sluit om die enkripsieproses te voltooi. Onthou dat die enkripsie van jou beursie jou munte nie ten volle kan beskerm as gevolg van wanware wat jou rekenaar besmet nie.</translation>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="-45"/>
         <location line="+7"/>
         <location line="+44"/>
         <location line="+6"/>
@@ -266,13 +219,13 @@ Voer wagwoordfrase in</translation>
     <message>
         <location line="-56"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Beursie bewaaking het misluk as gevolg van &apos;n interne fout. Die beursie is nie bewaak nie.</translation>
+        <translation>Beursie bewaaking het misluk as gevolg van &apos;n interne fout. Die beursie is nie bewaak nie!</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+50"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>Die wagwoord stem nie ooreen nie.</translation>
+        <translation>Die wagfrase stem nie ooreen nie</translation>
     </message>
     <message>
         <location line="-38"/>
@@ -284,7 +237,7 @@ Voer wagwoordfrase in</translation>
         <location line="+12"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Die wagwoord wat ingetik was om die beursie oop te sluit, was verkeerd.</translation>
+        <translation>Die wagfrase wat ingetik was om die beursie oop te sluit, was verkeerd.</translation>
     </message>
     <message>
         <location line="-20"/>
@@ -294,23 +247,59 @@ Voer wagwoordfrase in</translation>
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Wallet wagwoordfrase is suksesvol verander.</translation>
+        <translation>Die beursie se wagfrase verandering was suksesvol.</translation>
+    </message>
+    <message>
+        <location filename="../forms/askpassphrasedialog.ui" line="+33"/>
+        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
+        <translation>Dien om die triviale sendmoney uit te skakel wanneer OS-rekening gekompromitteer word. Verskaf geen werklike sekuriteit nie.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>For staking only</source>
+        <translation>Slegs vir staking</translation>
+    </message>
+    <message>
+        <location filename="../askpassphrasedialog.cpp" line="-116"/>
+        <source>Enter the old and new passphrase to the wallet.</source>
+        <translation>Tik asseblief die ou en nuwe wagwoord vir die beursie in.</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
+        <translation>Waarskuwing: As jy jou beursie enkripteer en jou wagwoordfrase verloor, sal jy &lt;b&gt; ALMAL VAN JOU MUNTSTUKKE VERLOOR &lt;/b&gt;!</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>Is jy seker jy wil jou beursie enkripteer?</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Gridcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Gridcoin sal nou sluit om die enkripsieproses te voltooi. Onthou dat die enkripsie van jou beursie jou munte nie ten volle kan beskerm as gevolg van wanware wat jou rekenaar besmet nie.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>BELANGRIK: Enige vorige rugsteun wat u van u beursie-lêer gemaak het, moet vervang word met die nuut gegenereerde, versleutelde beursie-lêer. Om sekuriteitsredes sal vorige back-ups van die ongecodeerde beursie-lêer nutteloos word sodra u die nuwe versleutelde beursie begin gebruik.</translation>
+    </message>
+    <message>
+        <location line="+103"/>
+        <location line="+24"/>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Waarskuwing: Die Caps Lock-sleutel is aan!</translation>
+    </message>
+    <message>
+        <location line="-213"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+981"/>
-        <source>Sign &amp;message...</source>
-        <translation>Teken &amp;boodskap...</translation>
-    </message>
-    <message>
-        <location line="+346"/>
-        <source>Synchronizing with network...</source>
-        <translation>Sinchroniseer met die netwerk ...</translation>
-    </message>
-    <message>
-        <location line="-500"/>
+        <location filename="../bitcoingui.cpp" line="+667"/>
         <source>&amp;Overview</source>
         <translation>&amp;Oorsig</translation>
     </message>
@@ -330,32 +319,7 @@ Voer wagwoordfrase in</translation>
         <translation>Besoek transaksie geskiedenis</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Adres Boek</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Edit the list of stored addresses and labels</source>
-        <translation>Redigeer die lys van gestoorde adresse en etikette</translation>
-    </message>
-    <message>
-        <location line="-11"/>
-        <source>&amp;Receive coins</source>
-        <translation>&amp;Ontvang muntstukke</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Wys die lys van adresse vir ontvangs van betalings</translation>
-    </message>
-    <message>
-        <location line="-6"/>
-        <source>&amp;Send coins</source>
-        <translation>&amp;Stuur muntstukke</translation>
-    </message>
-    <message>
-        <location line="+57"/>
+        <location line="+52"/>
         <source>E&amp;xit</source>
         <translation>S&amp;luit af</translation>
     </message>
@@ -365,130 +329,17 @@ Voer wagwoordfrase in</translation>
         <translation>Sluit af</translation>
     </message>
     <message>
-        <location line="+26"/>
-        <source>Show information about Gridcoin</source>
-        <translation>Wys inligting oor Gridcoin</translation>
-    </message>
-    <message>
-        <location line="+50"/>
+        <location line="+47"/>
         <source>&amp;Options...</source>
-        <translation>&amp;Opsies...</translation>
+        <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Enkripteer beursie...</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Rugsteun Beursie...</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Verander wagfrase...</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+354"/>
-        <source>~%n block(s) remaining</source>
-        <translation>
-            <numerusform>~ %n block oor</numerusform>
-            <numerusform>~ %n blockke oor</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
-        <translation>Afgelaai %1 van %2 blokke van transaksie geskiedenis (%3% gedoen).</translation>
-    </message>
-    <message>
-        <location line="-351"/>
-        <source>&amp;Export...</source>
-        <translation>&amp;Uitvoer...</translation>
-    </message>
-    <message>
-        <location line="-151"/>
-        <source>Send coins to a Gridcoin address</source>
-        <translation>Muntstukke aan &apos;n Gridcoin adres stuur</translation>
-    </message>
-    <message>
-        <location line="+134"/>
-        <source>Modify configuration options for Gridcoin</source>
-        <translation>Modifiseer netwerkkonfigurasie-opsies vir Gridcoin</translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Voer na &apos;n lêer uit die data in die huidige duimgids</translation>
-    </message>
-    <message>
-        <location line="-14"/>
-        <source>Encrypt or decrypt wallet</source>
-        <translation>Enkripteer of dekripteer Beursie</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Backup wallet to another location</source>
-        <translation>Rugsteun Beursie na &apos;n ander ligging</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Verander die wagfrase vir Beursie enkripsie gebruik</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Ontfout venster</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Oop ontfouting en diagnostiese konsole</translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verifieer boodskap...</translation>
-    </message>
-    <message>
-        <location line="-778"/>
-        <source>Gridcoin</source>
-        <translation>Gridcoin</translation>
-    </message>
-    <message>
-        <location line="+0"/>
+        <location line="-607"/>
         <source>Wallet</source>
         <translation>Beursie</translation>
     </message>
     <message>
-        <location line="+711"/>
-        <source>&amp;About Gridcoin</source>
-        <translation>&amp;Oor Gridcoin</translation>
-    </message>
-    <message>
-        <location line="+54"/>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Wys / versteek</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Unlock wallet</source>
-        <translation>Ontsluit Beursie</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Sluit Beursie</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Lock wallet</source>
-        <translation>LOCK Beursie</translation>
-    </message>
-    <message>
-        <location line="+54"/>
+        <location line="+667"/>
         <source>&amp;File</source>
         <translation>&amp;Lêer</translation>
     </message>
@@ -498,65 +349,42 @@ Voer wagwoordfrase in</translation>
         <translation>&amp;Instellings</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+32"/>
         <source>&amp;Help</source>
         <translation>&amp;Hulp</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+9"/>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <location line="-211"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+64"/>
-        <source>Gridcoin client</source>
-        <translation>Gridcoin kliënt</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+79"/>
-        <source>%n active connection(s) to Gridcoin network</source>
-        <translation>
-            <numerusform>%n aktiewe verbinding aan Gridcoin netwerk</numerusform>
-            <numerusform>%n aktiewe verbindings aan Gridcoin netwerk</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+40"/>
-        <source>Downloaded %1 blocks of transaction history.</source>
-        <translation>Afgelaai %1 blokke van transaksie geskiedenis.</translation>
-    </message>
-    <message>
-        <location line="+1104"/>
-        <source>Not staking because wallet is locked</source>
-        <translation>Stutting nie omdat beursie is gesluit</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Not staking because wallet is offline</source>
-        <translation>Stutting nie omdat beursie is vanlyn</translation>
+        <location line="+1"/>
+        <source>Send coins to a Gridcoin address</source>
+        <translation>Muntstukke aan &apos;n Gridcoin adres stuur</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Not staking because wallet is syncing</source>
-        <translation>Stutting nie omdat Beursie sinkroniseer tans</translation>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Not staking because you don&apos;t have mature coins</source>
-        <translation>Stutting nie want jy hoef nie volwasse muntstukke</translation>
-    </message>
-    <message numerus="yes">
-        <location line="-1101"/>
-        <source>%n second(s) ago</source>
-        <translation>
-            <numerusform>%n second ago</numerusform>
-            <numerusform>%n seconds ago</numerusform>
-        </translation>
+        <location line="+1"/>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation>Wys die lys van adresse vir ontvangs van betalings</translation>
     </message>
     <message>
-        <location line="-513"/>
+        <location line="+9"/>
+        <source>&amp;Address Book</source>
+        <translation>&amp;Adres Boek</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation>Redigeer die lys van gestoorde adresse en etikette</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>&amp;Block Explorer</source>
         <translation type="unfinished"></translation>
     </message>
@@ -602,13 +430,12 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
-        <location line="+169"/>
+        <location line="+28"/>
         <source>&amp;Rebuild Block Chain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-168"/>
+        <location line="+1"/>
         <source>Rebuild Block Chain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -623,17 +450,7 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>&amp;Reboot Client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Reboot Gridcoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>&amp;Upgrade Client</source>
         <translation type="unfinished"></translation>
     </message>
@@ -643,7 +460,17 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+3"/>
+        <source>&amp;About Gridcoin</source>
+        <translation>&amp;Oor Gridcoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Gridcoin</source>
+        <translation>Wys inligting oor Gridcoin</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>&amp;Neural Network</source>
         <translation type="unfinished"></translation>
     </message>
@@ -653,7 +480,7 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>&amp;Advanced Configuration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -664,37 +491,17 @@ Voer wagwoordfrase in</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Live Ticker</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Live Ticker</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Tickets</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Tickets</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>&amp;New User Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+606"/>
+        <location line="+590"/>
         <source>New User Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-599"/>
+        <location line="-665"/>
         <source>&amp;Voting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -704,17 +511,7 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Galaza (Game)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Galaza</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+77"/>
         <source>&amp;Foundation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -744,48 +541,149 @@ Voer wagwoordfrase in</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+4"/>
+        <source>Modify configuration options for Gridcoin</source>
+        <translation>Modifiseer netwerkkonfigurasie-opsies vir Gridcoin</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Wys / versteek</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>&amp;Enkripteer beursie...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Encrypt or decrypt wallet</source>
+        <translation>Enkripteer of dekripteer Beursie</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation>&amp;Rugsteun Beursie...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation>Rugsteun Beursie na &apos;n ander ligging</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Verander wagfrase...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Verander die wagfrase vir Beursie enkripsie gebruik</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>&amp;Unlock Wallet...</source>
         <translation>&amp;Ontsluit Beursie...</translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+1"/>
+        <source>Unlock wallet</source>
+        <translation>Ontsluit Beursie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Lock Wallet</source>
+        <translation>&amp;Sluit Beursie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock wallet</source>
+        <translation>LOCK Beursie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation>Teken &amp;boodskap...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Verify message...</source>
+        <translation>&amp;Verifieer boodskap...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation>&amp;Uitvoer...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Voer na &apos;n lêer uit die data in die huidige duimgids</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Debug window</source>
+        <translation>&amp;Ontfout venster</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Oop ontfouting en diagnostiese konsole</translation>
+    </message>
+    <message>
+        <location line="+56"/>
         <source>&amp;Community</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>&amp;Upgrade QT Client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="+8"/>
         <source>&amp;Advanced</source>
         <translation type="unfinished"></translation>
     </message>
-    <message numerus="yes">
-        <location line="+295"/>
-        <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>%n minuut gelede</numerusform>
-            <numerusform>%n minuuts gelede</numerusform>
-        </translation>
+    <message>
+        <location line="+133"/>
+        <location line="+9"/>
+        <source>[testnet]</source>
+        <translation>[testnet]</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+64"/>
+        <source>Gridcoin client</source>
+        <translation>Gridcoin kliënt</translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>%1 active connection(s) to Gridcoin network</source>
+        <translation type="unfinished">%1 aktiewe verbinding aan Gridcoin netwerk</translation>
     </message>
     <message numerus="yes">
-        <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>%n uur gelede</numerusform>
-            <numerusform>%n ure gelede</numerusform>
+        <location line="+12"/>
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
-    <message numerus="yes">
+    <message>
+        <location line="+13"/>
+        <source>%1 second(s) ago</source>
+        <translation type="unfinished">%1 second ago</translation>
+    </message>
+    <message>
         <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation>
-            <numerusform>%n dag gelede</numerusform>
-            <numerusform>%n dae gelede</numerusform>
-        </translation>
+        <source>%1 minute(s) ago</source>
+        <translation type="unfinished">%1 minuut gelede</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>%1 hour(s) ago</source>
+        <translation type="unfinished">%1 uur gelede</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>%1 day(s) ago</source>
+        <translation type="unfinished">%1 dag gelede</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -803,7 +701,7 @@ Voer wagwoordfrase in</translation>
         <translation>Laaste ontvang blok was Gegenereer wanneer %1.</translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+68"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation>Hierdie transaksie is oor die Groottelimiet. Jy kan dit steeds stuur vir &apos;n fooi van %1, wat gaan die nodusse wat verwerk jou transaksie en help om die netwerk ondersteun. Wil jy die fooi te betaal?</translation>
     </message>
@@ -866,16 +764,16 @@ Adres: %4
 </translation>
     </message>
     <message>
-        <location line="+405"/>
+        <location line="+211"/>
         <location line="+15"/>
-        <source>URI handling</source>
-        <translation>URI hantering</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Gridcoin address or malformed URI parameters.</source>
+        <translation>URI kan nie parsed word nie! Dit kan veroorsaak word deur &apos;n ongeldige Gridcoin adres of misvormde URI parameters.</translation>
     </message>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Gridcoin address or malformed URI parameters.</source>
-        <translation>URI kan nie parsed word nie! Dit kan veroorsaak word deur &apos;n ongeldige Gridcoin adres of misvormde URI parameters.</translation>
+        <source>URI handling</source>
+        <translation>URI hantering</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -908,35 +806,35 @@ Adres: %4
         <translation>Daar was &apos;n fout in die poging om die Beursie data na die nuwe ligging stoor.</translation>
     </message>
     <message numerus="yes">
-        <location line="+307"/>
+        <location line="+300"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n second</numerusform>
-            <numerusform>%n seconds</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n minuute</numerusform>
-            <numerusform>%n minuute(s)</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation>
-            <numerusform>%n uur</numerusform>
-            <numerusform>%n ure</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
-            <numerusform>%n dag</numerusform>
-            <numerusform>%n dae</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -945,12 +843,32 @@ Adres: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+9"/>
+        <source>Not staking because wallet is locked</source>
+        <translation>Stutting nie omdat beursie is gesluit</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Not staking because wallet is offline</source>
+        <translation>Stutting nie omdat beursie is vanlyn</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Not staking because wallet is syncing</source>
+        <translation>Stutting nie omdat Beursie sinkroniseer tans</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Not staking because you don&apos;t have mature coins and stake weight is too low.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
+        <source>Not staking because you don&apos;t have mature coins</source>
+        <translation>Stutting nie want jy hoef nie volwasse muntstukke</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Searching for mature coins... Please wait</source>
         <translation type="unfinished"></translation>
     </message>
@@ -958,6 +876,11 @@ Adres: %4
         <location line="+5"/>
         <source>Not staking</source>
         <translation>Nie stutting</translation>
+    </message>
+    <message>
+        <location line="-1913"/>
+        <source>Gridcoin</source>
+        <translation>Gridcoin</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+145"/>
@@ -976,7 +899,39 @@ Adres: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <location filename="../forms/coincontroldialog.ui" line="+116"/>
+        <source>Amount:</source>
+        <translation>Bedrag:</translation>
+    </message>
+    <message>
+        <location line="+329"/>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="+36"/>
+        <source>Copy address</source>
+        <translation>Maak kopie van adres</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation>Kopieer bedrag</translation>
+    </message>
+    <message>
+        <location line="+537"/>
+        <location line="+63"/>
+        <source>(no label)</source>
+        <translation>(geen etiket)</translation>
+    </message>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="-446"/>
         <source>Coin Control</source>
         <translation>Muntstuk beheer</translation>
     </message>
@@ -991,12 +946,7 @@ Adres: %4
         <translation>Bytes:</translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Amount:</source>
-        <translation>Bedrag:</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="+74"/>
         <source>Priority:</source>
         <translation>Prioriteit:</translation>
     </message>
@@ -1011,12 +961,7 @@ Adres: %4
         <translation>Lae uitset:</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+551"/>
-        <source>no</source>
-        <translation>nee</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="+48"/>
+        <location line="+48"/>
         <source>After Fee:</source>
         <translation>Nadat fooi:</translation>
     </message>
@@ -1041,12 +986,7 @@ Adres: %4
         <translation>Lys modus</translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+50"/>
         <source>Label</source>
         <translation>Etiket</translation>
     </message>
@@ -1056,12 +996,7 @@ Adres: %4
         <translation>Adres</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Confirmations</source>
         <translation>Confirmations</translation>
     </message>
@@ -1076,23 +1011,12 @@ Adres: %4
         <translation>Prioriteit</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="-515"/>
-        <source>Copy address</source>
-        <translation>Maak kopie van adres</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location filename="../coincontroldialog.cpp" line="-627"/>
         <source>Copy label</source>
         <translation>Afskrif etiket</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+26"/>
-        <source>Copy amount</source>
-        <translation>Kopieer bedrag</translation>
-    </message>
-    <message>
-        <location line="-25"/>
+        <location line="+2"/>
         <source>Copy transaction ID</source>
         <translation>Kopieer transaksie ID</translation>
     </message>
@@ -1177,6 +1101,11 @@ Adres: %4
         <translation>Ja</translation>
     </message>
     <message>
+        <location line="+0"/>
+        <source>no</source>
+        <translation>nee</translation>
+    </message>
+    <message>
         <location line="+10"/>
         <source>This label turns red, if the transaction size is bigger than 10000 bytes.
 
@@ -1225,13 +1154,7 @@ Bedrae onder 0.546 keer die minimum relay fooi is aangedui as STOF.</translation
 Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
     </message>
     <message>
-        <location line="+37"/>
-        <location line="+63"/>
-        <source>(no label)</source>
-        <translation>(geen etiket)</translation>
-    </message>
-    <message>
-        <location line="-9"/>
+        <location line="+91"/>
         <source>change from %1 (%2)</source>
         <translation>verander vanaf %1 (%2)</translation>
     </message>
@@ -1244,29 +1167,14 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>EditAddressDialog</name>
     <message>
-        <location filename="../forms/editaddressdialog.ui" line="+14"/>
-        <source>Edit Address</source>
-        <translation>Redigeer adres</translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location filename="../forms/editaddressdialog.ui" line="+25"/>
         <source>&amp;Label</source>
         <translation>&amp;Etiket</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>The label associated with this address book entry</source>
-        <translation>Die etiket wat verband hou met hierdie adres boek inskrywing</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+17"/>
         <source>&amp;Address</source>
         <translation>&amp;Adres</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
-        <translation>Die adres wat verband hou met hierdie adres boek inskrywing. Dit kan slegs gewysig word vir adresse te stuur.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+20"/>
@@ -1289,22 +1197,37 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Wysig stuurende adres</translation>
     </message>
     <message>
-        <location line="+76"/>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Die ingesleutelde adres &quot;%1&quot; is reeds in die adresboek.</translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Gridcoin address.</source>
-        <translation>Die ingesleutelde adres &quot;%1&quot; is nie &apos;n geldige Gridcoin adres.</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+81"/>
         <source>Could not unlock wallet.</source>
         <translation>Kon nie die beursie oopsluit nie.</translation>
     </message>
     <message>
+        <location filename="../forms/editaddressdialog.ui" line="-28"/>
+        <source>Edit Address</source>
+        <translation>Redigeer adres</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>The label associated with this address book entry</source>
+        <translation>Die etiket wat verband hou met hierdie adres boek inskrywing</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
+        <translation>Die adres wat verband hou met hierdie adres boek inskrywing. Dit kan slegs gewysig word vir adresse te stuur.</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="-10"/>
+        <source>The entered address &quot;%1&quot; is not a valid Gridcoin address.</source>
+        <translation>Die ingesleutelde adres &quot;%1&quot; is nie &apos;n geldige Gridcoin adres.</translation>
+    </message>
+    <message>
         <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>Die ingesleutelde adres &quot;%1&quot; is reeds in die adresboek.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>New key generation failed.</source>
         <translation>Nuwe sleutel generasie het misluk.</translation>
     </message>
@@ -1312,19 +1235,9 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+436"/>
-        <source>Gridcoin-Qt</source>
-        <translation>Gridcoin-Qt</translation>
-    </message>
-    <message>
-        <location line="-12"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <source>version</source>
         <translation>weergawe</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>gridcoinresearch</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1356,11 +1269,16 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <source>Show splash screen on startup (default: 1)</source>
         <translation>Wys spatsel skerm by aanskakel (verstek: 1)</translation>
     </message>
+    <message>
+        <location line="+2"/>
+        <source>Gridcoin-Qt</source>
+        <translation>Gridcoin-Qt</translation>
+    </message>
 </context>
 <context>
     <name>NewPollDialog</name>
     <message>
-        <location filename="../votingdialog.cpp" line="+900"/>
+        <location filename="../votingdialog.cpp" line="+896"/>
         <location line="+96"/>
         <source>Create Poll</source>
         <translation type="unfinished"></translation>
@@ -1449,12 +1367,22 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Opsionele transaksiefooi per kg wat help maak seker jou transaksies vinnig verwerk. Die meeste transaksies is 1 kg. Fooi 0.01 aanbeveel.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+15"/>
+        <source>Pa&amp;y transaction fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Reserved amount does not participate in staking and is therefore spendable at any time.</source>
         <translation>Voorbehou bedrag nie deelneem aan stutting en is dus spendable op enige tyd.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+15"/>
+        <source>Reser&amp;ve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Automatically start Gridcoin after logging in to the system.</source>
         <translation>Begin outomaties Gridcoin na by die stelsel aanteken.</translation>
     </message>
@@ -1499,18 +1427,8 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>&amp;Connect deur SOCKS instaanbediener koppel:</translation>
     </message>
     <message>
-        <location line="-130"/>
-        <source>Pa&amp;y transaction fee</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>Reser&amp;ve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+93"/>
-        <source>Prox&amp;y IP:</source>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1674,14 +1592,24 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Vorm</translation>
     </message>
     <message>
-        <location line="+57"/>
-        <location line="+439"/>
+        <location line="+47"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Beursie</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+466"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gridcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Die inligting wat vertoon is dalk verouderd. Jou Beursie sinchroniseer outomaties met die Gridcoin netwerk na &apos;n verbinding is gemaak, maar hierdie proses is nog nie klaar nie.</translation>
     </message>
     <message>
-        <location line="-376"/>
-        <source>Your current balance.</source>
+        <location line="-418"/>
+        <source>Available:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Your current spendable balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1700,17 +1628,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished">Onbevestigde</translation>
     </message>
     <message>
-        <location line="-114"/>
-        <source>Wallet</source>
-        <translation type="unfinished">Beursie</translation>
+        <location line="+15"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
+        <translation>Totaal van transaksies wat nog nie bevestig word, en nie nog telling teenoor die huidige balans</translation>
     </message>
     <message>
-        <location line="+58"/>
-        <source>Balance:</source>
-        <translation type="unfinished">Balans:</translation>
-    </message>
-    <message>
-        <location line="+90"/>
+        <location line="+19"/>
         <source>Immature:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1726,26 +1649,26 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Total Balance     </source>
+        <source>Your current total balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+49"/>
         <source>Blocks:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Difficulty:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Net Weight:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>DPOR Weight:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1770,7 +1693,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+124"/>
         <source>Recent transactions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1780,17 +1703,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Client Messages:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-414"/>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Totaal van transaksies wat nog nie bevestig word, en nie nog telling teenoor die huidige balans</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="+134"/>
+        <location filename="../overviewpage.cpp" line="+132"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>uit sinchro</translation>
@@ -1809,12 +1727,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Versoek betaling</translation>
     </message>
     <message>
-        <location line="+56"/>
-        <source>Amount:</source>
-        <translation>Bedrag:</translation>
-    </message>
-    <message>
-        <location line="-44"/>
+        <location line="+12"/>
         <source>Label:</source>
         <translation>Etiket:</translation>
     </message>
@@ -1824,7 +1737,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Boodskap:</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+25"/>
+        <source>Amount:</source>
+        <translation>Bedrag:</translation>
+    </message>
+    <message>
+        <location line="+46"/>
         <source>&amp;Save As...</source>
         <translation>&amp;Stoor As...</translation>
     </message>
@@ -1857,12 +1775,22 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>RPCConsole</name>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="+491"/>
-        <source>Client name</source>
-        <translation>Kliënt naam</translation>
+        <location filename="../forms/rpcconsole.ui" line="+30"/>
+        <source>&amp;Information</source>
+        <translation>Informasie</translation>
     </message>
     <message>
-        <location line="-445"/>
+        <location line="-16"/>
+        <source>Gridcoin - Debug Console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Boost version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <location line="+27"/>
         <location line="+42"/>
         <location line="+42"/>
@@ -1877,47 +1805,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>(n.v.t)</translation>
     </message>
     <message>
-        <location line="-241"/>
-        <source>Client version</source>
-        <translation>Kliënt weergawe</translation>
-    </message>
-    <message>
-        <location line="-168"/>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <location line="+425"/>
-        <source>Startup time</source>
-        <translation>Begin tyd</translation>
-    </message>
-    <message>
-        <location line="-366"/>
-        <source>Number of connections</source>
-        <translation>Aantal verbindings</translation>
-    </message>
-    <message>
-        <location line="+220"/>
-        <source>On testnet</source>
-        <translation>Op testnet</translation>
-    </message>
-    <message>
-        <location line="-136"/>
-        <source>Block chain</source>
-        <translation>Blok ketting</translation>
-    </message>
-    <message>
-        <location line="-159"/>
-        <source>Gridcoin - Debug Console</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Boost version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="-386"/>
         <source>Proof Of Research Difficulty</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1927,17 +1815,47 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished">1</translation>
     </message>
     <message>
-        <location line="+128"/>
+        <location line="+29"/>
+        <source>Number of connections</source>
+        <translation>Aantal verbindings</translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Last block time</source>
+        <translation>Laaste blok tyd</translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Block chain</source>
+        <translation>Blok ketting</translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Gridcoin Core:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+10"/>
+        <source>Client version</source>
+        <translation>Kliënt weergawe</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Build date</source>
+        <translation>Bou datum</translation>
+    </message>
+    <message>
+        <location line="+34"/>
         <source>Network:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+29"/>
+        <source>On testnet</source>
+        <translation>Op testnet</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Current number of blocks</source>
         <translation>Huidige getal van blokke</translation>
     </message>
@@ -1947,37 +1865,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Geraamde totale blokke</translation>
     </message>
     <message>
-        <location line="-217"/>
-        <source>Last block time</source>
-        <translation>Laaste blok tyd</translation>
-    </message>
-    <message>
-        <location line="+248"/>
-        <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
-    </message>
-    <message>
         <location line="+15"/>
-        <source>Command-line options</source>
-        <translation>Opdragreël-opsies</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>&amp;Show</source>
-        <translation>&amp;Wys</translation>
-    </message>
-    <message>
-        <location line="+265"/>
-        <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
-    </message>
-    <message>
-        <location line="-429"/>
-        <source>Build date</source>
-        <translation>Bou datum</translation>
-    </message>
-    <message>
-        <location line="+117"/>
         <source>Debug log file</source>
         <translation>Ontfout loglêer</translation>
     </message>
@@ -1987,17 +1875,42 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Open die Gridcoin vir foutopspoor loglêer vanaf die huidige data gids. Dit kan &apos;n paar sekondes vir groot loglêers neem.</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+6"/>
+        <source>&amp;Open</source>
+        <translation>&amp;Open</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Command-line options</source>
+        <translation>Opdragreël-opsies</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Show the Gridcoin help message to get a list with possible Gridcoin command-line options.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+6"/>
+        <source>&amp;Show</source>
+        <translation>&amp;Wys</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Startup time</source>
+        <translation>Begin tyd</translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <source>OpenSSL version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+13"/>
+        <source>Client name</source>
+        <translation>Kliënt naam</translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>&amp;Network Traffic</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2022,7 +1935,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="+41"/>
+        <source>&amp;Console</source>
+        <translation>&amp;Console</translation>
+    </message>
+    <message>
+        <location line="+56"/>
         <source>Clear console</source>
         <translation>Duidelike konsole</translation>
     </message>
@@ -2092,7 +2010,42 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Stuur Munstukke</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+116"/>
+        <source>Insufficient funds!</source>
+        <translation>Onvoldoende fondse</translation>
+    </message>
+    <message>
+        <location line="+166"/>
+        <source>Amount:</source>
+        <translation>Bedrag:</translation>
+    </message>
+    <message>
+        <location line="+357"/>
+        <source>Send to multiple recipients at once</source>
+        <translation>Stuur aan vele ontvangers op eens</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Balance:</source>
+        <translation>Balans:</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>S&amp;end</source>
+        <translation>S&amp;tuur</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-157"/>
+        <source>Copy amount</source>
+        <translation>Kopieer bedrag</translation>
+    </message>
+    <message>
+        <location line="+422"/>
+        <source>(no label)</source>
+        <translation>(geen etiket)</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="-670"/>
         <source>Coin Control Features</source>
         <translation>Muntstuk beheer funksies</translation>
     </message>
@@ -2107,12 +2060,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>outomaties gekies</translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende fondse!</translation>
-    </message>
-    <message>
-        <location line="+83"/>
+        <location line="+99"/>
         <source>Quantity:</source>
         <translation>Hoeveelheid:</translation>
     </message>
@@ -2128,12 +2076,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Bytes:</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Amount:</source>
-        <translation>Bedrag:</translation>
-    </message>
-    <message>
-        <location line="+22"/>
+        <location line="+70"/>
         <location line="+80"/>
         <location line="+80"/>
         <location line="+29"/>
@@ -2181,12 +2124,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation></translation>
     </message>
     <message>
-        <location line="+115"/>
-        <source>Send to multiple recipients at once</source>
-        <translation>Stuur aan vele ontvangers op eens</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+118"/>
         <source>Add &amp;Recipient</source>
         <translation>Voeg &amp;Recipient</translation>
     </message>
@@ -2201,12 +2139,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Duidelike &amp;All</translation>
     </message>
     <message>
-        <location line="+28"/>
-        <source>Balance:</source>
-        <translation>Balans:</translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+44"/>
         <source>123.456 GRC</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2216,12 +2149,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Bevestig die stuur aksie</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>S&amp;end</source>
-        <translation>S&amp;tuur</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <location filename="../sendcoinsdialog.cpp" line="-438"/>
         <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2231,12 +2159,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Kopieer hoeveelheid</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>Kopieer bedrag</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Copy fee</source>
         <translation>Afskrif fooi</translation>
     </message>
@@ -2326,12 +2249,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Waarskuwing: onbekende verander adres</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>(no label)</source>
-        <translation>(geen etiket)</translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+17"/>
         <source>WARNING: unknown change address</source>
         <translation>Waarskuwing: onbekende verander adres</translation>
     </message>
@@ -2339,13 +2257,34 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+14"/>
+        <location filename="../forms/sendcoinsentry.ui" line="+170"/>
+        <source>A&amp;mount:</source>
+        <translation>&amp;Bedrag:</translation>
+    </message>
+    <message>
+        <location line="-30"/>
+        <source>Message:</source>
+        <translation>Boodskap:</translation>
+    </message>
+    <message>
+        <location line="-126"/>
         <source>Form</source>
         <translation>Vorm</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Pa&amp;y To:</source>
+        <location line="+18"/>
+        <source>&amp;Label:</source>
+        <translation>&amp;Etiket:</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <location filename="../sendcoinsentry.cpp" line="+29"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Tik &apos;n etiket vir hierdie adres om dit by jou adresboek te voeg</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Pay &amp;To:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2354,43 +2293,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+60"/>
-        <source>Message:</source>
-        <translation type="unfinished">Boodskap:</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Send Custom Message to a Gridcoin Recipient</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;berg:</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Track Coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Add Attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-137"/>
-        <location filename="../sendcoinsentry.cpp" line="+29"/>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Tik &apos;n etiket vir hierdie adres om dit by jou adresboek te voeg</translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiket:</translation>
-    </message>
-    <message>
-        <location line="+58"/>
+        <location line="+10"/>
         <source>Choose address from address book</source>
         <translation>Kies adres uit adresboek</translation>
     </message>
@@ -2415,6 +2318,21 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Verwyder hierdie ontvanger</translation>
     </message>
     <message>
+        <location line="+37"/>
+        <source>Send Custom Message to a Gridcoin Recipient</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Track Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Add Attachment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Gridcoin address (e.g. G8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"></translation>
@@ -2423,18 +2341,22 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Handtekeninge - teken / verifieer &apos;n boodskap</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <location line="+124"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="+27"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;Teken boodskap</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="+124"/>
+        <source>Sign &amp;Message</source>
+        <translation>Teken &amp;Boodskap</translation>
+    </message>
+    <message>
+        <location line="-137"/>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation>Handtekeninge - teken / verifieer &apos;n boodskap</translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Jy kan boodskappe met jou adresse om te bewys jy eie hulle onderteken. Wees versigtig om nie te teken iets vaag, as phishing aanvalle kan probeer om jou ondertekening jou identiteit hulle. Teken slegs volledig gedetailleerde state stem jy in om.</translation>
     </message>
@@ -2603,7 +2525,111 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+38"/>
+        <location filename="../transactiondesc.cpp" line="+106"/>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+17"/>
+        <source>From</source>
+        <translation>Van</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>unknown</source>
+        <translation>onbekend</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+22"/>
+        <location line="+58"/>
+        <source>To</source>
+        <translation>Na</translation>
+    </message>
+    <message>
+        <location line="-77"/>
+        <location line="+2"/>
+        <source>own address</source>
+        <translation>eie adres</translation>
+    </message>
+    <message>
+        <location line="-2"/>
+        <source>label</source>
+        <translation>etiket</translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+45"/>
+        <location line="+17"/>
+        <location line="+43"/>
+        <source>Credit</source>
+        <translation>Krediet</translation>
+    </message>
+    <message>
+        <location line="-113"/>
+        <source>not accepted</source>
+        <translation>nie aanvaar nie</translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <location line="+8"/>
+        <location line="+15"/>
+        <location line="+43"/>
+        <source>Debit</source>
+        <translation>Debiet</translation>
+    </message>
+    <message>
+        <location line="-52"/>
+        <source>Transaction fee</source>
+        <translation>Transaksie fooi</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Net amount</source>
+        <translation>Netto bedrag</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Message</source>
+        <translation>Boodskap</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Transaction ID</source>
+        <translation>Transaksie ID</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Transaction</source>
+        <translation>Transaksie</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>true</source>
+        <translation>waar</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>false</source>
+        <translation>onwaar</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-311"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform>Oop vir %n meer block</numerusform>
+            <numerusform>Oop vir %n meer blocks</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Open until %1</source>
         <translation>Oop tot %1</translation>
     </message>
@@ -2632,8 +2658,13 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <source>Status</source>
         <translation>Status</translation>
     </message>
+    <message>
+        <location line="+5"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, het nie is suksesvol uitsaai nog</translation>
+    </message>
     <message numerus="yes">
-        <location line="+7"/>
+        <location line="+2"/>
         <source>, broadcast through %n node(s)</source>
         <translation>
             <numerusform>, uitgesaai deur %n node</numerusform>
@@ -2641,12 +2672,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         </translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+11"/>
         <source>Source</source>
         <translation>Bron</translation>
     </message>
@@ -2655,41 +2681,8 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <source>Generated</source>
         <translation>Gegenereer</translation>
     </message>
-    <message>
-        <location line="+5"/>
-        <location line="+17"/>
-        <source>From</source>
-        <translation>Van</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <location line="+22"/>
-        <location line="+58"/>
-        <source>To</source>
-        <translation>Na</translation>
-    </message>
-    <message>
-        <location line="-77"/>
-        <location line="+2"/>
-        <source>own address</source>
-        <translation>eie adres</translation>
-    </message>
-    <message>
-        <location line="-2"/>
-        <source>label</source>
-        <translation>etiket</translation>
-    </message>
-    <message>
-        <location line="+37"/>
-        <location line="+12"/>
-        <location line="+45"/>
-        <location line="+17"/>
-        <location line="+51"/>
-        <source>Credit</source>
-        <translation>Krediet</translation>
-    </message>
     <message numerus="yes">
-        <location line="-123"/>
+        <location line="+65"/>
         <source>matures in %n more block(s)</source>
         <translation>
             <numerusform>verval in %n meer block</numerusform>
@@ -2697,50 +2690,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         </translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>not accepted</source>
-        <translation>nie aanvaar nie</translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <location line="+8"/>
-        <location line="+15"/>
-        <location line="+51"/>
-        <source>Debit</source>
-        <translation>Debiet</translation>
-    </message>
-    <message>
-        <location line="-60"/>
-        <source>Transaction fee</source>
-        <translation>Transaksie fooi</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Net amount</source>
-        <translation>Netto bedrag</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Message</source>
-        <translation>Boodskap</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+84"/>
         <source>Comment</source>
         <translation>Kommentaar</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Transaction ID</source>
-        <translation>Transaksie ID</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Project</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+9"/>
         <source>Block Type</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2751,61 +2706,18 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>RAC</source>
+        <source>Gridcoin generated coins must mature 110 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Gridcoin generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+14"/>
         <source>Information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Informasie</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Transaction</source>
-        <translation>Transaksie</translation>
-    </message>
-    <message>
-        <location line="+25"/>
+        <location line="+33"/>
         <source>Inputs</source>
         <translation>Insette</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>true</source>
-        <translation>waar</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>false</source>
-        <translation>onwaar</translation>
-    </message>
-    <message>
-        <location line="-255"/>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, het nie is suksesvol uitsaai nog</translation>
-    </message>
-    <message numerus="yes">
-        <location line="-64"/>
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
-            <numerusform>Oop vir %n meer block</numerusform>
-            <numerusform>Oop vir %n meer blocks</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+99"/>
-        <source>unknown</source>
-        <translation>onbekend</translation>
     </message>
 </context>
 <context>
@@ -2821,32 +2733,22 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Hierdie paneel wys &apos;n gedetailleerde Beskrywing van die transaksie</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+25"/>
+        <source>View Attachment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Execute Contract</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Close</source>
+        <source>C&amp;lose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-17"/>
-        <source>Track Coins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-7"/>
-        <source>View Attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../transactiondescdialog.cpp" line="+90"/>
-        <source>Gridcoin Coin Tracking System</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location filename="../transactiondescdialog.cpp" line="+40"/>
         <source>Gridcoin Documents</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2869,90 +2771,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Tipe</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
-        <location line="+55"/>
-        <source>Open until %1</source>
-        <translation>Oop tot %1</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Confirming (%1 of %2 recommended confirmations)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>Bevestig (%1 confirmations)</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Immature (%1 confirmations, will be available after %2)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>This block was not received by any other nodes&lt;br&gt; and will probably not be accepted!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+80"/>
-        <source>Mined - DPOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Minted - (Local) DPOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Mined - PoR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Mined - Interest</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <location line="-117"/>
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform>Oop vir %n meer block</numerusform>
-            <numerusform>Oop vir %n meer blocks</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Offline</source>
-        <translation>Vanlyn</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Unconfirmed</source>
-        <translation>Onbevestigde</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Conflicted</source>
-        <translation>Bots</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Generated but not accepted</source>
-        <translation>Gegenereer maar nie aanvaar</translation>
-    </message>
-    <message>
-        <location line="+61"/>
+        <location line="+140"/>
         <source>Received with</source>
         <translation>Ontvang met</translation>
     </message>
@@ -2972,17 +2791,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Betalings Aan/na jouself</translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+80"/>
         <source>(n/a)</source>
         <translation>(n.v.t)</translation>
     </message>
     <message>
-        <location line="+193"/>
-        <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transaksie status. Sweef oor hierdie gebied te wys nommer van confirmations.</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+195"/>
         <source>Date and time that the transaction was received.</source>
         <translation>Datum en tyd wat die transaksie ontvang was.</translation>
     </message>
@@ -2992,7 +2806,95 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Tipe transaksie.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-424"/>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+52"/>
+        <source>Open for %n more block(s)</source>
+        <translation>
+            <numerusform>Oop vir %n meer block</numerusform>
+            <numerusform>Oop vir %n meer blocks</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open until %1</source>
+        <translation>Oop tot %1</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Offline</source>
+        <translation>Vanlyn</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unconfirmed</source>
+        <translation>Onbevestigde</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirming (%1 of %2 recommended confirmations)&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Bevestig (%1 confirmations)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Conflicted</source>
+        <translation>Bots</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Immature (%1 confirmations, will be available after %2)&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This block was not received by any other nodes&lt;br&gt; and will probably not be accepted!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Generated but not accepted</source>
+        <translation>Gegenereer maar nie aanvaar</translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Mined - DPOR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Minted - (Local) DPOR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Mined - PoR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Mined - Interest</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+251"/>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>Transaksie status. Sweef oor hierdie gebied te wys nommer van confirmations.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Destination address of transaction.</source>
         <translation>Bestemming adres van transaksie.</translation>
     </message>
@@ -3066,12 +2968,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Ander</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Enter address or label to search</source>
-        <translation>Voer adres of etiket om te soek</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+14"/>
         <source>Min amount</source>
         <translation>Min bedrag</translation>
     </message>
@@ -3081,47 +2978,17 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Maak kopie van adres</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Copy label</source>
-        <translation>Afskrif etiket</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Copy amount</source>
         <translation>Kopieer bedrag</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation>Kopieer transaksie ID</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Edit label</source>
-        <translation>Redigeer etiket</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show transaction details</source>
-        <translation>Wys transaksie besonderhede</translation>
-    </message>
-    <message>
-        <location line="+146"/>
-        <source>Export Transaction Data</source>
-        <translation>Uitvoer transaksie Data</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+150"/>
         <source>Comma separated file (*.csv)</source>
         <translation>Komma geskei lêer (*.csv)</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Confirmed</source>
-        <translation>Bevestig</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+9"/>
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -3141,27 +3008,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation>Adres</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error exporting</source>
-        <translation>Kon nie uitvoer nie</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Could not write to file %1.</source>
-        <translation>Kon nie lêer %1 skryf nie.</translation>
-    </message>
-    <message>
-        <location line="+100"/>
+        <location line="+104"/>
         <source>Range:</source>
         <translation>Reeks:</translation>
     </message>
@@ -3169,6 +3021,56 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <location line="+8"/>
         <source>to</source>
         <translation>aan</translation>
+    </message>
+    <message>
+        <location line="-319"/>
+        <source>Enter address or label to search</source>
+        <translation>Voer adres of etiket om te soek</translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Copy label</source>
+        <translation>Afskrif etiket</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy transaction ID</source>
+        <translation>Kopieer transaksie ID</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit label</source>
+        <translation>Redigeer etiket</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation>Wys transaksie besonderhede</translation>
+    </message>
+    <message>
+        <location line="+146"/>
+        <source>Export Transaction Data</source>
+        <translation>Uitvoer transaksie Data</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Confirmed</source>
+        <translation>Bevestig</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error exporting</source>
+        <translation>Kon nie uitvoer nie</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation>Kon nie lêer %1 skryf nie.</translation>
     </message>
 </context>
 <context>
@@ -3233,12 +3135,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>VotingDialog</name>
     <message>
-        <location line="-349"/>
-        <source>Gridcoin Voting System 1.1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="-343"/>
         <source>Active Polls (Right Click to Vote)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3271,7 +3168,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>VotingTableModel</name>
     <message>
-        <location line="-391"/>
+        <location line="-387"/>
         <source>#</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3297,12 +3194,12 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+157"/>
+        <location line="+158"/>
         <source>Answers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-156"/>
+        <location line="-157"/>
         <source># Voters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3322,7 +3219,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Row Number.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3370,7 +3267,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>VotingVoteDialog</name>
     <message>
-        <location line="+533"/>
+        <location line="+528"/>
         <source>PlaceVote</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3403,7 +3300,7 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+278"/>
+        <location filename="../walletmodel.cpp" line="+249"/>
         <source>Sending...</source>
         <translation>Stuur...</translation>
     </message>
@@ -3411,238 +3308,47 @@ Dit beteken dat &apos;n fooi van ten minste %2 word benodig.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>Gridcoin version</source>
-        <translation>Gridcoin weergawe</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Usage:</source>
-        <translation>Gebruik:</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>List commands</source>
-        <translation>Lys bevele</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Get help for a command</source>
-        <translation>Kry hulp vir &apos;n bevel</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location filename="../bitcoinstrings.cpp" line="+39"/>
         <source>Options:</source>
         <translation>Opsies:</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Spesifiseer Beursie lêer (binne data gids)</translation>
+        <location line="+131"/>
+        <source>Loading addresses...</source>
+        <translation>Laai adresse...</translation>
     </message>
     <message>
-        <location line="-1"/>
-        <source>Specify data directory</source>
-        <translation>Spesifiseer data gids</translation>
+        <location line="+18"/>
+        <source>Insufficient funds</source>
+        <translation>Onvoldoende fondse</translation>
+    </message>
+    <message>
+        <location line="-33"/>
+        <source>Loading block index...</source>
+        <translation>Laai blok indeks...</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Stel databasis cachegrootte in megagrepe (verstek: 25)</translation>
+        <source>Loading wallet...</source>
+        <translation>Laai beursie...</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Done loading</source>
+        <translation>Klaar gelaai</translation>
+    </message>
+    <message>
+        <location line="-150"/>
+        <source>Error</source>
+        <translation>Fout</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>To use the %s option</source>
+        <translation>Die %s-opsie gebruik</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Set database disk log size in megabytes (default: 100)</source>
-        <translation>Stel databasis skyf teken grootte in megagrepe (verstek: 100)</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Onderhou op die meeste &lt;n&gt; konneksies na eweknieë (standaard: 125)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Koppel aan &apos;n nodus herwin eweknie adresse, en ontkoppel</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Specify your own public address</source>
-        <translation>Spesifiseer jou eie openbare adres</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Bind to given address. Use [host]:port notation for IPv6</source>
-        <translation>Bind om gegewe adres. Gebruik [host]: poort notasie vir IPv6</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Drempel vir ontkoppel peers eweknieë (verstek: 100)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Aantal sekondes te hou hom wangedra eweknieë uit herkoppel (verstek: 86400)</translation>
-    </message>
-    <message>
-        <location line="-43"/>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>&apos;N Fout het voorgekom terwyl die RPC poort %u vir luister op IPv4 stel: %s</translation>
-    </message>
-    <message>
-        <location line="+157"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
-        <translation>Fout: Hierdie transaksie vereis &apos;n transaksiefooi van ten minste %s as gevolg van sy bedrag, kompleksiteit, of gebruik van onlangs ontvang fondse</translation>
-    </message>
-    <message>
-        <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 15715 or testnet: 25715)</source>
-        <translation>Luister vir JSON-RPC verbindings op &lt;port&gt; (verstek: 15715 of testnet: 25715)</translation>
-    </message>
-    <message>
-        <location line="-11"/>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Aanvaar bevelreël en JSON-RPC bevele</translation>
-    </message>
-    <message>
-        <location line="+101"/>
-        <source>Error: Transaction creation failed  </source>
-        <translation>Fout: Transaksie skepping het misluk</translation>
-    </message>
-    <message>
-        <location line="-5"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
-        <translation>Fout: Beursie gesluit, nie skep transaksie</translation>
-    </message>
-    <message>
-        <location line="-8"/>
-        <source>Importing blockchain data file.</source>
-        <translation>Blockchain data lêer invoer.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Importing bootstrap blockchain data file.</source>
-        <translation>Invoer bootstrap blockchain data lêer.</translation>
-    </message>
-    <message>
-        <location line="-88"/>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Loop in die agtergrond as &apos;n daemon en aanvaar bevele</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Use the test network</source>
-        <translation>Gebruik die toets netwerk</translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Verbindings van buite aanvaar (verstek: 1 as geen - volmag of - verbind)</translation>
-    </message>
-    <message>
-        <location line="-38"/>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>&apos;N Fout het voorgekom terwyl opstellings die RPC poort %u vir luister op IPv6, val terug na IPv4: %s</translation>
-    </message>
-    <message>
-        <location line="+115"/>
-        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
-        <translation>Fout met die inisialisering van databasis omgewing %s! Om te herwin, RUGSTEUN dat gids, dan verwyder alles uit dit behalwe vir wallet.dat.</translation>
-    </message>
-    <message>
-        <location line="-21"/>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation>Stel maksimum grootte van hoë-prioriteit/lae-fooi transaksies in grepe (verstek: 27000)</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Waarskuwing: - paytxfee is baie hoog gestel! Dit is die transaksiefooi sal jy betaal as jy stuur &apos;n transaksie.</translation>
-    </message>
-    <message>
-        <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gridcoin will not work properly.</source>
-        <translation>Waarskuwing: Maak asseblief seker dat jou rekenaar se datum en tyd is korrek! As jou horlosie is verkeerd sal Gridcoin nie behoorlik werk nie.</translation>
-    </message>
-    <message>
-        <location line="-30"/>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Waarskuwing: fout lees wallet.dat! Alle sleutels lees korrek, maar transaksie data of adres boek inskrywings dalk ontbreek of is foutief.</translation>
-    </message>
-    <message>
-        <location line="-18"/>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Waarskuwing: wallet.dat korrup, data herwin! Oorspronklike wallet.dat gestoor as Beursie. {timestamp} .bak in %s; As jou balans of transaksies is verkeerd jy moet &apos;n rugsteun teruggelaai.</translation>
-    </message>
-    <message>
-        <location line="-31"/>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Poging om private keys van &apos;n korrupte wallet.dat verhaal</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Block creation options:</source>
-        <translation>Blok skepping opsies:</translation>
-    </message>
-    <message>
-        <location line="-59"/>
-        <source>Connect only to the specified node(s)</source>
-        <translatorcomment>Koppel net om die gespesifiseerde nodes</translatorcomment>
-        <translation>Koppel net om die gespesifiseerde node</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Ontdek eie IP-adres (verstek: 1 wanneer luister en geen - externalip)</translation>
-    </message>
-    <message>
-        <location line="+92"/>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Het misluk om te luister op enige hawe. Gebruik - luister = 0 as jy dit wil hê.</translation>
-    </message>
-    <message>
-        <location line="-88"/>
-        <source>Find peers using DNS lookup (default: 1)</source>
-        <translation>Vind eweknieë met behulp van DNS opsoek (verstek: 1)</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Sync checkpoints policy (default: strict)</source>
-        <translation>Sinchro kontrolepunte beleid (verstek: streng)</translation>
-    </message>
-    <message>
-        <location line="+82"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Ongeldige - TOR adres: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Ongeldige bedrag vir -reservebalance=&lt;amount&gt;</translation>
-    </message>
-    <message>
-        <location line="-81"/>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maksimum per-verbinding ontvang buffer, &lt;n&gt;* 1000 grepe (verstek: 5000)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maksimum per-verbinding stuur buffer, &lt;n&gt;* 1000 grepe (verstek: 1000)</translation>
-    </message>
-    <message>
-        <location line="-15"/>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Slegs verbind nodusse in netwerk &lt;net&gt;(IPv4, IPv6 of belegger)</translation>
-    </message>
-    <message>
-        <location line="-49"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3657,12 +3363,61 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+14"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation>&apos;N Fout het voorgekom terwyl opstellings die RPC poort %u vir luister op IPv6, val terug na IPv4: %s</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation>&apos;N Fout het voorgekom terwyl die RPC poort %u vir luister op IPv4 stel: %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation>Jy moet rpcpassword stel = &lt;password&gt;in die konfigurasielêer:
+%s
+As die lêer bestaan nie, dit skep met eienaar-leesbare-net lêer toestemmings.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Gridcoin version</source>
+        <translation>Gridcoin weergawe</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation>Gebruik:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Send command to -server or gridcoind</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation>Lys bevele</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation>Kry hulp vir &apos;n bevel</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Gridcoin</source>
+        <translation>Gridcoin</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This help message</source>
+        <translation>Hierdie help boodskap</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Specify configuration file (default: gridcoin.conf)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3672,12 +3427,178 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+1"/>
+        <source>Specify data directory</source>
+        <translation>Spesifiseer data gids</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Spesifiseer Beursie lêer (binne data gids)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation>Stel databasis cachegrootte in megagrepe (verstek: 25)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database disk log size in megabytes (default: 100)</source>
+        <translation>Stel databasis skyf teken grootte in megagrepe (verstek: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation>Spesifiseer verbinding afsnytyd in millisekondes (verstek: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation>Koppel deur sokkies volmag</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation>Kies die weergawe van sokkies volmag om te gebruik (4-5, verstek: 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation>Gebruik volmag te bereik sionele verborge dienste (verstek: dieselfde as - volmag)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>Laat DNS lookups vir -addnode, -seednode and -connect</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Listen for connections on &lt;port&gt; (default: 32749 or testnet: 32748)</source>
         <translation type="unfinished">Luister vir verbindings op &lt;port&gt; (verstek: 15714 of testnet: 25714) {32749 ?} {32748)?}</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation>Onderhou op die meeste &lt;n&gt; konneksies na eweknieë (standaard: 125)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Voeg &apos;n nodus om aan te koppel en probeer die verbinding om oop te hou</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translatorcomment>Koppel net om die gespesifiseerde nodes</translatorcomment>
+        <translation>Koppel net om die gespesifiseerde node</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Koppel aan &apos;n nodus herwin eweknie adresse, en ontkoppel</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation>Spesifiseer jou eie openbare adres</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation>Slegs verbind nodusse in netwerk &lt;net&gt;(IPv4, IPv6 of belegger)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Ontdek eie IP-adres (verstek: 1 wanneer luister en geen - externalip)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation>Vind eweknieë gebruik internet relay chat (verstek: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Verbindings van buite aanvaar (verstek: 1 as geen - volmag of - verbind)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Bind to given address. Use [host]:port notation for IPv6</source>
+        <translation>Bind om gegewe adres. Gebruik [host]: poort notasie vir IPv6</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1)</source>
+        <translation>Vind eweknieë met behulp van DNS opsoek (verstek: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
+        <translation>Sinchro tyd met ander nodusse. Deaktiveer as tyd op jou stelsel is presiese bv. sinkroniseer met NTP (verstek: 1)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sync checkpoints policy (default: strict)</source>
+        <translation>Sinchro kontrolepunte beleid (verstek: streng)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation>Drempel vir ontkoppel peers eweknieë (verstek: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation>Aantal sekondes te hou hom wangedra eweknieë uit herkoppel (verstek: 86400)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation>Maksimum per-verbinding ontvang buffer, &lt;n&gt;* 1000 grepe (verstek: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation>Maksimum per-verbinding stuur buffer, &lt;n&gt;* 1000 grepe (verstek: 1000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>Gebruik UPnP te karteer die luistervaardigheid poort (verstek: 1 wanneer luister)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation>Gebruik UPnP te karteer die luistervaardigheid poort (verstek: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation>Fooi per kg te voeg tot transaksies jy stuur</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
+        <translation>Wanneer die skep van transaksies, ignoreer insette met waarde minder as dit (verstek: 0.01)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Aanvaar bevelreël en JSON-RPC bevele</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Loop in die agtergrond as &apos;n daemon en aanvaar bevele</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use the test network</source>
+        <translation>Gebruik die toets netwerk</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Uitset ekstra ontfouting-inligting. Impliseer alle ander - vir foutopspoor * opsies</translation>
     </message>
@@ -3692,17 +3613,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Prepend vir foutopspoor uitsette met timestamp</translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL opsies: (sien die Bitcoin Wiki vir SSL omstellingsinstruksies)</translation>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Debug.log lêer op kliënt begin krimp (verstek: 1 wanneer nie - ontfout)</translation>
     </message>
     <message>
-        <location line="-71"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>Kies die weergawe van sokkies volmag om te gebruik (4-5, verstek: 5)</translation>
-    </message>
-    <message>
-        <location line="+38"/>
+        <location line="+1"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Spoor/vir foutopspoor info na konsole in plaas van debug.log lêer stuur</translation>
     </message>
@@ -3712,98 +3628,22 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Stuur spoor/vir foutopspoor info na ontfouter</translation>
     </message>
     <message>
-        <location line="+28"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>Stel maksimum blok grootte in grepe (verstek: 250000)</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Stel minimum blok grootte in grepe (verstek: 0)</translation>
-    </message>
-    <message>
-        <location line="-29"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Debug.log lêer op kliënt begin krimp (verstek: 1 wanneer nie - ontfout)</translation>
-    </message>
-    <message>
-        <location line="-39"/>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Spesifiseer verbinding afsnytyd in millisekondes (verstek: 5000)</translation>
-    </message>
-    <message>
-        <location line="+107"/>
-        <source>Unable to sign checkpoint, wrong checkpointkey?
-</source>
-        <translation>Kan nie aanteken kontrolepunt, verkeerde checkpointkey?</translation>
-    </message>
-    <message>
-        <location line="-79"/>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Gebruik UPnP te karteer die luistervaardigheid poort (verstek: 0)</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Gebruik UPnP te karteer die luistervaardigheid poort (verstek: 1 wanneer luister)</translation>
-    </message>
-    <message>
-        <location line="-24"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Gebruik volmag te bereik sionele verborge dienste (verstek: dieselfde as - volmag)</translation>
-    </message>
-    <message>
-        <location line="+39"/>
+        <location line="+1"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Gebruikersnaam vir JSON-RPC verbindings</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Verifying database integrity...</source>
-        <translation>Verifieer tans databasis integriteit...</translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
-        <translation>Waarskuwing: syncronized kontrolepunt skending opgespoor, maar oorgeslaan!</translation>
-    </message>
-    <message>
         <location line="+1"/>
-        <source>Warning: Disk space is low!</source>
-        <translation>Waarskuwing: Skyfspasie laag is!</translation>
-    </message>
-    <message>
-        <location line="-2"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Waarskuwing: Hierdie weergawe is verouderde, opgradering nodig!</translation>
-    </message>
-    <message>
-        <location line="-47"/>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>Wallet.dat korrup, red, het misluk</translation>
-    </message>
-    <message>
-        <location line="-55"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Wagwoord vir JSON-RPC verbindings</translation>
     </message>
     <message>
-        <location line="-30"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation>Vind eweknieë gebruik internet relay chat (verstek: 0)</translation>
+        <location line="+1"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 15715 or testnet: 25715)</source>
+        <translation>Luister vir JSON-RPC verbindings op &lt;port&gt; (verstek: 15715 of testnet: 25715)</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
-        <translation>Sinchro tyd met ander nodusse. Deaktiveer as tyd op jou stelsel is presiese bv. sinkroniseer met NTP (verstek: 1)</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
-        <translation>Wanneer die skep van transaksies, ignoreer insette met waarde minder as dit (verstek: 0.01)</translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+2"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Laat INTO-RPC verbindings van gespesifiseerde IP adres</translation>
     </message>
@@ -3853,7 +3693,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Rescan die blok ketting vir vermiste Beursie transaksies</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Poging om private keys van &apos;n korrupte wallet.dat verhaal</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
         <translation>Hoeveel blokke te kontroleer by selflaai (verstek: 2500, 0 = al)</translation>
     </message>
@@ -3868,7 +3713,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Voer blokke van eksterne blk000?. gerapporteer lêer</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation>Blok skepping opsies:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation>Stel minimum blok grootte in grepe (verstek: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation>Stel maksimum blok grootte in grepe (verstek: 250000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation>Stel maksimum grootte van hoë-prioriteit/lae-fooi transaksies in grepe (verstek: 27000)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL opsies: (sien die Bitcoin Wiki vir SSL omstellingsinstruksies)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Gebruik OpenSSL (https) vir INTO-RPC verbindings</translation>
     </message>
@@ -3888,27 +3758,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Aanvaarbare ciphers (verstek: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+3"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Ongeldige bedrag vir - paytxfee = &lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Waarskuwing: - paytxfee is baie hoog gestel! Dit is die transaksiefooi sal jy betaal as jy stuur &apos;n transaksie.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Ongeldige bedrag vir - mininput = &lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Initialization sanity check failed. Gridcoin is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
-        <translation>Fout: Beursie ontsluit vir stutting enigste, nie skep transaksie.</translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers.</source>
-        <translation>Waarskuwing: Ongeldige kontrolepunt gevind! Gewys word transaksies kan nie korrek wees! Jy moet dalk opgradeer, of stel ontwikkelaars.</translation>
-    </message>
-    <message>
-        <location line="-155"/>
-        <source>This help message</source>
-        <translation>Hierdie help boodskap</translation>
-    </message>
-    <message>
-        <location line="+93"/>
+        <location line="+1"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Beursie %s gesetel buite data gids %s.</translation>
     </message>
@@ -3918,32 +3788,73 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Kan verkry &apos;n slot op data gids %s. Gridcoin is waarskynlik reeds te laat loop.</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <source>Gridcoin</source>
-        <translation>Gridcoin</translation>
+        <location line="+3"/>
+        <source>Verifying database integrity...</source>
+        <translation>Verifieer tans databasis integriteit...</translation>
     </message>
     <message>
-        <location line="+137"/>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Kon nie %s op hierdie rekenaar bind (penarie bevind teruggekeer fout %d, %s)</translation>
-    </message>
-    <message>
-        <location line="-127"/>
-        <source>Connect through socks proxy</source>
-        <translation>Koppel deur sokkies volmag</translation>
+        <location line="+1"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation>Fout met die inisialisering van databasis omgewing %s! Om te herwin, RUGSTEUN dat gids, dan verwyder alles uit dit behalwe vir wallet.dat.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Laat DNS lookups vir -addnode, -seednode and -connect</translation>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Waarskuwing: wallet.dat korrup, data herwin! Oorspronklike wallet.dat gestoor as Beursie. {timestamp} .bak in %s; As jou balans of transaksies is verkeerd jy moet &apos;n rugsteun teruggelaai.</translation>
     </message>
     <message>
-        <location line="+119"/>
-        <source>Loading addresses...</source>
-        <translation>Laai adresse...</translation>
+        <location line="+4"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>Wallet.dat korrup, red, het misluk</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation>Onbekende - socks gevolmagtigde weergawe versoek: %i</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation>Onbekende netwerk gespesifiseer in - onlynet: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation>Ongeldige - proxy adres: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation>Ongeldige - TOR adres: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation>Adres kan oplos nie-penarie bevind: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Het misluk om te luister op enige hawe. Gebruik - luister = 0 as jy dit wil hê.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation>-ExternalIP adres kan oplos nie: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Ongeldige bedrag vir -reservebalance=&lt;amount&gt;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unable to sign checkpoint, wrong checkpointkey?
+</source>
+        <translation>Kan nie aanteken kontrolepunt, verkeerde checkpointkey?</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Error loading blkindex.dat</source>
         <translation>Fout laai blkindex.dat</translation>
     </message>
@@ -3953,7 +3864,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Kon nie wallet.dat: Beursie korrup</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>Waarskuwing: fout lees wallet.dat! Alle sleutels lees korrek, maar transaksie data of adres boek inskrywings dalk ontbreek of is foutief.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Gridcoin</source>
         <translation>Kon nie wallet.dat: Beursie vereis nuwer weergawe van Gridcoin</translation>
     </message>
@@ -3968,87 +3884,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Fout laai wallet.dat</translation>
     </message>
     <message>
-        <location line="-16"/>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Ongeldige - proxy adres: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Onbekende netwerk gespesifiseer in - onlynet: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Onbekende - socks gevolmagtigde weergawe versoek: %i</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Adres kan oplos nie-penarie bevind: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>-ExternalIP adres kan oplos nie: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="-25"/>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ongeldige bedrag vir - paytxfee = &lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <source>Error: could not start node</source>
-        <translation>Fout: kon nie begin nie</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Sending...</source>
-        <translation>Stuur...</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Invalid amount</source>
-        <translation>Ongeldige bedrag</translation>
-    </message>
-    <message>
         <location line="+1"/>
-        <source>Insufficient funds</source>
-        <translation>Onvoldoende fondse</translation>
-    </message>
-    <message>
-        <location line="-33"/>
-        <source>Loading block index...</source>
-        <translation>Laai blok indeks...</translation>
-    </message>
-    <message>
-        <location line="-101"/>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Voeg &apos;n nodus om aan te koppel en probeer die verbinding om oop te hou</translation>
-    </message>
-    <message>
-        <location line="+119"/>
-        <source>Unable to bind to %s on this computer. Gridcoin is probably already running.</source>
-        <translation>Kon nie bind aan %s op hierdie rekenaar nie. Gridcoin is waarskynlik reeds te laat loop.</translation>
-    </message>
-    <message>
-        <location line="-97"/>
-        <source>Fee per KB to add to transactions you send</source>
-        <translation>Fooi per kg te voeg tot transaksies jy stuur</translation>
-    </message>
-    <message>
-        <location line="+55"/>
-        <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ongeldige bedrag vir - mininput = &lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Loading wallet...</source>
-        <translation>Laai beursie...</translation>
-    </message>
-    <message>
-        <location line="+8"/>
         <source>Cannot downgrade wallet</source>
         <translation>Beursie kan downgrade</translation>
     </message>
@@ -4063,28 +3899,89 @@ for example: alertnotify=echo %%s | mail -s &quot;Gridcoin Alert&quot; admin@foo
         <translation>Rescanning...</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Done loading</source>
-        <translation>Klaar gelaai</translation>
+        <location line="+1"/>
+        <source>Importing blockchain data file.</source>
+        <translation>Blockchain data lêer invoer.</translation>
     </message>
     <message>
-        <location line="-164"/>
-        <source>To use the %s option</source>
-        <translation>Die %s-opsie gebruik</translation>
+        <location line="+1"/>
+        <source>Importing bootstrap blockchain data file.</source>
+        <translation>Invoer bootstrap blockchain data lêer.</translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Error</source>
-        <translation>Fout</translation>
+        <location line="+2"/>
+        <source>Error: could not start node</source>
+        <translation>Fout: kon nie begin nie</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Jy moet rpcpassword stel = &lt;password&gt;in die konfigurasielêer:
-%s
-As die lêer bestaan nie, dit skep met eienaar-leesbare-net lêer toestemmings.</translation>
+        <location line="+2"/>
+        <source>Unable to bind to %s on this computer. Gridcoin is probably already running.</source>
+        <translation>Kon nie bind aan %s op hierdie rekenaar nie. Gridcoin is waarskynlik reeds te laat loop.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation>Kon nie %s op hierdie rekenaar bind (penarie bevind teruggekeer fout %d, %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction  </source>
+        <translation>Fout: Beursie gesluit, nie skep transaksie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
+        <translation>Fout: Beursie ontsluit vir stutting enigste, nie skep transaksie.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
+        <translation>Fout: Hierdie transaksie vereis &apos;n transaksiefooi van ten minste %s as gevolg van sy bedrag, kompleksiteit, of gebruik van onlangs ontvang fondse</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: Transaction creation failed  </source>
+        <translation>Fout: Transaksie skepping het misluk</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sending...</source>
+        <translation>Stuur...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid amount</source>
+        <translation>Ongeldige bedrag</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gridcoin will not work properly.</source>
+        <translation>Waarskuwing: Maak asseblief seker dat jou rekenaar se datum en tyd is korrek! As jou horlosie is verkeerd sal Gridcoin nie behoorlik werk nie.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Waarskuwing: Hierdie weergawe is verouderde, opgradering nodig!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
+        <translation>Waarskuwing: syncronized kontrolepunt skending opgespoor, maar oorgeslaan!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: Disk space is low!</source>
+        <translation>Waarskuwing: Skyfspasie laag is!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers.</source>
+        <translation>Waarskuwing: Ongeldige kontrolepunt gevind! Gewys word transaksies kan nie korrek wees! Jy moet dalk opgradeer, of stel ontwikkelaars.</translation>
     </message>
 </context>
 </TS>

@@ -14,7 +14,7 @@ Public Class Utilization
     Private mlSpeakMagnitude As Double
     Public ReadOnly Property Version As Double
         Get
-            Return 412
+            Return 422
         End Get
     End Property
 
@@ -215,8 +215,21 @@ Public Class Utilization
         '7-25-2015 - Use Quorum Hashing algorithm to get the quorum hash 
         Dim clsQHA As New clsQuorumHashingAlgorithm
         Dim sHash As String = clsQHA.QuorumHashingAlgorithm(sContract)
+        ' Dim contractsDir As String = Path.Combine(GetGridFolder(), "contracts")
+
+        '  If Directory.Exists(contractsDir) = False Then
+        ' Directory.CreateDirectory(contractsDir)
+        ' End If
+        ' Dim contractPath As String = Path.Combine(contractsDir, sHash, ".txt")
+        ' If File.Exists(contractPath) = False Then
+        ' File.WriteAllText(contractPath, sContract)
+        ' End If
+
         Return sHash
     End Function
+    Public Sub ExportToCSVFile()
+        ExportToCSV2()
+    End Sub
     Public Function GetNeuralContract() As String
         Dim sContract As String = GetMagnitudeContract()
         Return sContract
@@ -226,6 +239,9 @@ Public Class Utilization
         fmVoting.Show()
         Return 1
     End Function
+    Public Sub CS1()
+        CompleteSync()
+    End Sub
     Public Function ShowForm(sFormName As String) As String
         Try
             Dim vFormName() As String
@@ -509,21 +525,6 @@ Public Class Utilization
         ResetCPIDsForManualSync()
         Call UpdateMagnitudes()
     End Sub
-    Public Sub AddressUserThread()
-        Try
-            Log("Speaking " + Trim(mlSpeakMagnitude))
-            Dim s As New SpeechSynthesis
-            s.AddressUserBySurname(mlSpeakMagnitude)
-        Catch ex As Exception
-            Log("Unable to initialize speech")
-        End Try
-    End Sub
-    Public Function AddressUser(sMagnitude As String) As Double
-        Dim t As New Threading.Thread(AddressOf AddressUserThread)
-        mlSpeakMagnitude = Val("0" + Trim(sMagnitude))
-        t.Start()
-        Return 1
-    End Function
     Public Sub SetSqlBlock(ByVal data As String)
         Exit Sub
     End Sub

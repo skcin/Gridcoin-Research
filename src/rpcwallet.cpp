@@ -16,7 +16,6 @@ using namespace std;
 
 int64_t nWalletUnlockTime;
 static CCriticalSection cs_nWalletUnlockTime;
-extern std::string TimestampToHRDate(double dtm);
 
 extern void ThreadTopUpKeyPool(void* parg);
 
@@ -849,7 +848,7 @@ Value addmultisigaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() < 2 || params.size() > 3)
     {
         string msg = "addmultisigaddress <nrequired> <'[\"key\",\"key\"]'> [account]\n"
-            "Add a nrequired-to-sign multisignature address to the wallet\"\n"
+            "Add a nrequired-to-sign multisignature address to the wallet\n"
             "each key is a Gridcoin address or hex-encoded public key\n"
             "If [account] is specified, assign address to [account].";
         throw runtime_error(msg);
@@ -1067,20 +1066,23 @@ Value ListReceived(const Array& params, bool fByAccounts)
 
             // Add support for contract or message information appended to the TX itself
             Object oTX;
-            BOOST_FOREACH(const std::string& sContract, (*it).second.sContracts)
+            if(it != mapTally.end())
             {
-                std::string sTxId = ExtractXML(sContract,"<TXID>","</TXID>");
-                std::string sKey = ExtractXML(sContract,"<KEY>","</KEY>");
-                std::string sDetail = ExtractXML(sContract,"<DETAIL>","</DETAIL>");
-                oTX.push_back(Pair("txid", sTxId));
-                Object oSubTx;
-                if (!sDetail.empty())
+                BOOST_FOREACH(const std::string& sContract, (*it).second.sContracts)
                 {
-                    oSubTx.push_back(Pair("key", sKey));
-                    oSubTx.push_back(Pair("detail",sDetail));
-                    oTX.push_back(Pair("Contract",oSubTx));
+                    std::string sTxId = ExtractXML(sContract,"<TXID>","</TXID>");
+                    std::string sKey = ExtractXML(sContract,"<KEY>","</KEY>");
+                    std::string sDetail = ExtractXML(sContract,"<DETAIL>","</DETAIL>");
+                    oTX.push_back(Pair("txid", sTxId));
+                    Object oSubTx;
+                    if (!sDetail.empty())
+                    {
+                        oSubTx.push_back(Pair("key", sKey));
+                        oSubTx.push_back(Pair("detail",sDetail));
+                        oTX.push_back(Pair("Contract",oSubTx));
+        	        }
                 }
-            }
+			}
             obj.push_back(Pair("txids", oTX));
             ret.push_back(obj);
         }

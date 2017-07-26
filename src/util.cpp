@@ -86,8 +86,6 @@ extern std::string GetNeuralVersion();
 
 int64_t IsNeural();
 
-extern int GetDayOfYear();
-
 void MilliSleep(int64_t n)
 {
 #if BOOST_VERSION >= 105000
@@ -99,7 +97,7 @@ void MilliSleep(int64_t n)
 
 // Init OpenSSL library multithreading support
 static CCriticalSection** ppmutexOpenSSL;
-void locking_callback(int mode, int i, const char* file, int line)
+void locking_callback(int mode, int i, const char* file, int line) NO_THREAD_SAFETY_ANALYSIS
 {
     if (mode & CRYPTO_LOCK) {
         ENTER_CRITICAL_SECTION(*ppmutexOpenSSL[i]);
@@ -227,10 +225,12 @@ inline int OutputDebugStringF(const char* pszFormat, ...)
         // print to console
         va_list arg_ptr;
         va_start(arg_ptr, pszFormat);
-        ret = vprintf(pszFormat, arg_ptr);
+        ret = vfprintf(stdout, pszFormat, arg_ptr);
+        fflush(stdout);
         va_end(arg_ptr);
     }
-    else if (!fPrintToDebugger)
+    //else
+    if (!fPrintToDebugger)
     {
         // print to debug.log
         static FILE* fileout = NULL;
@@ -272,6 +272,7 @@ inline int OutputDebugStringF(const char* pszFormat, ...)
             va_list arg_ptr;
             va_start(arg_ptr, pszFormat);
             ret = vfprintf(fileout, pszFormat, arg_ptr);
+            fflush(fileout);
             va_end(arg_ptr);
         }
     }
@@ -314,11 +315,7 @@ string vstrprintf(const char *format, va_list ap)
     {
         va_list arg_ptr;
         va_copy(arg_ptr, ap);
-#ifdef WIN32
-        ret = _vsnprintf(p, limit, format, arg_ptr);
-#else
         ret = vsnprintf(p, limit, format, arg_ptr);
-#endif
         va_end(arg_ptr);
         if (ret >= 0 && ret < limit)
             break;
@@ -353,11 +350,11 @@ string real_strprintf(const std::string &format, int dummy, ...)
     return str;
 }
 
-int GetDayOfYear()
+int GetDayOfYear(int64_t timestamp)
 {
     try
     {
-        boost::gregorian::date d=boost::posix_time::from_time_t(GetAdjustedTime()).date();
+        boost::gregorian::date d=boost::posix_time::from_time_t(timestamp).date();
         //      boost::gregorian::date d(year, month, day);
         int dayNumber = d.day_of_year();
         return dayNumber;
@@ -585,6 +582,22 @@ void ParseParameters(int argc, const char* const argv[])
     }
 }
 
+std::string GetArgument(const std::string& arg, const std::string& defaultvalue)
+{
+    if (mapArgs.count("-" + arg))
+        return mapArgs["-" + arg];
+
+    return defaultvalue;
+}
+
+// SetArgument - Set or alter arguments stored in memory
+void SetArgument(
+            const string &argKey,
+            const string &argValue)
+{
+    mapArgs["-" + argKey] = argValue;
+}
+
 std::string GetArg(const std::string& strArg, const std::string& strDefault)
 {
     if (mapArgs.count(strArg))
@@ -614,7 +627,7 @@ bool SoftSetArg(const std::string& strArg, const std::string& strValue)
 {
     if (mapArgs.count(strArg))
         return false;
-    mapArgs[strArg] = strValue;
+    ForceSetArg(strArg, strValue);
     return true;
 }
 
@@ -626,6 +639,12 @@ bool SoftSetBoolArg(const std::string& strArg, bool fValue)
         return SoftSetArg(strArg, std::string("0"));
 }
 
+void ForceSetArg(const std::string& strArg, const std::string& strValue)
+{
+    mapArgs[strArg] = strValue;
+    mapMultiArgs[strArg].clear();
+    mapMultiArgs[strArg].push_back(strValue);
+}
 
 string EncodeBase64(const unsigned char* pch, size_t len)
 {
@@ -1436,6 +1455,11 @@ std::string RoundToString(double d, int place)
     return ss.str() ;
 }
 
+bool Contains(const std::string& data, const std::string& instring)
+{
+    return data.find(instring) != std::string::npos;
+}
+
 std::string GetNeuralVersion()
 {
 
@@ -1522,4 +1546,34 @@ bool NewThread(void(*pfn)(void*), void* parg)
         return false;
     }
     return true;
+}
+
+// Convert characters that can potentially cause problems to safe html
+std::string MakeSafeMessage(const std::string& messagestring)
+{
+    std::string safemessage = "";
+    safemessage.reserve(messagestring.size());
+    try
+    {
+        for (auto chk : messagestring)
+        {
+            switch(chk)
+            {
+                case '&':     safemessage += "&amp;";     break;
+                case '\'':    safemessage += "&apos;";    break;
+                case '\\':    safemessage += "&#92;";     break;
+                case '\"':    safemessage += "&quot;";    break;
+                case '>':     safemessage += "&gt;";      break;
+                case '<':     safemessage += "&lt;";      break;
+                case '\0':                                break;
+                default:      safemessage += chk;         break;
+            }
+        }
+    }
+    catch (...)
+    {
+        printf("Exception occured in MakeSafeMessage. Returning an empty message.\n");
+        safemessage = "";
+    }
+    return safemessage;
 }

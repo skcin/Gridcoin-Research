@@ -11,7 +11,7 @@
 #include <leveldb/env.h>
 #include <leveldb/cache.h>
 #include <leveldb/filter_policy.h>
-#include <memenv/memenv.h>
+#include <leveldb/helpers/memenv/memenv.h>
 
 #include "kernel.h"
 #include "checkpoints.h"
@@ -26,7 +26,6 @@ using namespace boost;
 
 leveldb::DB *txdb; // global pointer for LevelDB object instance
 void AddCPIDBlockHash(const std::string& cpid, const uint256& blockhash);
-void SetUpExtendedBlockIndexFieldsOnce();
 
 static leveldb::Options GetOptions() {
     leveldb::Options options;
@@ -360,6 +359,7 @@ bool CTxDB::LoadBlockIndex()
     #endif
     
     // Now read each entry.
+    printf("Loading DiskIndex %d\n",nHighest);
     while (iterator->Valid())
     {
         // Unpack keys and values.
@@ -420,6 +420,7 @@ bool CTxDB::LoadBlockIndex()
                 if (nHighest < nGrandfather) nHighest=nGrandfather;
                 std::string sBlocksLoaded = RoundToString(nLoaded,0) + "/" + RoundToString(nHighest,0) + " Blocks Loaded";
                 uiInterface.InitMessage(_(sBlocksLoaded.c_str()));
+                fprintf(stdout,"%d ",nLoaded); fflush(stdout);
             }
         #endif
 
@@ -663,13 +664,11 @@ bool CTxDB::LoadBlockIndex()
                 uiInterface.InitMessage(_(sBlocksLoaded.c_str()));
             }
 #endif
-            
-            const std::string& scpid = pindex->GetCPID();
-            if (pindex->nResearchSubsidy > 0 &&
-                !scpid.empty() &&
-                scpid != "INVESTOR")
+                        
+            if (pindex->nResearchSubsidy > 0 && pindex->IsUserCPID())
             {
-                StructCPID& stCPID = mvResearchAge[scpid];
+                const std::string& scpid = pindex->GetCPID();
+                StructCPID stCPID = GetInitializedStructCPID2(scpid, mvResearchAge);
                 
                 stCPID.InterestSubsidy += pindex->nInterestSubsidy;
                 stCPID.ResearchSubsidy += pindex->nResearchSubsidy;
@@ -689,15 +688,14 @@ bool CTxDB::LoadBlockIndex()
                 if (pindex->nTime < stCPID.LowLockTime)  stCPID.LowLockTime = pindex->nTime;
                 if (pindex->nTime > stCPID.HighLockTime) stCPID.HighLockTime = pindex->nTime;
                 
+                // Store the updated struct.
+                mvResearchAge[scpid] = stCPID;
                 AddCPIDBlockHash(scpid, pindex->GetBlockHash());
             }
         }
     }
 
     printf("RA Complete - RA Time %15" PRId64 "ms\n", GetTimeMillis() - nStart);
-    nStart = GetTimeMillis();
-    SetUpExtendedBlockIndexFieldsOnce();
-    printf("SetUpExtendedBlockIndexFieldsOnce Complete - Time %15" PRId64 "ms\n", GetTimeMillis() - nStart);
     #if defined(WIN32) && defined(QT_GUI)
         SetThreadPriority(THREAD_PRIORITY_NORMAL);
     #endif

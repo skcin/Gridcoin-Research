@@ -19,6 +19,7 @@ class TransactionView;
 class OverviewPage;
 class AddressBookPage;
 class SendCoinsDialog;
+class VotingDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
@@ -30,7 +31,6 @@ class QLineEdit;
 class QTableView;
 class QAbstractItemModel;
 class QModelIndex;
-class QProgressBar;
 class QStackedWidget;
 class QUrl;
 QT_END_NAMESPACE
@@ -79,14 +79,13 @@ private:
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
+    VotingDialog *votingPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
     QLabel *labelConnectionsIcon;
     QLabel *labelBlocksIcon;
-    QLabel *progressBarLabel;
-    QProgressBar *progressBar;
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
@@ -106,17 +105,13 @@ private:
 	QAction *rebuildAction;
 	QAction *upgradeAction;
 	QAction *downloadAction;
-	QAction *rebootAction;
 
 	QAction *configAction;
 	QAction *leaderboardAction;
 	QAction *tickerAction;
-	QAction *browserAction;
 
-	QAction *ticketListAction;
     QAction *votingAction;
 
-	QAction *galazaAction;
 	QAction *newUserWizardAction;
 	QAction *foundationAction;
 	QAction *faqAction;
@@ -216,18 +211,13 @@ private slots:
 	void rebuildClicked();
 	void upgradeClicked();
 	void downloadClicked();
-	void rebootClicked();
 	void configClicked();
 	void miningClicked();
     void votingClicked();
 
 	void faqClicked();
     void diagnosticsClicked();
-
-	void tickerClicked();
 	
-	void ticketListClicked();
-	void galazaClicked();
 	void newUserWizardClicked();
 
 
