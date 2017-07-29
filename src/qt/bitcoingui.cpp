@@ -29,7 +29,7 @@
 #include "signverifymessagedialog.h"
 #include "optionsdialog.h"
 #include "aboutdialog.h"
-#include "votingdialog.h"
+/* #include "votingdialog.h" */
 #include "clientmodel.h"
 #include "walletmodel.h"
 #include "editaddressdialog.h"
@@ -172,7 +172,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
 
     setGeometry(QStyle::alignedRect(Qt::LeftToRight,Qt::AlignCenter,QSize(980,550),qApp->desktop()->availableGeometry()));
-    
+
     setWindowTitle(tr("Gridcoin") + " " + tr("Wallet"));
 
 #ifndef Q_OS_MAC
@@ -766,7 +766,7 @@ void BitcoinGUI::createActions()
 	newUserWizardAction = new QAction(QIcon(":/icons/bitcoin"), tr("&New User Wizard"), this);
 	newUserWizardAction->setStatusTip(tr("New User Wizard"));
 	newUserWizardAction->setMenuRole(QAction::TextHeuristicRole);
-    
+
 	foundationAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Foundation"), this);
 	foundationAction->setStatusTip(tr("Foundation"));
 	foundationAction->setMenuRole(QAction::TextHeuristicRole);
@@ -825,7 +825,7 @@ void BitcoinGUI::createActions()
 
 	connect(foundationAction, SIGNAL(triggered()), this, SLOT(foundationClicked()));
 	connect(faqAction, SIGNAL(triggered()), this, SLOT(faqClicked()));
-	
+
 	connect(newUserWizardAction, SIGNAL(triggered()), this, SLOT(newUserWizardClicked()));
 }
 
@@ -851,7 +851,7 @@ void BitcoinGUI::createMenuBar()
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
     settings->addAction(encryptWalletAction);
     settings->addAction(changePassphraseAction);
-  
+
 	settings->addAction(unlockWalletAction);
     settings->addAction(lockWalletAction);
     settings->addSeparator();
@@ -866,7 +866,7 @@ void BitcoinGUI::createMenuBar()
     community->addAction(websiteAction);
 
 	QMenu *qmAdvanced = appMenuBar->addMenu(tr("&Advanced"));
-#ifdef WIN32  // Some actions in this menu are implemented in Visual Basic and thus only work on Windows    
+#ifdef WIN32  // Some actions in this menu are implemented in Visual Basic and thus only work on Windows
 	qmAdvanced->addAction(configAction);
 	qmAdvanced->addAction(miningAction);
 //	qmAdvanced->addAction(newUserWizardAction);
