@@ -8,6 +8,7 @@
 #include <deque>
 #include <array>
 #include <boost/foreach.hpp>
+#include <boost/thread.hpp>
 #include <openssl/rand.h>
 
 
@@ -125,6 +126,7 @@ enum threadId
 };
 
 extern bool fDiscover;
+void Discover(boost::thread_group& threadGroup);
 extern bool fUseUPnP;
 extern uint64_t nLocalServices;
 extern uint64_t nLocalHostNonce;
@@ -246,7 +248,7 @@ public:
 	int nTrust;
 	////////////////////////
 
-	
+
 	//Block Flood attack Halford
 	int64_t nLastOrphan;
 	int nOrphanCount;
@@ -367,7 +369,7 @@ private:
      static CCriticalSection cs_totalBytesSent;
      static uint64_t nTotalBytesRecv;
      static uint64_t nTotalBytesSent;
- 
+
 
 public:
 
@@ -382,7 +384,7 @@ public:
     unsigned int GetTotalRecvSize()
     {
         unsigned int total = 0;
-        BOOST_FOREACH(const CNetMessage &msg, vRecvMsg) 
+        BOOST_FOREACH(const CNetMessage &msg, vRecvMsg)
             total += msg.vRecv.size() + 24;
         return total;
     }
@@ -505,7 +507,7 @@ public:
         assert(ssSend.size () >= CMessageHeader::CHECKSUM_OFFSET + sizeof(nChecksum));
         memcpy((char*)&ssSend[CMessageHeader::CHECKSUM_OFFSET], &nChecksum, sizeof(nChecksum));
 
-        if (fDebug10) 
+        if (fDebug10)
 		{
             printf("(%d bytes)\n", nSize);
         }
@@ -682,7 +684,7 @@ public:
         }
     }
 
-	
+
 	template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10>
     void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8, const T9& a9, const T10& a10)
     {
@@ -733,7 +735,7 @@ public:
     }
 
 
-	
+
 	template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename T12, typename T13>
     void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8, const T9& a9, const T10& a10, const T11& a11, const T12& a12, const T13& a13)
     {
@@ -752,7 +754,7 @@ public:
 
 
 	template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename T12, typename T13, typename T14>
-    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8, 
+    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8,
 		const T9& a9, const T10& a10, const T11& a11, const T12& a12, const T13& a13, const T14& a14)
     {
         try
@@ -770,7 +772,7 @@ public:
 
 
 	template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename T12, typename T13, typename T14, typename T15>
-    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8, 
+    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8,
 		const T9& a9, const T10& a10, const T11& a11, const T12& a12, const T13& a13, const T14& a14, const T15& a15)
     {
         try
@@ -789,7 +791,7 @@ public:
 
 
 	template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename T12, typename T13, typename T14, typename T15, typename T16>
-    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8, 
+    void PushMessage(const char* pszCommand, const T1& a1, const T2& a2, const T3& a3, const T4& a4, const T5& a5, const T6& a6, const T7& a7, const T8& a8,
 		const T9& a9, const T10& a10, const T11& a11, const T12& a12, const T13& a13, const T14& a14, T15& a15, T16& a16)
     {
         try
@@ -806,7 +808,7 @@ public:
     }
 
 
-		
+
 
 
     void PushRequest(const char* pszCommand,
