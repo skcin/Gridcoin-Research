@@ -19,6 +19,7 @@
 #include <QFileDialog>
 #include <QDesktopServices>
 #include <QThread>
+#include <QUrlQuery> // For QUrl::queryItems
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
