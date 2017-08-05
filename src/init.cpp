@@ -24,11 +24,7 @@
 
 std::vector<std::string> split(std::string s, std::string delim);
 bool LoadAdminMessages(bool bFullTableScan,std::string& out_errors);
-<<<<<<< HEAD
 extern boost::thread_group threadGroup;
-=======
-extern void InitializeBoincProjects();
->>>>>>> 00264a52... Added extern var to init.cpp, bitcoind builds
 
 StructCPID GetStructCPID();
 bool ComputeNeuralNetworkSupermajorityHashes();
