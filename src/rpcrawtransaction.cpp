@@ -12,7 +12,6 @@
 #include "main.h"
 #include "net.h"
 #include "wallet.h"
-//#include "univalue.h"
 #include "upgrader.h"
 
 using namespace std;
@@ -439,7 +438,6 @@ Value createrawtransaction(const Array& params, bool fHelp)
 
     Array inputs = params[0].get_array();
     Object sendTo = params[1].get_obj();
-    //UniValue sendTo2 = params[1].get_obj();
 
     CTransaction rawTx;
 
@@ -468,7 +466,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
     set<CBitcoinAddress> setAddress;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
-         if (s.name_ == "data") 
+         if (s.name_ == "data")
          {
             std::vector<unsigned char> data = ParseHexV(s.value_,"Data");
             CTxOut out(0, CScript() << OP_RETURN << data);
