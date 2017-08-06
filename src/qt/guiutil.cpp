@@ -10,16 +10,20 @@
 #include <QDoubleValidator>
 #include <QFont>
 #include <QLineEdit>
-#include <QUrl>
+//#include <QUrl>
 #include <QTextDocument> // For Qt::escape
-#include <QUrlQuery> // For alternative QT5 toHtmlEscaped
 #include <QAbstractItemView>
 #include <QApplication>
 #include <QClipboard>
 #include <QFileDialog>
 #include <QDesktopServices>
 #include <QThread>
-#include <QUrlQuery> // For QUrl::queryItems
+
+#if QT_VERSION < 0x050000
+#include <QUrl> // For alternative QT5 toHtmlEscaped
+#else
+#include <QUrlQuery>
+#endif
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -91,7 +95,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
     rv.address = uri.path();
     rv.amount = 0;
 #if QT_VERSION < 0x050000
-    QList<QPair<QString, QString> > items = QUrlQuery::queryItems(uri);
+    QList<QPair<QString, QString> > items = uri.queryItems();
 #else
     QUrlQuery uriQuery(uri);
     QList<QPair<QString, QString> > items = uriQuery.queryItems();
