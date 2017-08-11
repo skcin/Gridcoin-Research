@@ -83,11 +83,9 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsdialog.ui \
   qt/forms/transactiondescdialog.ui \
   qt/forms/askpassphrasedialog.ui \
-  qt/forms/miningdialog.ui \
   qt/forms/qrcodedialog.ui \
   qt/forms/sendcoinsentry.ui \
   qt/forms/upgradedialog.ui
-
 
 QT_MOC_CPP = \
   qt/moc_aboutdialog.cpp \

@@ -20,6 +20,7 @@
 #include "json/json_spirit_value.h"
 #include "boinc.h"
 #include "beacon.h"
+#include "miner.h"
 
 #include <boost/lexical_cast.hpp>
 #include <boost/filesystem.hpp>
@@ -97,7 +98,6 @@ extern std::string GetCurrentNeuralNetworkSupermajorityHash(double& out_populari
 extern std::string GetNeuralNetworkSupermajorityHash(double& out_popularity);
 
 extern double CalculatedMagnitude2(std::string cpid, int64_t locktime,bool bUseLederstrumpf);
-extern int64_t ComputeResearchAccrual(int64_t nTime, std::string cpid, std::string operation, CBlockIndex* pindexLast, bool bVerifyingBlock, int VerificationPhase, double& dAccrualAge, double& dMagnitudeUnit, double& AvgMagnitude);
 
 
 
@@ -116,7 +116,7 @@ extern std::string strReplace(std::string& str, const std::string& oldStr, const
 extern bool GetEarliestStakeTime(std::string grcaddress, std::string cpid);
 extern double GetTotalBalance();
 extern std::string PubKeyToAddress(const CScript& scriptPubKey);
-extern void IncrementNeuralNetworkSupermajority(std::string NeuralHash, std::string GRCAddress,double distance);
+extern void IncrementNeuralNetworkSupermajority(const std::string& NeuralHash, const std::string& GRCAddress, double distance, const CBlockIndex* pblockindex);
 extern bool LoadSuperblock(std::string data, int64_t nTime, double height);
 
 
@@ -572,18 +572,20 @@ void GetGlobalStatus()
         }
 
         LOCK(GlobalStatusStruct.lock);
+        { LOCK(MinerStatus.lock);
         GlobalStatusStruct.blocks = RoundToString((double)nBestHeight,0);
         GlobalStatusStruct.difficulty = RoundToString(PORDiff,3);
         GlobalStatusStruct.netWeight = RoundToString(GetPoSKernelPS2(),2);
+        //todo: use the real weight from miner status (requires scaling)
         GlobalStatusStruct.dporWeight = sWeight;
         GlobalStatusStruct.magnitude = RoundToString(boincmagnitude,2);
         GlobalStatusStruct.project = msMiningProject;
         GlobalStatusStruct.cpid = GlobalCPUMiningCPID.cpid;
         GlobalStatusStruct.status = msMiningErrors;
         GlobalStatusStruct.poll = msPoll;
-        GlobalStatusStruct.errors =  msMiningErrors5 + " " + msMiningErrors6 + " " + msMiningErrors7 + " " + msMiningErrors8;
+        GlobalStatusStruct.errors =  MinerStatus.ReasonNotStaking + MinerStatus.Message + " " + msMiningErrors6 + " " + msMiningErrors7 + " " + msMiningErrors8;
         GlobalStatusStruct.rsaOverview =  msRSAOverview; // not displayed on overview page anymore.
-
+        }
         return;
     }
     catch (std::exception& e)
@@ -3294,6 +3296,28 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck, boo
             // Only reject superblock when it is new And when QuorumHash of Block != the Popular Quorum Hash:
             if (IsLockTimeWithinMinutes(GetBlockTime(),15)  && !fColdBoot)
             {
+                // Let this take effect together with stakev8
+                if (nVersion>=8)
+                {
+                    try
+                    {
+                        CBitcoinAddress address;
+                        bool validaddressinblock = address.SetString(bb.GRCAddress);
+                        validaddressinblock &= address.IsValid();
+                        if (!validaddressinblock)
+                        {
+                            return error("ConnectBlock[] : Superblock staked with invalid GRC address in block");
+                        }
+                        if (!IsNeuralNodeParticipant(bb.GRCAddress, nTime))
+                        {
+                            return error("ConnectBlock[] : Superblock staked by ineligible neural node participant");
+                        }
+                    }
+                    catch (...)
+                    {
+                        return error("ConnectBlock[] : Superblock stake check caused unknwon exception with GRC address %s", bb.GRCAddress.c_str());
+                    }
+                }
                 if (!VerifySuperblock(superblock,pindex->nHeight))
                 {
                     return error("ConnectBlock[] : Superblock avg mag below 10; SuperblockHash: %s, Consensus Hash: %s",
@@ -4135,12 +4159,13 @@ bool CBlock::AcceptBlock(bool generated_by_me)
     int nHeight = pindexPrev->nHeight+1;
 
     if(       (IsProtocolV2(nHeight) && nVersion < 7)
-            ||(fTestNet && nHeight >= 288160 && nVersion < 8)
+            ||(fTestNet && nHeight >= 312000 && nVersion < 8)
+            ||(!fTestNet && nHeight >= 1001000 && nVersion < 8)
         )
-        return DoS(100, error("AcceptBlock() : reject too old nVersion = %d", nVersion));
+        return DoS(20, error("AcceptBlock() : reject too old nVersion = %d", nVersion));
     else if( (!IsProtocolV2(nHeight) && nVersion >= 7)
-            ||(!fTestNet && nVersion >=8 )
-            ||(fTestNet && nHeight < 288160 && nVersion >= 8)
+            ||(fTestNet && nHeight < 312000 && nVersion >= 8)
+            ||(!fTestNet && nHeight < 1001000 && nVersion >= 8)
         )
         return DoS(100, error("AcceptBlock() : reject too new nVersion = %d", nVersion));
 
@@ -5735,7 +5760,7 @@ bool ComputeNeuralNetworkSupermajorityHashes()
 
                 IncrementVersionCount(bb.clientversion);
                 //Increment Neural Network Hashes Supermajority (over the last N blocks)
-                IncrementNeuralNetworkSupermajority(bb.NeuralHash,bb.GRCAddress,(nMaxDepth-pblockindex->nHeight)+10);
+                IncrementNeuralNetworkSupermajority(bb.NeuralHash,bb.GRCAddress,(nMaxDepth-pblockindex->nHeight)+10,pblockindex);
                 IncrementCurrentNeuralNetworkSupermajority(bb.CurrentNeuralHash,bb.GRCAddress,(nMaxDepth-pblockindex->nHeight)+10);
 
             }
@@ -8455,9 +8480,32 @@ void IncrementCurrentNeuralNetworkSupermajority(std::string NeuralHash, std::str
 
 
 
-void IncrementNeuralNetworkSupermajority(std::string NeuralHash, std::string GRCAddress, double distance)
+void IncrementNeuralNetworkSupermajority(const std::string& NeuralHash, const std::string& GRCAddress, double distance, const CBlockIndex* pblockindex)
 {
     if (NeuralHash.length() < 5) return;
+    if (pblockindex->nVersion >= 8)
+    {
+        try
+        {
+            CBitcoinAddress address(GRCAddress);
+            bool validaddresstovote = address.IsValid();
+            if (!validaddresstovote)
+            {
+                printf("INNS : Vote found in block with invalid GRC address. HASH: %s GRC: %s\n", NeuralHash.c_str(), GRCAddress.c_str());
+                return;
+            }
+            if (!IsNeuralNodeParticipant(GRCAddress, pblockindex->nTime))
+            {
+                printf("INNS : Vote found in block from ineligible neural node participant. HASH: %s GRC: %s\n", NeuralHash.c_str(), GRCAddress.c_str());
+                return;
+            }
+        }
+        catch (const bignum_error& innse)
+        {
+            printf("INNS : Exception: %s\n", innse.what());
+            return;
+        }
+    }
     double temp_hashcount = 0;
     if (mvNeuralNetworkHash.size() > 0)
     {
@@ -8608,56 +8656,15 @@ bool MemorizeMessage(std::string msg, int64_t nTime, double dAmount, std::string
 
               if (!sMessageType.empty() && !sMessageKey.empty() && !sMessageValue.empty() && !sMessageAction.empty() && !sSignature.empty())
               {
-
-                  // If this is a DAO, ensure the contents are protected:
-                  if ((sMessageType=="dao" || sMessageType=="daoclient") && !sMessagePublicKey.empty())
-                  {
-                            if (fDebug10) printf("DAO Message %s",msg.c_str());
-
-                            if (sMessageAction=="A")
-                            {
-                                std::string daoPubKey = ReadCache(sMessageType + "pubkey",sMessageKey);
-                                if (daoPubKey.empty())
-                                {
-                                    //We only accept the first message
-                                    WriteCache(sMessageType + "pubkey",sMessageKey,sMessagePublicKey,nTime);
-                                    std::string OrgSymbol = ExtractXML(sMessageValue,"<SYMBOL>","</SYMBOL>");
-                                    std::string OrgName = ExtractXML(sMessageValue,"<NAME>","</NAME>");
-                                    std::string OrgREST = ExtractXML(sMessageValue,"<REST>","</REST>");
-                                    WriteCache(sMessageType + "rest",  OrgSymbol,  OrgREST,    nTime);
-                                    WriteCache(sMessageType + "symbol",sMessageKey,OrgSymbol,  nTime);
-                                    WriteCache(sMessageType + "name",  OrgSymbol,  sMessageKey,nTime);
-                                    WriteCache(sMessageType + "orgname", OrgSymbol,OrgName,    nTime);
-                                }
-                            }
-                  }
-
-                  if (sMessageType=="dao" || sMessageType=="daoclient")
-                  {
-                        sMessagePublicKey = ReadCache(sMessageType+"pubkey",sMessageKey);
-                  }
-                  if (sMessageType == "daofeed")
-                  {
-                        sMessagePublicKey = ReadCache("daopubkey",GetOrgSymbolFromFeedKey(sMessageKey));
-                  }
-
                   //Verify sig first
                   bool Verified = CheckMessageSignature(sMessageAction,sMessageType,sMessageType+sMessageKey+sMessageValue,
                       sSignature,sMessagePublicKey);
-
-                  if ( (sMessageType=="dao" || sMessageType == "daofeed") && !Verified && fDebug3)
-                  {
-                        printf("Message type %s: %s was not verified successfully. PubKey %s \r\n",sMessageType.c_str(),msg.c_str(),sMessagePublicKey.c_str());
-                  }
 
                   if (Verified)
                   {
 
                         if (sMessageAction=="A")
                         {
-                                if ( (sMessageType=="dao" || sMessageType == "daofeed") && fDebug3 )
-                                    printf("Adding MessageKey type %s Key %s Value %s\r\n",
-                                    sMessageType.c_str(),sMessageKey.c_str(),sMessageValue.c_str());
                                 // Ensure we have the TXID of the contract in memory
                                 if (!(sMessageType=="project" || sMessageType=="projectmapping" || sMessageType=="beacon" ))
                                 {

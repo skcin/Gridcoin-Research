@@ -273,7 +273,7 @@ AC_DEFUN([_BITCOIN_QT_CHECK_QT5],[
     [[#include <QtCore>]],
     [[
       #if QT_VERSION < 0x050000
-      choke me;
+      choke me
       #else
       return 0;
       #endif
@@ -349,10 +349,6 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
        elif test x$TARGET_OS = xdarwin; then
          PKG_CHECK_MODULES([QTPRINT], [Qt5PrintSupport], [QT_LIBS="$QTPRINT_LIBS $QT_LIBS"])
        fi
-       if ${PKG_CONFIG} --exists "Qt5Core >= 5.8" 2>/dev/null; then
-         PKG_CHECK_MODULES([QTXCBQPA], [Qt5XcbQpa], [QT_LIBS="$QTXCBQPA_LIBS $QT_LIBS"])
-       fi
-
      ])
      else
        if test x$TARGET_OS = xwindows; then

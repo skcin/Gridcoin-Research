@@ -32,6 +32,11 @@ For in detail and plattform specific instructions see [doc/](doc/)
 Development process
 ===========================
 
+The master branch is regularly built and tested, but is not guaranteed 
+to be completely stable. [Tags](https://github.com/gridcoin/Gridcoin-Research/tags)
+are created regularly to indicate new official, stable release versions 
+of Gridcoin.
+
 Developers work in their own trees, then submit pull requests to the
 development branch when they think their feature or bug fix is ready.
 
