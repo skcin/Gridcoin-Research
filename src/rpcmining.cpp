@@ -9,6 +9,7 @@
 #include "init.h"
 #include "miner.h"
 #include "bitcoinrpc.h"
+#include "neuralnet.h"
 #include "global_objects_noui.hpp"
 using namespace json_spirit;
 using namespace std;
@@ -20,7 +21,7 @@ int64_t GetCoinYearReward(int64_t nTime);
 
 double GetPoSKernelPS2();
 double GRCMagnitudeUnit(int64_t locktime);
-std::string qtGetNeuralHash(std::string data);
+//std::string qtGetNeuralHash(std::string data);
 volatile bool bCPIDsLoaded;
 volatile bool bProjectsInitialized;
 std::string GetNeuralNetworkSupermajorityHash(double& out_popularity);
@@ -94,9 +95,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     std::string neural_hash = GetNeuralNetworkSupermajorityHash(neural_popularity);
     obj.push_back(Pair("PopularNeuralHash", neural_hash));
     //9-19-2015 - CM
-    #if defined(WIN32) && defined(QT_GUI)
-    obj.push_back(Pair("MyNeuralHash", qtGetNeuralHash("")));
-    #endif
+    obj.push_back(Pair("MyNeuralHash", NN::GetNeuralHash()));
 
     obj.push_back(Pair("NeuralPopularity", neural_popularity));
     obj.push_back(Pair("CPID",msPrimaryCPID));
