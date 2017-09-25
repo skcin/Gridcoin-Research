@@ -12,16 +12,16 @@
 #include "main.h"
 #include "net.h"
 #include "wallet.h"
-#include "upgrader.h"
+// #include "upgrader.h"
 
 using namespace std;
 using namespace boost;
 using namespace boost::assign;
 using namespace json_spirit;
 
-extern std::string GetTxProject(uint256 hash, int& out_blocknumber, int& out_blocktype, int& out_rac);
-extern void Imker(void *kippel);
-extern Upgrader upgrader;
+//extern std::string GetTxProject(uint256 hash, int& out_blocknumber, int& out_blocktype, int& out_rac);
+//extern void Imker(void *kippel);
+//extern Upgrader upgrader;
 
 /* #ifdef QT_GUI */
 /* #include "qt/upgradedialog.h" */
@@ -65,7 +65,7 @@ std::string GetTxProject(uint256 hash, int& out_blocknumber, int& out_blocktype,
 
 }
 
-Value downloadblocks(const Array& params, bool fHelp)
+/*Value downloadblocks(const Array& params, bool fHelp)
 {
         if (fHelp || params.size() != 0)
         throw runtime_error(
@@ -81,9 +81,9 @@ Value downloadblocks(const Array& params, bool fHelp)
         else
         {
             boost::thread(Imker, &upgrader);
-            /* #ifdef QT_GUI */
-            /* QMetaObject::invokeMethod(&checker, "check", Qt::QueuedConnection); */
-            /* #endif */
+            // #ifdef QT_GUI
+            // QMetaObject::invokeMethod(&checker, "check", Qt::QueuedConnection);
+            // #endif
             return "Initiated download of blockchain";
         }
 }
@@ -181,14 +181,14 @@ Value upgrade(const Array& params, bool fHelp)
          else
          {
              boost::thread(Imker, &upgrader);
-             /* #ifdef QT_GUI */
-             /*  QMetaObject::invokeMethod(&checker, "check", Qt::QueuedConnection); */
-             /* #endif */
+             //#ifdef QT_GUI
+             //  QMetaObject::invokeMethod(&checker, "check", Qt::QueuedConnection);
+             //#endif
              return "Initiated download of client";
         }
 
 }
-
+*/
 
 
 
