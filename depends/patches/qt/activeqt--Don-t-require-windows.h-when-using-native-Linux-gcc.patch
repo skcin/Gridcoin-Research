@@ -1,0 +1,9 @@
+--- old/qtactiveqt/src/tools/idc/idc.pro
++++ new/qtactiveqt/src/tools/idc/idc.pro
+@@ -1,4 +1,3 @@
+-option(host_build)
+ CONFIG += force_bootstrap
+ SOURCES = main.cpp
+ 
+
+

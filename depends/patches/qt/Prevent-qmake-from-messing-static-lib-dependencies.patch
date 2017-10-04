@@ -1,0 +1,26 @@
+--- old/qtbase/qmake/generators/unix/unixmake.cpp
++++ new/qtbase/qmake/generators/unix/unixmake.cpp
+@@ -414,6 +414,9 @@ UnixMakefileGenerator::fixLibFlag(const ProString &lib)
+ bool
+ UnixMakefileGenerator::findLibraries(bool linkPrl, bool mergeLflags)
+ {
++    if(project->isActiveConfig("staticlib")) {
++        return false; // prevent qmake from messing static lib dependencies
++    }
+     QList<QMakeLocalFileName> libdirs, frameworkdirs;
+     int libidx = 0, fwidx = 0;
+     for (const ProString &dlib : project->values("QMAKE_DEFAULT_LIBDIRS"))
+--- old/qtbase/qmake/generators/win32/winmakefile.cpp
++++ new/qtbase/qmake/generators/win32/winmakefile.cpp
+@@ -87,6 +87,9 @@ Win32MakefileGenerator::findLibraries(bool linkPrl, bool mergeLflags)
+     impexts.append(project->values("QMAKE_EXTENSION_IMPORTLIB"));
+     impexts.append(project->values("QMAKE_EXTENSION_STATICLIB"));
+   }
++  if(project->isActiveConfig("staticlib")) {
++    return false; // prevent qmake from messing static lib dependencies
++  }
+   QList<QMakeLocalFileName> dirs;
+   static const char * const lflags[] = { "QMAKE_LIBS", "QMAKE_LIBS_PRIVATE", 0 };
+   for (int i = 0; lflags[i]; i++) {
+
+

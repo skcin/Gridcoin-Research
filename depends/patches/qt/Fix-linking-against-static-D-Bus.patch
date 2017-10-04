@@ -1,0 +1,48 @@
+--- old/qtbase/config.tests/unix/dbus/dbus.cpp
++++ new/qtbase/config.tests/unix/dbus/dbus.cpp
+@@ -37,6 +37,10 @@
+ **
+ ****************************************************************************/
+ 
++#ifdef QT_STATIC
++#  define DBUS_STATIC_BUILD
++#endif
++
+ #define DBUS_API_SUBJECT_TO_CHANGE
+ #include <dbus/dbus.h>
+ 
+--- old/qtbase/configure.json
++++ /configure.json
+@@ -159,12 +159,16 @@
+             "sources": [
+                 { "type": "pkgConfig", "args": "dbus-1 >= 1.2" },
+                 {
++                    "libs": "-ldbus-1 -lws2_32 -liphlpapi",
++                    "condition": "config.win32 && !features.shared"
++                },
++                {
+                     "libs": "",
+                     "builds": {
+                         "debug": "-ldbus-1d",
+                         "release": "-ldbus-1"
+                     },
+-                    "condition": "config.win32"
++                    "condition": "config.win32 && features.shared"
+                 },
+                 { "libs": "-ldbus-1", "condition": "!config.win32" }
+             ]
+--- old/qtbase/src/dbus/qdbus_symbols_p.h
++++ new/qtbase/src/dbus/qdbus_symbols_p.h
+@@ -57,6 +57,10 @@
+ 
+ #ifndef QT_NO_DBUS
+ 
++#ifdef QT_STATIC
++#  define DBUS_STATIC_BUILD
++#endif
++
+ #ifdef QT_LINKED_LIBDBUS
+ #  include <dbus/dbus.h>
+ #else
+
+

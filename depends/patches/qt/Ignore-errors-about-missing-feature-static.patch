@@ -1,0 +1,20 @@
+--- old/qtbase/mkspecs/features/qt_build_config.prf
++++ new/qtbase/mkspecs/features/qt_build_config.prf
+@@ -135,5 +135,5 @@ defineTest(qtConfig) {
+         contains(QT.$${module}.disabled_features, $$1): \
+             return(false)
+     }
+-    error("Could not find feature $${1}.")
++    !equals($$1, "static"): error("Could not find feature $${1}.")
+ }
+--- old/qtbase/mkspecs/features/qt_functions.prf
++++ new/qtbase/mkspecs/features/qt_functions.prf
+@@ -351,5 +351,5 @@ defineTest(qtConfig) {
+         contains(QT.$${module}.disabled_features, $$1): \
+             return(false)
+     }
+-    error("Could not find feature $${1}.")
++    !equals($$1, "static"): error("Could not find feature $${1}.")
+ }
+
+
