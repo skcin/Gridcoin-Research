@@ -271,6 +271,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/cpid.h \
     src/upgrader.h \
     src/boinc.h \
+    src/backup.h \
+    src/appcache.h \
     src/qt/clicklabel.h
 
 
@@ -351,6 +353,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/upgrader.cpp \
     src/boinc.cpp \
     src/allocators.cpp \
+    src/backup.cpp \
     src/qt/clicklabel.cpp
 
 ##
