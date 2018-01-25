@@ -83,6 +83,7 @@
 #include <QStyle>
 #include <QNetworkInterface>
 #include <QDesktopWidget>
+#include <QStatusBar>
 
 #include <boost/lexical_cast.hpp>
 
@@ -212,7 +213,41 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     setCentralWidget(centralWidget);
 
     // Create status bar
-    // statusBar();
+
+    statusBar();
+    statusBar()->setSizeGripEnabled(false);
+
+
+    QFrame *frameBlocks = new QFrame();
+    frameBlocks->setContentsMargins(0,0,0,0);
+    frameBlocks->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+    QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
+    frameBlocksLayout->setContentsMargins(3,0,3,0);
+    frameBlocksLayout->setSpacing(12);
+    labelEncryptionIcon = new QLabel();
+    labelStakingIcon = new QLabel();
+    labelConnectionsIcon = new QLabel();
+    labelBlocksIcon = new QLabel();
+
+    frameBlocksLayout->addStretch();
+    frameBlocksLayout->addWidget(labelEncryptionIcon);
+    frameBlocksLayout->addStretch();
+    frameBlocksLayout->addWidget(labelStakingIcon);
+    frameBlocksLayout->addStretch();
+    frameBlocksLayout->addWidget(labelConnectionsIcon);
+    frameBlocksLayout->addStretch();
+    frameBlocksLayout->addWidget(labelBlocksIcon);
+    frameBlocksLayout->addStretch();
+
+    statusBar()->addPermanentWidget(frameBlocks);
+
+    if (GetBoolArg("-staking", true))
+    {
+        QTimer *timerStakingIcon = new QTimer(labelStakingIcon);
+        connect(timerStakingIcon, SIGNAL(timeout()), this, SLOT(updateStakingIcon()));
+        timerStakingIcon->start(30 * 1000);
+        updateStakingIcon();
+    }
 
     syncIconMovie = new QMovie(":/movies/update_spinner", "GIF", this);
 
@@ -833,45 +868,6 @@ void BitcoinGUI::createToolBars()
     webSpacer->setMaximumHeight(10);
     toolbar->addWidget(webSpacer);
     webSpacer->setObjectName("WebSpacer");
-
-
-    // Status bar notification icons
-    QFrame *frameBlocks = new QFrame();
-
-    frameBlocks->setContentsMargins(0,0,0,0);
-
-    QVBoxLayout *frameBlocksLayout = new QVBoxLayout(frameBlocks);
-    frameBlocksLayout->setContentsMargins(1,0,1,0);
-    frameBlocksLayout->setSpacing(-1);
-    labelEncryptionIcon = new QLabel();
-    labelStakingIcon = new QLabel();
-    labelConnectionsIcon = new QLabel();
-    labelBlocksIcon = new QLabel();
-    frameBlocksLayout->addWidget(labelEncryptionIcon);
-
-    frameBlocksLayout->addWidget(labelStakingIcon);
-    frameBlocksLayout->addWidget(labelConnectionsIcon);
-    frameBlocksLayout->addWidget(labelBlocksIcon);
-    //12-21-2015 Prevent Lock from falling off the page
-
-    frameBlocksLayout->addStretch();
-
-    if (GetBoolArg("-staking", true))
-    {
-        QTimer *timerStakingIcon = new QTimer(labelStakingIcon);
-        connect(timerStakingIcon, SIGNAL(timeout()), this, SLOT(updateStakingIcon()));
-        timerStakingIcon->start(30 * 1000);
-        updateStakingIcon();
-    }
-
-    frameBlocks->setObjectName("frame");
-    addToolBarBreak(Qt::LeftToolBarArea);
-    QToolBar *toolbar2 = addToolBar("Tabs toolbar");
-    addToolBar(Qt::LeftToolBarArea,toolbar2);
-    toolbar2->setOrientation(Qt::Vertical);
-    toolbar2->setMovable( false );
-    toolbar2->setObjectName("toolbar2");
-    toolbar2->addWidget(frameBlocks);
 
     addToolBarBreak(Qt::TopToolBarArea);
     QToolBar *toolbar3 = addToolBar("Logo bar");

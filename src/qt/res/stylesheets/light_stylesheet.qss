@@ -364,13 +364,6 @@ QListWidget{
     color: black;
 }
 
-#toolbar2 {
-    border:none;
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(195,195,195), stop: 1 rgb(195,195,195));
-    min-width:1.625em;
-    max-width:1.625em;
-}
-
 #toolbar3 {
     border:none;
     background-color:rgb(65,0,127);
@@ -385,13 +378,6 @@ QToolBar#toolbar QToolButton {
     padding-bottom:0.5em;
     margin:0.25em;
     width:100%;
-}
-
-QToolBar#toolbar2 QLabel{
-    border:none;
-    padding-top:1em;
-    padding-bottom:1em;
-    qproperty-alignment: AlignCenter;
 }
 
 QToolBar#toolbar3 QLabel{
