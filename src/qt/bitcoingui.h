@@ -36,6 +36,7 @@ class QAbstractItemModel;
 class QModelIndex;
 class QStackedWidget;
 class QUrl;
+class QWidget;
 QT_END_NAMESPACE
 
 /**
@@ -71,7 +72,9 @@ private:
     ClientModel *clientModel;
     WalletModel *walletModel;
 
+    QWidget *contentWidget;
     QStackedWidget *centralWidget;
+    QWidget *sideBarWidget;
 
     OverviewPage *overviewPage;
     QWidget *transactionsPage;
@@ -154,8 +157,6 @@ private:
     void createTrayIcon();
     /** Create system tray menu (or setup the dock menu) */
     void createTrayIconMenu();
-    /** Set Icons */
-    void setIcons();
 
 
 public slots:

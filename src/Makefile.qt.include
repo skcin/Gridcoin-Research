@@ -114,6 +114,7 @@ QT_MOC_CPP = \
   qt/moc_rpcconsole.cpp \
   qt/moc_sendcoinsdialog.cpp \
   qt/moc_sendcoinsentry.cpp \
+  qt/moc_sidebarbutton.cpp \
   qt/moc_signverifymessagedialog.cpp \
   qt/moc_trafficgraphwidget.cpp \
   qt/moc_transactiondesc.cpp \
@@ -169,6 +170,7 @@ GRIDCOINRESEARCH_QT_H = \
   qt/rpcconsole.h \
   qt/sendcoinsdialog.h \
   qt/sendcoinsentry.h \
+  qt/sidebarbutton.h \
   qt/signverifymessagedialog.h \
   qt/trafficgraphwidget.h \
   qt/transactiondesc.h \
@@ -208,6 +210,7 @@ GRIDCOINRESEARCH_QT_CPP = \
   qt/rpcconsole.cpp \
   qt/sendcoinsdialog.cpp \
   qt/sendcoinsentry.cpp \
+  qt/sidebarbutton.cpp \
   qt/signverifymessagedialog.cpp \
   qt/trafficgraphwidget.cpp \
   qt/transactiondesc.cpp \

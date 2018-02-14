@@ -3,6 +3,8 @@
 QMainWindow {
     background-color:rgb(49,54,59);
     border:none;
+    padding:0;
+    margin:0;
     font-family:'Open Sans';
 }
 
@@ -355,13 +357,50 @@ QListWidget{
 
 /* Main Window*/
 
-#toolbar {
+SideBarButton{
+    color:white;
+    background-color:transparent;
+    Text-align:left;
     border:none;
-    padding-top:1.25em;
-    min-width:8em;
-    height:100%;    
-    background: transparent;
-    color: white;
+    padding:0;
+    margin:0;
+    min-height:2em;
+}
+
+QLabel[type="42"]{
+    background-color:red;
+    max-height:1em;
+    min-height:1em;
+    max-width:0.5em;
+    min-width:0.5em;
+    border-radius: 0.2em;
+    margin-right:0.75em;
+}
+
+QLabel[type="43"]{
+    background-color:transparent;
+    margin-right:0.75em;
+    font-weight:bold;
+}
+
+QLabel[type="44"]{
+    background-color:green;
+    border-radius: 0.3em;
+}
+
+#contentwidget {
+    border:none;
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+#sidebar {
+    border:none;  
+    background: rgb(42,0,81);
+    margin:0;
+    padding:0;
+    border:none;
 }
 
 #toolbar3 {
@@ -369,15 +408,6 @@ QListWidget{
     background-color:rgb(65,0,127);
     min-height:3.25em;
     max-height:3.25em;
-}
-
-QToolBar#toolbar QToolButton {
-    padding-left:1em;
-    padding-right:1em;
-    padding-top:0.5em;
-    padding-bottom:0.5em;
-    margin:0.25em;
-    width:100%;
 }
 
 QToolBar#toolbar3 QLabel{
